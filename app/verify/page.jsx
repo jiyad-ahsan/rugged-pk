@@ -15,7 +15,7 @@ export default function VerifyPage() {
     setError("");
     setLoading(true);
 
-    const res = await fetch("/api/auth/verify", {
+    const res = await fetch("/api/verify", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ code }),

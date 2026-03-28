@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__bea9e850-aa34-4909-92ea-f218a144a6c4__list_projects",
+      "mcp__bea9e850-aa34-4909-92ea-f218a144a6c4__list_teams",
+      "mcp__bea9e850-aa34-4909-92ea-f218a144a6c4__list_deployments",
+      "mcp__bea9e850-aa34-4909-92ea-f218a144a6c4__get_runtime_logs",
+      "mcp__bea9e850-aa34-4909-92ea-f218a144a6c4__get_deployment_build_logs",
+      "mcp__bea9e850-aa34-4909-92ea-f218a144a6c4__web_fetch_vercel_url",
+      "Bash(cp app/api/auth/signup/route.js app/api/signup/route.js)",
+      "Bash(cp app/api/auth/verify/route.js app/api/verify/route.js)",
+      "Bash(cp app/api/auth/forgot-password/route.js app/api/forgot-password/route.js)",
+      "Bash(cp app/api/auth/reset-password/route.js app/api/reset-password/route.js)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
