@@ -116,3 +116,49 @@
 .animate-delay-100 { animation-delay: 0.1s; opacity: 0; }
 .animate-delay-200 { animation-delay: 0.2s; opacity: 0; }
 .animate-delay-300 { animation-delay: 0.3s; opacity: 0; }
+
+/* Print styles — guides and field cards should print cleanly */
+@media print {
+  body::before {
+    display: none !important;
+  }
+
+  nav, footer, .print\\:hidden,
+  [class*="SaveOffline"], [class*="btn-outline"] {
+    display: none !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  .card {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .section-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .guide-content h2 {
+    break-after: avoid;
+  }
+
+  .guide-content p, .guide-content li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}
