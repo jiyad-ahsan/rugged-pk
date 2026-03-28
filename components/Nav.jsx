@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { useSession, signOut } from "next-auth/react";
 import { useTheme } from "./ThemeProvider";
 
 const links = [
@@ -14,6 +15,7 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const { dark, toggle } = useTheme();
+  const { data: session } = useSession();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -88,6 +90,27 @@ export default function Nav() {
           >
             {dark ? "☀" : "☾"}
           </button>
+
+          {/* Auth */}
+          {session?.user ? (
+            <button
+              onClick={() => signOut({ callbackUrl: "/" })}
+              className="font-mono text-sm text-sand-600 dark:text-sand-500
+                         hover:text-neutral-900 dark:hover:text-sand-100
+                         bg-transparent border-none cursor-pointer transition-colors duration-200"
+            >
+              {session.user.name?.split(" ")[0] || "account"} ·{" "}
+              <span className="text-rugged-500 dark:text-rugged-400">logout</span>
+            </button>
+          ) : (
+            <Link
+              href="/login"
+              className="font-mono text-sm no-underline text-sand-600 dark:text-sand-500
+                         hover:text-neutral-900 dark:hover:text-sand-100 transition-colors duration-200"
+            >
+              login
+            </Link>
+          )}
         </div>
       </div>
     </nav>

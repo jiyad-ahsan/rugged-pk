@@ -1,0 +1,13 @@
+{
+  "name": "Rugged",
+  "short_name": "Rugged",
+  "description": "Preparedness for Pakistani Families",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141210",
+  "theme_color": "#c94b30",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

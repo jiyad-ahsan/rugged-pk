@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SketchBackpack, SketchFood, SketchRadio, SketchHouses, SketchMedical, SketchWater, SketchShelter } from "@/components/Sketches";
+import SaveOfflineButton from "@/components/SaveOfflineButton";
 
 // This will eventually come from markdown/CMS — hardcoded sample for now
 const guideData = {
@@ -123,7 +124,7 @@ export default function GuidePage({ params }) {
             {guide.subtitle}
           </p>
           <div className="flex gap-3">
-            <button className="btn-primary text-sm">↓ Download for offline</button>
+            <SaveOfflineButton slug={params.slug} />
             <button className="btn-outline text-sm">Share guide</button>
           </div>
         </div>
