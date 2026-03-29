@@ -26,9 +26,9 @@ This guide is about those 30 minutes. What you do, in what order, and what you s
 
 ## Why 30 minutes
 
-Karachi has roughly 16 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, a major terrorist attack, a political assassination — the window between "news breaks" and "roads are completely jammed" is short.
+Karachi has roughly 30 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, a major terrorist attack, a political assassination — the window between "news breaks" and "roads are completely jammed" is short.
 
-In February 2019, after the Pulwama attack and India's response, Karachi's main arteries were clogged within 40 minutes of the first rumours of strikes. People who left early got through. People who waited didn't.
+In May 2025, during the Pakistan-India conflict, Karachi's main arteries were clogged within 40 minutes of the first rumours of strikes, as people rushed to grocery stores to stock up in case some form of emergency arose. People who left early got through. People who waited didn't.
 
 Thirty minutes is not a guarantee. It's a planning assumption. Some crises give you more. Some give you less. But if your family can execute a plan in 30 minutes, you're ahead of almost everyone else in the city.
 
