@@ -19,11 +19,11 @@ relatedGuides: ["30-minute-window", "surviving-a-curfew"]
 status: "published"
 ---
 
-Gunfire in the distance. Not close — but not far enough. The news says curfew imposed, effective immediately. Shoot on sight after dark. Your phone buzzes with a WhatsApp forward — some area has been cordoned off, Rangers everywhere. The roads are already blocked.
+Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound — you don't know where, you don't know how many. You saw what happened in Iran, in Syria, in Gaza. People going about their regular Tuesday and then the sky opened up. Pakistan's geopolitical neighbourhood means this isn't someone else's problem.
 
 You're not going anywhere. So now what?
 
-The 30-Minute Window covers when you can leave. This guide covers when you can't. Or when leaving is more dangerous than staying. In Pakistan, that situation is not hypothetical — Section 144, military operations, riots, curfews. When the order comes, you shelter. And how well you shelter depends on what you did before the order came.
+The 30-Minute Window covers when you can leave. This guide covers when you can't — or when leaving is more dangerous than staying. Whether it's an airstrike warning, a sudden escalation at the border, an earthquake that's made the streets unsafe, or a curfew during unrest — the situation is the same. You're at home, you're staying at home, and how well you manage depends on what you did before it happened.
 
 ## Home hardening
 
@@ -47,18 +47,18 @@ Most Pakistani homes have window grills — metal bars welded over windows. In n
 
 **During a shelter-in-place:**
 
-- **Tape X-patterns on glass.** This doesn't prevent the glass from breaking — it reduces shatter spray. Packing tape or masking tape in an X across each pane. Takes five minutes per window.
-- **Cover windows.** Cardboard, plywood if you have it, thick blankets. This serves two purposes: it stops glass shards from entering and it blocks visibility from outside.
+- **Tape X-patterns on glass.** This doesn't prevent the glass from breaking — it reduces shatter spray. A nearby blast can turn a window into shrapnel. Packing tape or masking tape in an X across each pane. Takes five minutes per window.
+- **Cover windows.** Cardboard, plywood if you have it, thick blankets. This catches glass fragments from blast pressure or impacts, and blocks visibility from outside.
 - **Blackout.** If the power is out on your street but you're running a UPS or generator, light from your windows tells everyone you have resources. Black garbage bags taped over windows, dark blankets, cardboard — seal the edges so no light leaks. This isn't paranoia. During extended curfews, houses with visible light have been targeted for theft.
 
 ### The safe room
 
-Pick one room in your home as the fallback. This is where your family goes if things escalate beyond general unease into direct threat — sounds of forced entry, sustained gunfire nearby, or building damage.
+Pick one room in your home as the fallback. This is where your family goes if things escalate — an airstrike warning, an explosion nearby, structural shaking, sounds of forced entry, or anything that makes the rest of the house feel exposed.
 
 **Criteria:**
 
-- **Interior room.** No exterior walls if possible. A bedroom or bathroom that doesn't face the street.
-- **Lower floor.** If you're in a multi-storey house, ground floor or basement. Upper floors are more exposed to crossfire and stray rounds. In an apartment, you don't have this choice — use the most interior room available.
+- **Interior room.** No exterior walls if possible. A bedroom or bathroom that doesn't face the street. In a strike scenario, exterior walls and windows are where shrapnel and blast pressure enter.
+- **Lower floor.** If you're in a multi-storey house, ground floor or basement. In an apartment, use the most interior room available — ideally one surrounded by other rooms, not the building's outer shell.
 - **Away from windows.** Obvious, but easy to forget when panicking.
 - **Has a lock.** Even a bathroom lock provides a few seconds of warning.
 
@@ -149,7 +149,7 @@ After dark, if your area has lost power but you haven't:
 - Use torches pointed downward or into walls (indirect light) rather than overhead lights.
 - Don't use your phone screen near windows.
 
-This isn't about hiding from the military. It's about not advertising that your house has power, supplies, or anything worth taking during a period when normal social controls have broken down.
+During an active conflict or strike scenario, visible light makes your building stand out. During a breakdown of civil order, it advertises that your house has power and supplies. Either way — stay dark.
 
 ## Utility shutoffs
 
@@ -191,9 +191,9 @@ This is the hardest call. You've been sheltering for two days. Things aren't get
 
 ### Go if:
 
-- Your building has sustained structural damage (cracks in load-bearing walls, partial collapse, fire)
+- Your building has sustained structural damage (cracks in load-bearing walls, partial collapse, fire, blast damage)
 - You're out of water with no way to get more
-- There is a direct, credible threat to your specific location (not general area — your building, your street)
+- There is a direct, credible threat to your specific location — your building, your street, a nearby target (military installation, government building, infrastructure)
 - A safe corridor has been confirmed by trusted sources (not WhatsApp forwards)
 - Medical emergency that you cannot handle at home
 
