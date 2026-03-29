@@ -18,17 +18,17 @@ relatedCards: ["fc-go-bag-packing", "fc-document-pouch", "fc-siphon-fuel"]
 status: "published"
 ---
 
-A border escalation hits the news. Your wife calls from home — she saw it on Geo. The kids are with her. Your mother is across town in Nazimabad. WhatsApp groups are lighting up with rumours. Nobody knows if it's going to escalate or blow over. But you've seen this before, and last time the roads were gridlocked within the hour.
+A border escalation hits the news. Your wife calls from home. WhatsApp groups are lighting up with rumours. Nobody knows if it's going to escalate or blow over. We've seen this before, at varying degrees of intensity, so sitting here now, what's your plan?
 
 You have maybe 30 minutes before Karachi's roads become unusable. Maybe less.
 
-This guide is about those 30 minutes. What you do, in what order, and what you should have already done so that tonight — right now — you can build a plan your family can execute without thinking.
+This guide is about those first 30 minutes. What you do, in what order, and what you should have already done so that tonight — right now — you can build a plan your family can execute without thinking.
 
 ## Why 30 minutes
 
-Karachi has roughly 30 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, strikes, a major attack — the window between "news breaks" and "roads are completely jammed" is short. We saw how fast things moved in Iran when strikes hit. We saw it in Syria, in Gaza. Modern conflict doesn't give you a week's warning. It gives you minutes.
+Karachi has roughly 30 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, strikes, a major attack — the window between "news breaks" and "roads are completely jammed" is short. We saw how fast things moved in Iran when strikes hit. We saw it in Syria, even in the UAE, airports locked down, people piling in at the grocery stores, roads jammed. Modern conflict doesn't give you a week's warning. It gives you minutes.
 
-In May 2025, during the Pakistan-India conflict, Karachi's main arteries were clogged within 40 minutes of the first rumours of strikes, as people rushed to grocery stores to stock up in case some form of emergency arose. People who left early got through. People who waited didn't.
+In May 2025, during the Pakistan-India conflict, Karachi's main arteries were clogged within 40 minutes of the first rumours of strikes, as people rushed back from work, or ran to grocery stores to stock up in case some form of emergency arose. People who left early got through. People who waited didn't.
 
 Thirty minutes is not a guarantee. It's a planning assumption. Some crises give you more. Some give you less. But if your family can execute a plan in 30 minutes, you're ahead of almost everyone else in the city.
 

@@ -19,7 +19,7 @@ relatedGuides: ["30-minute-window", "surviving-a-curfew"]
 status: "published"
 ---
 
-Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound — you don't know where, you don't know how many. You saw what happened in Iran, in Syria, in Gaza. People going about their regular Tuesday and then the sky opened up. Pakistan's geopolitical neighbourhood means this isn't someone else's problem.
+Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound — you don't know where, you don't know how many. You saw what happened in Iran, in Syria, in the Middle East. People going about their regular Tuesday and then the sky opened up. Pakistan's geopolitical neighbourhood means this isn't someone else's problem.
 
 You're not going anywhere. So now what?
 

@@ -6,6 +6,155 @@
 
 ---
 
+## Task Tracker
+
+> **How to use this:** When you complete a task, change `[ ]` to `[x]` and add the date and any notes. If a task is in progress, change to `[~]`. If you're an AI session, update this section before finishing so the next session knows where things stand.
+
+### Infrastructure (do first)
+- [ ] Finalize markdown rendering pipeline (guide.md → page.jsx) — needs frontmatter parser, MDX or remark/rehype setup
+- [ ] Add `type` field ("guide" | "field-card") to frontmatter schema and update listing page to handle both content types
+- [ ] Add new tags to `tagColor` object in listing page: `planning`, `resilience`, `environment`, `skills`
+- [ ] Add Field Card visual treatment to listing page (badge, shorter card variant, different read time display)
+- [ ] Create `/content/guides/` and `/content/field-cards/` directory structure
+- [ ] Build "Related Field Cards" and "Parent Guide" cross-reference UI in guide detail page
+- [ ] PWA/offline caching for guide content (flagged as Week 1-2 priority)
+
+### Phase 1 — Main Guides (write in this order)
+- [ ] **G1** The 30-Minute Window (`30-minute-window`) — ~14 min read
+- [ ] **G2** Shelter in Place (`shelter-in-place`) — ~13 min read
+- [ ] **G5** Trauma First Aid (`trauma-first-aid`) — ~18 min read
+- [ ] **G4** Water When the Taps Stop (`water-when-taps-stop`) — ~10 min read
+- [ ] **G3** Sattu, Chana, and Staying Fed (`sattu-chana-emergency-food`) — ~9 min read
+- [ ] **G6** When the Towers Go Down (`towers-go-down`) — ~11 min read
+- [ ] **G7** Your Go-Bag (`go-bag-guide`) — ~12 min read
+- [ ] **G8** The Family Emergency Plan (`family-emergency-plan`) — ~15 min read
+
+### Phase 1 — Voice & Quality Gate
+- [ ] After G1-G3 are written, extract voice/tone reference examples and add to "Notes for AI Sessions" section below — these become the benchmark for all subsequent content
+- [ ] Jiyad review and sign-off on voice for G1-G3 before continuing
+
+### FC Phase A — Field Cards (launch alongside Phase 1 guides)
+*These can be written by Sonnet sessions using this spec + completed Phase 1 guides as voice reference.*
+
+**Medical:**
+- [ ] FC9 Tourniquet (`fc-tourniquet`)
+- [ ] FC10 Wound Disinfection (`fc-wound-disinfection`)
+- [ ] FC11 Wound Packing (`fc-wound-packing`)
+- [ ] FC13 Chest Seal (`fc-chest-seal`)
+- [ ] FC15 Improvised Splint (`fc-splint`)
+- [ ] FC32 Pressure Bandage (`fc-pressure-bandage`)
+- [ ] FC37 Build a First Aid Kit (`fc-build-first-aid-kit`)
+- [ ] FC40 ORS from Scratch (`fc-ors`)
+
+**Skills & Essentials:**
+- [ ] FC1 Go-Bag Packing Checklist (`fc-go-bag-packing`)
+- [ ] FC2 Door Barricade (`fc-door-barricade`)
+- [ ] FC3 Window Reinforcement (`fc-window-reinforce`)
+- [ ] FC4 Starting a Fire Safely (`fc-start-fire`)
+- [ ] FC5 Improvised Stove (`fc-improvised-stove`)
+- [ ] FC6 Bleach Water Purification (`fc-bleach-purify`)
+- [ ] FC8 Boiling Water for Safety (`fc-boil-purify`)
+- [ ] FC12 Shutting Off Utilities (`fc-shutoff-utilities`)
+- [ ] FC14_doc Document Go-Pouch (`fc-document-pouch`)
+- [ ] FC18 Essential Knots (`fc-essential-knots`)
+- [ ] FC19 No-Cook Emergency Meals (`fc-no-cook-meals`)
+- [ ] FC27 Walkie-Talkie Quick Start (`fc-walkie-quickstart`)
+- [ ] FC35 Blackout Curtains (`fc-blackout-curtains`)
+
+### Phase 2 — Main Guides
+- [ ] **G9** Your Street Is Your First Responder (`neighbourhood-cluster`)
+- [ ] **G10** When the City Goes Dark (`extended-blackout`)
+- [ ] **G11** Curfew: Day 1 to Day 7 (`surviving-a-curfew`)
+- [ ] **G12** Protests, Roadblocks & Civil Unrest (`civil-unrest`)
+- [ ] **G13** Your Medicine Cabinet for a Crisis (`crisis-medicine-kit`)
+- [ ] **G14** Earthquake Ready (`earthquake-ready`)
+- [ ] **G15** Monsoon & Flood Preparedness (`monsoon-floods`)
+- [ ] **G16** Extreme Heat Survival (`extreme-heat`)
+
+### FC Phase B — Field Cards
+- [ ] FC7 SODIS (`fc-sodis`)
+- [ ] FC14 Fireman's Carry (`fc-fireman-carry`)
+- [ ] FC16 Improvised Stretcher (`fc-stretcher`)
+- [ ] FC17 Fuel Siphoning (`fc-siphon-fuel`)
+- [ ] FC20 Food Preservation (`fc-food-preservation`)
+- [ ] FC22 Rainwater Collection (`fc-rainwater`)
+- [ ] FC23 CPR Adult (`fc-cpr-adult`)
+- [ ] FC24 CPR Child/Infant (`fc-cpr-child`)
+- [ ] FC25 Choking Adult (`fc-choking-adult`)
+- [ ] FC26 Choking Child/Infant (`fc-choking-child`)
+- [ ] FC28 Burns (`fc-burns`)
+- [ ] FC29 Snakebite (`fc-snakebite`)
+- [ ] FC30 Shock (`fc-shock`)
+- [ ] FC31 Recovery Position (`fc-recovery-position`)
+- [ ] FC33 Arm Sling (`fc-sling`)
+- [ ] FC39 Heatstroke Response (`fc-heatstroke-response`)
+- [ ] FC41 Dehydration (`fc-dehydration`)
+- [ ] FC42 Oil/Grease Fire (`fc-oil-fire`)
+- [ ] FC43 Fire Types (`fc-fire-types`)
+- [ ] FC44 Escape Building Fire (`fc-escape-fire`)
+- [ ] FC46 Household Water Sources (`fc-household-water`)
+- [ ] FC50 Food Safety Check (`fc-food-safety`)
+- [ ] FC51 Tarp Shelter (`fc-tarp-shelter`)
+- [ ] FC53 Securing Load to Vehicle (`fc-secure-load`)
+- [ ] FC54 Flood Barriers (`fc-sandbag-alternatives`)
+- [ ] FC60 Change Car Tyre (`fc-change-tyre`)
+- [ ] FC61 Motorcycle Puncture (`fc-motorcycle-puncture`)
+- [ ] FC62 Jump-Start Car (`fc-jumpstart`)
+- [ ] FC65 Carrying a Child While Fleeing (`fc-carry-child-flee`)
+- [ ] FC66 Emergency Phone Settings (`fc-phone-emergency-setup`)
+- [ ] FC70 Crowd Escape (`fc-crowd-escape`)
+- [ ] FC71 Cooling Without AC (`fc-wet-cooling`)
+- [ ] FC72 Earthquake Positions (`fc-earthquake-position`)
+- [ ] FC73 Flood Driving (`fc-flood-driving`)
+
+### Phase 3 — Main Guides
+- [ ] **G17** Keeping Kids Calm (`kids-in-crisis`)
+- [ ] **G18** Financial Preparedness (`financial-preparedness`)
+- [ ] **G19** Preparing Your Vehicle (`vehicle-preparedness`)
+- [ ] **G20** Cooking Without Your Kitchen (`cooking-without-kitchen`)
+- [ ] **G21** After the Crisis (`post-crisis-recovery`)
+- [ ] **G22** Apartment vs House (`apartment-vs-house`)
+- [ ] **G23** Digital Security (`digital-security-crisis`)
+- [ ] **G24** Fire Safety in the Home (`home-fire-safety`)
+- [ ] **G25** Elderly & Disabled Members (`elderly-disabled-preparedness`)
+
+### FC Phase C — Field Cards (complete the encyclopedia)
+- [ ] FC21 Sprouting (`fc-sprouting`)
+- [ ] FC34 Eye Injury (`fc-eye-injury`)
+- [ ] FC36 Scorpion Sting (`fc-scorpion-sting`)
+- [ ] FC38 Emergency Childbirth (`fc-emergency-delivery`)
+- [ ] FC45 Finding Water in the Wild (`fc-find-water`)
+- [ ] FC47 Container Gardening (`fc-container-garden`)
+- [ ] FC48 Basic Fishing (`fc-fishing-basics`)
+- [ ] FC49 Cooking Without Utensils (`fc-cooking-no-utensils`)
+- [ ] FC52 Rope from Fabric (`fc-rope-from-fabric`)
+- [ ] FC55 Roof Patch (`fc-roof-patch`)
+- [ ] FC56 Shelter from Nothing (`fc-emergency-shelter`)
+- [ ] FC57 Direction Without Compass (`fc-direction-no-compass`)
+- [ ] FC58 Signal for Rescue (`fc-signal-for-rescue`)
+- [ ] FC59 Reading a Map (`fc-read-map`)
+- [ ] FC63 Push-Start Vehicle (`fc-push-start`)
+- [ ] FC64 Descend a Building (`fc-descend-building`)
+- [ ] FC67 VPN Setup (`fc-vpn-setup`)
+- [ ] FC68 Encrypted Messaging (`fc-encrypted-messaging`)
+- [ ] FC69 Break Car Window (`fc-break-car-window`)
+- [ ] FC74 Sterilizing Containers (`fc-clean-drinking-vessel`)
+- [ ] FC75 Night Movement (`fc-night-movement`)
+- [ ] FC76 Improvised Tools (`fc-improvised-tools`)
+
+### Illustrations
+- [ ] Create new Sketch components: `SketchPlan`, `SketchPower`, `SketchClock`, `SketchBarricade`, `SketchPills`, `SketchQuake`, `SketchFlood`, `SketchSun`, `SketchFamily`, `SketchCash`, `SketchVehicle`, `SketchStove`, `SketchSunrise`, `SketchLock`, `SketchFire`, `SketchElderly`, `SketchKnot`, `SketchCompass`
+- [ ] Commission or generate inline illustrations for completed guides (ongoing as guides are written)
+- [ ] Commission or generate step illustrations for completed field cards (ongoing)
+
+### Review & Quality
+- [ ] Technical accuracy review: all medical field cards reviewed against current first aid standards
+- [ ] Pakistan-specific fact check: prices, brand availability, hospital names, phone numbers, locations
+- [ ] Walkie-talkie range claims verified against real Karachi urban testing (not manufacturer specs)
+- [ ] All food shelf-life claims verified for 40°C+ storage conditions
+
+---
+
 ## What Is Rugged
 
 Rugged (rugged.pk) is Pakistan's first consumer preparedness brand. It sells emergency kits and publishes free survival guides targeting Pakistani families — primarily urban middle-class in Karachi, but the content must be useful nationwide and across scenarios.
