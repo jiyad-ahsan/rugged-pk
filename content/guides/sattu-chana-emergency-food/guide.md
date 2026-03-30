@@ -15,13 +15,13 @@ sections:
   - "Calorie planning"
 excerpt: "Forget freeze-dried Western rations nobody here has tasted. Pakistan already has the perfect emergency foods — sattu alone can sustain you for days and costs almost nothing."
 relatedCards: ["fc-start-fire", "fc-improvised-stove", "fc-no-cook-meals", "fc-food-preservation"]
-relatedGuides: ["water-when-taps-stop", "cooking-without-kitchen"]
+relatedGuides: ["water-when-taps-stop", "shelter-in-place"]
 status: "published"
 ---
 
-Day three. The fridge stopped being useful on day one — power's been out since the first night. The kids are hungry and you're rationing whatever was in the pantry. The corner shop opened for two hours yesterday but the shelves were half-empty and prices had tripled.
+Day three. The strikes started two nights ago and the power hasn't come back since. The fridge stopped being useful on day one. The kids are hungry and you're rationing whatever was in the pantry. The corner shop opened for two hours yesterday but the shelves were half-empty and prices had tripled.
 
-Except you planned for this. You have a steel container in the cupboard with 5 kg of sattu, a tin of roasted chana, a bag of dates, and a pack of glucose biscuits. It cost you less than Rs. 3,000 and it's going to feed your family for a week.
+Except you planned for this. You have a steel container in the cupboard with 5 kg of sattu, a tin of roasted chana, a bag of dates, and a pack of glucose biscuits. It cost you about Rs. 5,000 and it's going to keep your family fed for a week.
 
 This guide is about emergency food that's already Pakistani. No freeze-dried Western rations. No MREs you've never tasted and can't buy here anyway. The best emergency food for Pakistan is the food Pakistan already eats.
 

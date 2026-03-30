@@ -18,7 +18,7 @@ sections:
   - "What not to do"
   - "Triage"
 excerpt: "Someone is bleeding badly and 1122 isn't answering. The blood is soaking through whatever you've pressed against it. You have what's in this room and what's in your head. Right now, the second one matters more."
-relatedCards: ["fc-tourniquet", "fc-wound-disinfection", "fc-wound-packing", "fc-chest-seal", "fc-splint", "fc-pressure-bandage", "fc-shock", "fc-recovery-position", "fc-cpr-adult"]
+relatedCards: ["fc-tourniquet", "fc-wound-disinfection", "fc-wound-packing", "fc-chest-seal", "fc-splint", "fc-pressure-bandage", "fc-shock", "fc-recovery-position", "fc-cpr-adult", "fc-burns"]
 relatedGuides: ["shelter-in-place", "30-minute-window"]
 status: "published"
 ---
@@ -259,6 +259,10 @@ This is critically important in Pakistan. Common home practices that cause infec
 Clean water and pressure. That's it. If you have Pyodine (povidone-iodine), use it to clean around the wound — not inside deep wounds. If you have Dettol, dilute it properly. If you have nothing — clean water is better than any of the above.
 
 For proper wound cleaning, see the <FieldCardRef slug="fc-wound-disinfection" title="Wound Cleaning Field Card" />.
+
+### Burns — a brief note
+
+Burns are extremely common in blast and fire scenarios. The full treatment protocol is covered in the <FieldCardRef slug="fc-burns" title="Burns Field Card" />, but the essentials: cool running water on the burn for 10-20 minutes. Not ice, not butter, not toothpaste, not ghee — clean, cool water. Cover loosely with cling wrap or a clean, non-fluffy cloth. If the burn is larger than the person's palm, blistered, or on the face, hands, feet, or joints — they need a hospital.
 
 ### Don't move someone with a suspected spinal injury
 

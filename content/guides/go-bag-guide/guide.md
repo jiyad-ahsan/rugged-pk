@@ -16,7 +16,7 @@ sections:
   - "Maintenance"
 excerpt: "You will not have time to pack when it matters. You'll be shaking, your kids will be crying, and you'll forget half the important stuff. Pack it now. Put it by the door. Check it every 3 months."
 relatedCards: ["fc-go-bag-packing", "fc-document-pouch", "fc-siphon-fuel"]
-relatedGuides: ["30-minute-window", "family-emergency-plan"]
+relatedGuides: ["30-minute-window", "family-emergency-plan", "towers-go-down"]
 status: "published"
 ---
 
@@ -87,7 +87,7 @@ This gives you roughly 5,000-6,000 calories spread across three days. It's not c
 
 ### Power and light
 
-**Power bank:** 10,000mAh minimum, 20,000mAh if you can manage the weight. Keep it charged — check it monthly. A dead power bank is dead weight. This gives you 3-4 full phone charges.
+**Power bank:** 10,000mAh minimum, 20,000mAh if you can manage the weight. Keep it charged — check it monthly. A dead power bank is dead weight. A 10,000mAh gives you 2-3 full phone charges; a 20,000mAh gives you 4-5.
 
 **Phone charger:** A cable that actually works with your phone. Test it. The number of people who pack a charger that doesn't fit their current phone is astonishing.
 

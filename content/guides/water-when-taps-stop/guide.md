@@ -15,11 +15,11 @@ sections:
   - "Rationing protocol"
 excerpt: "Karachi's water supply is fragile on a good day. In a crisis, it's the first utility to fail. Three purification methods using materials from any local market, plus how much you actually need per person."
 relatedCards: ["fc-bleach-purify", "fc-sodis", "fc-boil-purify", "fc-rainwater"]
-relatedGuides: ["sattu-chana-emergency-food", "shelter-in-place"]
+relatedGuides: ["sattu-chana-emergency-food", "shelter-in-place", "trauma-first-aid"]
 status: "published"
 ---
 
-The tanker didn't come today. It's not coming tomorrow either. Your overhead tank has maybe 200 litres left and there are five people in the house. You do the maths and it doesn't feel like enough. Because it isn't — not if you don't know exactly how much you need and where the waste is hiding.
+The tanker didn't come today. It's not coming tomorrow either — the roads are blocked and nobody's sure if the depot is even operational after the strikes. Your overhead tank has maybe 200 litres left and there are five people in the house. You do the maths and it doesn't feel like enough. Because it isn't — not if you don't know exactly how much you need and where the waste is hiding.
 
 Water is the first utility to fail in any crisis. Before power, before gas, before food supply chains. In Karachi, water is already fragile on a normal day — tanker-dependent neighbourhoods, low-pressure mains, contaminated lines. In a crisis, it goes from fragile to gone.
 

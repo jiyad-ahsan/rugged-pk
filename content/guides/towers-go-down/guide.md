@@ -16,7 +16,7 @@ sections:
   - "Offline messaging"
   - "FM radio"
 excerpt: "The government shut down mobile internet for 'security reasons.' Millions couldn't reach their families. It lasted days. It will happen again — and next time it might not just be the internet."
-relatedCards: ["fc-radio-frequencies"]
+relatedCards: ["fc-walkie-quickstart"]
 relatedGuides: ["30-minute-window", "shelter-in-place", "family-emergency-plan"]
 status: "published"
 ---
@@ -153,6 +153,8 @@ Pre-agree on when to turn on radios and check in. This conserves battery and giv
 - **"We're staying"** = sheltering in place
 - **"We need pickup"** = can't move on our own
 - **"Red"** = someone is hurt, need medical
+- **"Moving to secondary"** = primary isn't safe, heading to secondary rally point
+- **"Going out"** = evacuating the city, heading to tertiary
 
 Write these on a card and tape it to your walkie-talkie.
 
@@ -232,7 +234,7 @@ Write the full tree on a card. Every family member carries a copy.
 
 ## Tonight
 
-1. **Buy walkie-talkies.** One pair minimum. Baofeng UV-5R on Daraz (Rs. 3,000-5,000 each) or Motorola Talkabout (Rs. 8,000-12,000 per pair). Order tonight. Charge them when they arrive.
+1. **Buy walkie-talkies.** One pair minimum. Baofeng UV-5R on Daraz (Rs. 3,000-5,000 each) or Motorola Talkabout (Rs. 5,000-12,000 per pair). Order tonight. Charge them when they arrive.
 2. **Pick a channel.** Not Channel 1. Agree on it with your spouse. Write it on a card.
 3. **Download Bridgefy or Briar.** Both of you. And your nearby family members. Do it now — you can't download it when the internet is gone.
 4. **Find an FM radio.** Check your house — there's probably one somewhere. If not, Rs. 500-1,500 at any electronics shop. Put batteries in it.

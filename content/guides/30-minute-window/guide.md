@@ -15,6 +15,7 @@ sections:
   - "Communication tree"
 excerpt: "A border escalation hits the news. Your wife calls. You have maybe 30 minutes before the roads clog. Where do you go? What do you grab? Who do you call first?"
 relatedCards: ["fc-go-bag-packing", "fc-document-pouch", "fc-siphon-fuel"]
+relatedGuides: ["shelter-in-place", "go-bag-guide", "family-emergency-plan"]
 status: "published"
 ---
 
@@ -80,7 +81,7 @@ You should not be packing this during a crisis. You should be picking it up and 
 
 <SupplyList title="Grab Bag — Per Person">
 <Item name="Documents pouch" detail="CNIC copies, passport copies, property papers, medical records, 2x passport photos" priority="critical" />
-<Item name="Cash" detail="Rs. 20,000 in Rs. 500 and Rs. 1,000 notes — not Rs. 5,000 (hard to break in a crisis)" priority="critical" />
+<Item name="Cash" detail="Rs. 20,000-50,000 in Rs. 500 and Rs. 1,000 notes — not Rs. 5,000 (hard to break in a crisis)" priority="critical" />
 <Item name="Water" detail="1.5L bottle minimum — refillable" priority="critical" />
 <Item name="Water purification" detail="Aquatabs (pack of 50, Rs. 300 from any pharmacy)" />
 <Item name="Food" detail="Sattu (500g), roasted chana (500g), dates, glucose biscuits — 3 days minimum" priority="critical" />
@@ -117,6 +118,8 @@ Each of them has their own three. Write it down. Everyone gets a copy.
 - **"We're staying"** = sheltering in place, don't come
 - **"We need pickup"** = we can't move on our own, come get us
 - **"Red"** = someone is hurt, need medical help
+- **"Moving to secondary"** = primary isn't safe, heading to secondary rally point
+- **"Going out"** = evacuating the city, heading to tertiary
 
 **Walkie-talkie backup:** If you've invested in Baofeng UV-5Rs or Motorola Talkabouts (Rs. 5,000-12,000 per pair on Daraz), pre-agree a channel and a check-in schedule. Channel 5, every hour on the hour, for the first 3 hours. Then every 3 hours after that. Keep transmissions short — battery matters.
 

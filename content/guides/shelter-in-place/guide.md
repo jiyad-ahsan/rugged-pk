@@ -15,7 +15,7 @@ sections:
   - "Decision framework"
 excerpt: "Sometimes the safest move is no move at all. How to fortify your home for a multi-day lockdown — securing entry points, managing power and water, keeping your family calm, and knowing when it's finally time to go."
 relatedCards: ["fc-door-barricade", "fc-window-reinforce", "fc-shutoff-utilities", "fc-blackout-curtains"]
-relatedGuides: ["30-minute-window", "surviving-a-curfew"]
+relatedGuides: ["30-minute-window", "water-when-taps-stop", "sattu-chana-emergency-food", "family-emergency-plan"]
 status: "published"
 ---
 
@@ -84,7 +84,7 @@ This is your most critical resource. You can survive days without food. Without 
 **Immediate actions when a curfew is declared:**
 
 1. Fill every container you own. Pots, buckets, bottles, the bathtub if you have one. Fill your overhead tank if the water is still running — it might not be by morning.
-2. Inventory what you have. A standard overhead tank holds 500-1,000 litres. But that's shared between drinking, cooking, flushing, and washing. Drinking alone: 3-4 litres per person per day. Family of four = 12-16 litres/day minimum.
+2. Inventory what you have. A standard overhead tank holds 500-1,000 litres. But that's shared between drinking, cooking, flushing, and washing. Drinking alone: 3-4 litres per person per day. Family of four = 10-16 litres/day depending on children's ages.
 3. Start rationing immediately if you don't know how long this will last. Don't wait until the tank is low.
 
 For purification methods if your stored water runs out, see the Water When the Taps Stop guide.
@@ -184,7 +184,7 @@ This is the hardest call. You've been sheltering for two days. Things aren't get
 ### Stay if:
 
 - Your home is structurally sound
-- You have water for at least 2 more days
+- You have water for at least 3 more days
 - There is no direct, immediate threat to your building
 - The roads are reported as blocked, dangerous, or under curfew
 - You have no confirmed safe destination to reach

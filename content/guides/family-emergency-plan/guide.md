@@ -16,7 +16,7 @@ sections:
   - "The rehearsal"
 excerpt: "If something happened while your family was scattered — you at work, wife at home, kids at school, parents across town — does everyone know what to do? Where to meet? Who to call? If the answer is 'we'd figure it out,' that's not a plan."
 relatedCards: ["fc-go-bag-packing", "fc-document-pouch"]
-relatedGuides: ["30-minute-window", "shelter-in-place", "go-bag-guide"]
+relatedGuides: ["30-minute-window", "shelter-in-place", "go-bag-guide", "towers-go-down"]
 status: "published"
 ---
 
