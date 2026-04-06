@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply font-mono bg-sand-200 text-neutral-900 leading-relaxed font-medium;
+    @apply font-mono bg-sand-200 text-black leading-relaxed;
     @apply dark:bg-sand-900 dark:text-white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
