@@ -22,7 +22,7 @@ module.exports = {
         },
         sand: {
           50: "#f5f2f0",
-          100: "#f2efec",
+          100: "#f0f0f0",
           200: "#eae6e1",
           300: "#ddd8d2",
           400: "#c4bfb8",
