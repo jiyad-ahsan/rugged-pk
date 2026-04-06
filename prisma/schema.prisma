@@ -27,6 +27,12 @@ model User {
 
   accounts Account[]
   sessions Session[]
+
+  threads          ForumThread[]
+  replies          ForumReply[]
+  reportsMade      ForumReport[]      @relation("ReportsMade")
+  reportsResolved  ForumReport[]      @relation("ReportsResolved")
+  moderationActions ModerationAction[]
 }
 
 model Account {
@@ -66,4 +72,90 @@ model VerificationToken {
   expires    DateTime
 
   @@id([identifier, token])
+}
+
+// ──── Forum Models ────
+
+model ForumCategory {
+  id          String        @id @default(cuid())
+  name        String        @unique
+  slug        String        @unique
+  description String?
+  sortOrder   Int           @default(0)
+  threads     ForumThread[]
+}
+
+model ForumThread {
+  id             String        @id @default(cuid())
+  title          String
+  body           String
+  authorId       String
+  categoryId     String
+  tag            String?
+  isPinned       Boolean       @default(false)
+  isLocked       Boolean       @default(false)
+  isHidden       Boolean       @default(false)
+  replyCount     Int           @default(0)
+  lastActivityAt DateTime      @default(now())
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  author   User          @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  category ForumCategory @relation(fields: [categoryId], references: [id])
+  replies  ForumReply[]
+  reports  ForumReport[] @relation("ThreadReports")
+
+  @@index([categoryId, lastActivityAt])
+  @@index([authorId])
+}
+
+model ForumReply {
+  id        String   @id @default(cuid())
+  body      String
+  threadId  String
+  authorId  String
+  isHidden  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  thread  ForumThread   @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  author  User          @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  reports ForumReport[] @relation("ReplyReports")
+
+  @@index([threadId, createdAt])
+  @@index([authorId])
+}
+
+model ForumReport {
+  id         String   @id @default(cuid())
+  reason     String
+  notes      String?
+  status     String   @default("open") // open, resolved, dismissed
+  reporterId String
+  threadId   String?
+  replyId    String?
+  resolverId String?
+  resolvedAt DateTime?
+  createdAt  DateTime @default(now())
+
+  reporter User         @relation("ReportsMade", fields: [reporterId], references: [id])
+  resolver User?        @relation("ReportsResolved", fields: [resolverId], references: [id])
+  thread   ForumThread? @relation("ThreadReports", fields: [threadId], references: [id], onDelete: Cascade)
+  reply    ForumReply?  @relation("ReplyReports", fields: [replyId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+}
+
+model ModerationAction {
+  id         String   @id @default(cuid())
+  actorId    String
+  actionType String   // hide, unhide, lock, unlock, pin, unpin, warn
+  targetType String   // thread, reply
+  targetId   String
+  reason     String?
+  createdAt  DateTime @default(now())
+
+  actor User @relation(fields: [actorId], references: [id])
+
+  @@index([targetType, targetId])
 }
