@@ -55,7 +55,7 @@ For the full document prep walkthrough, see the <FieldCardRef slug="fc-document-
 
 ### Cash — because ATMs won't work
 
-In every crisis Pakistan has experienced — from earthquakes to political unrest to the 2025 conflict — ATMs either ran dry or went offline within hours. Digital payments require internet. The only universally accepted payment method in a crisis is cash.
+In any crisis — earthquakes, political unrest, conflict — ATMs either run dry or go offline within hours. Digital payments require internet. The only universally accepted payment method in a crisis is cash.
 
 **How much:** Rs. 20,000-50,000 per bag.
 

@@ -23,9 +23,9 @@ status: "published"
 
 Your phone shows full bars but WhatsApp won't connect. You switch to a call — it rings endlessly, then drops. You try again. Nothing. You try your wife, your brother, your mother. Same thing. The cell network is either jammed, shut down, or both.
 
-This isn't hypothetical. In February 2024, the Pakistani government shut down mobile internet for days around the general election. Millions of people couldn't reach their families. In May 2025, during the conflict escalation with India, networks in Karachi were overloaded within minutes of the first reports — calls wouldn't connect, WhatsApp messages sat on single ticks, and families were cut off from each other for hours.
+This isn't hypothetical. Pakistan has experienced multiple government-ordered internet and mobile shutdowns in recent years. When networks go down — whether from overload, a government order, or physical damage — calls won't connect, WhatsApp messages sit on single ticks, and families get cut off from each other.
 
-And those were relatively contained situations. In an actual strike scenario — the kind Iran, Syria, and other parts of the Middle East have experienced — cell towers can be physically destroyed. No amount of rebooting your phone fixes a tower that isn't there anymore.
+In an actual strike scenario — the kind that countries in the Middle East have experienced — cell towers can be physically destroyed. No amount of rebooting your phone fixes a tower that isn't there anymore.
 
 This guide is about what happens when your phone stops being useful for communication, and what you should have set up before that happens.
 

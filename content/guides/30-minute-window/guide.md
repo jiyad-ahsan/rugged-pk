@@ -27,9 +27,7 @@ This guide is about those first 30 minutes. What you do, in what order, and what
 
 ## Why 30 minutes
 
-Karachi has roughly 30 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, strikes, a major attack — the window between "news breaks" and "roads are completely jammed" is short. We saw how fast things moved in Iran when strikes hit. We saw it in Syria, even in the UAE, airports locked down, people piling in at the grocery stores, roads jammed. Modern conflict doesn't give you a week's warning. It gives you minutes.
-
-In May 2025, during the Pakistan-India conflict, Karachi's main arteries were clogged within 40 minutes of the first rumours of strikes, as people rushed back from work, or ran to grocery stores to stock up in case some form of emergency arose. People who left early got through. People who waited didn't.
+Karachi has roughly 20 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, strikes, a major attack — the window between "news breaks" and "roads are completely jammed" is short. Modern conflict doesn't give you a week's warning. It gives you minutes.
 
 Thirty minutes is not a guarantee. It's a planning assumption. Some crises give you more. Some give you less. But if your family can execute a plan in 30 minutes, you're ahead of almost everyone else in the city.
 

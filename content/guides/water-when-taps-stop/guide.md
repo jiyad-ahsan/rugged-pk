@@ -19,7 +19,7 @@ relatedGuides: ["sattu-chana-emergency-food", "shelter-in-place", "trauma-first-
 status: "published"
 ---
 
-The tanker didn't come today. It's not coming tomorrow either — the roads are blocked and nobody's sure if the depot is even operational after the strikes. Your overhead tank has maybe 200 litres left and there are five people in the house. You do the maths and it doesn't feel like enough. Because it isn't — not if you don't know exactly how much you need and where the waste is hiding.
+The tanker didn't come today. It's not coming tomorrow either — the roads are blocked and nobody's sure if the depot is even operational. Your overhead tank has maybe 200 litres left and there are five people in the house. You do the maths and it doesn't feel like enough. Because it isn't — not if you don't know exactly how much you need and where the waste is hiding.
 
 Water is the first utility to fail in any crisis. Before power, before gas, before food supply chains. In Karachi, water is already fragile on a normal day — tanker-dependent neighbourhoods, low-pressure mains, contaminated lines. In a crisis, it goes from fragile to gone.
 
@@ -33,7 +33,7 @@ People overestimate how much water they use and underestimate how much they need
 
 The minimum: **3 litres per person per day.** That's for drinking only — not cooking, not washing, not flushing.
 
-In a Karachi summer, when temperatures hit 40°C+, push that to **4 litres per person.** Dehydration accelerates dangerously in heat, especially for children and elderly family members.
+In a Karachi summer, when temperatures regularly exceed 35°C, push that to **4 litres per person.** Dehydration accelerates dangerously in heat, especially for children and elderly family members.
 
 | Person | Daily drinking water | Notes |
 |--------|---------------------|-------|

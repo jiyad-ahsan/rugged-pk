@@ -26,7 +26,7 @@ Something happens. A strike warning, an earthquake, an explosion — it doesn't 
 
 Your wife calls you. You don't answer because you're already in the car, trying to get to the kids' school. She assumes the worst. Your mother calls your wife, who's now panicking and can't get through to you. Your brother drives to your parents' house but they've already left for your house. Everyone is moving. Nobody knows where anyone else is going.
 
-This happens to thousands of families in every crisis. It happened in Karachi in May 2025. It happens in every city, every time. The families who navigate it are the ones who agreed on a plan beforehand. Not a complicated plan. Not a 50-page document. A one-page agreement that everyone has read, everyone has a copy of, and everyone can execute without thinking.
+This happens to thousands of families in every crisis, in every city. The families who navigate it are the ones who agreed on a plan beforehand. Not a complicated plan. Not a 50-page document. A one-page agreement that everyone has read, everyone has a copy of, and everyone can execute without thinking.
 
 ## The one-page plan
 

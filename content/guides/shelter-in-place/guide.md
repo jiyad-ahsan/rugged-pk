@@ -19,7 +19,7 @@ relatedGuides: ["30-minute-window", "water-when-taps-stop", "sattu-chana-emergen
 status: "published"
 ---
 
-Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound — you don't know where, you don't know how many. You saw what happened in Iran, in Syria, in the Middle East. People going about their regular Tuesday and then the sky opened up. Pakistan's geopolitical neighbourhood means this isn't someone else's problem.
+Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound — you don't know where, you don't know how many. Pakistan's geopolitical neighbourhood means this kind of scenario isn't hypothetical.
 
 You're not going anywhere. So now what?
 

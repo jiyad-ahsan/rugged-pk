@@ -60,7 +60,7 @@ When you reach someone who's hurt, you need to assess quickly. Not a full medica
 
 ## Stop the bleeding
 
-Blood loss is the number one killer in trauma that could have been survived. A person can bleed to death from a major limb wound in 3-5 minutes. You don't have time to debate what to do. The priority is always: stop the bleeding first, figure out the rest later.
+Blood loss is the number one preventable cause of death in trauma. Severe arterial bleeding can become life-threatening within minutes. You don't have time to debate what to do. The priority is always: stop the bleeding first, figure out the rest later.
 
 ### Direct pressure — the first thing you do
 

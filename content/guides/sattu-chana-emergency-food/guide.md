@@ -19,7 +19,7 @@ relatedGuides: ["water-when-taps-stop", "shelter-in-place"]
 status: "published"
 ---
 
-Day three. The strikes started two nights ago and the power hasn't come back since. The fridge stopped being useful on day one. The kids are hungry and you're rationing whatever was in the pantry. The corner shop opened for two hours yesterday but the shelves were half-empty and prices had tripled.
+Day three. The power hasn't come back since it went out. The fridge stopped being useful on day one. The kids are hungry and you're rationing whatever was in the pantry. The corner shop opened for two hours yesterday but the shelves were half-empty and prices had tripled.
 
 Except you planned for this. You have a steel container in the cupboard with 5 kg of sattu, a tin of roasted chana, a bag of dates, and a pack of glucose biscuits. It cost you about Rs. 5,000 and it's going to keep your family fed for a week.
 
