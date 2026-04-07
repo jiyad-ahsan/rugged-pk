@@ -93,15 +93,27 @@ export default function Nav() {
 
           {/* Auth */}
           {session?.user ? (
-            <button
-              onClick={() => signOut({ callbackUrl: "/" })}
-              className="font-mono text-sm text-sand-600 dark:text-sand-500
-                         hover:text-neutral-900 dark:hover:text-sand-100
-                         bg-transparent border-none cursor-pointer transition-colors duration-200"
-            >
-              {session.user.name?.split(" ")[0] || "account"} ·{" "}
-              <span className="text-rugged-500 dark:text-rugged-400">logout</span>
-            </button>
+            <div className="flex items-center gap-4">
+              {session.user.role === "ADMIN" && (
+                <Link
+                  href="/admin"
+                  className="font-mono text-xs no-underline px-2.5 py-1 rounded-sm
+                             bg-rugged-500/10 text-rugged-500 dark:text-rugged-400
+                             hover:bg-rugged-500/20 transition-colors duration-200"
+                >
+                  admin
+                </Link>
+              )}
+              <button
+                onClick={() => signOut({ callbackUrl: "/" })}
+                className="font-mono text-sm text-sand-600 dark:text-sand-500
+                           hover:text-neutral-900 dark:hover:text-sand-100
+                           bg-transparent border-none cursor-pointer transition-colors duration-200"
+              >
+                {session.user.name?.split(" ")[0] || "account"} ·{" "}
+                <span className="text-rugged-500 dark:text-rugged-400">logout</span>
+              </button>
+            </div>
           ) : (
             <Link
               href="/login"
