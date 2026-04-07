@@ -22,16 +22,16 @@ module.exports = {
         },
         sand: {
           50: "#f5f2f0",
-          100: "#f0f0f0",
-          200: "#eae6e1",
+          100: "#edeceb",
+          200: "#e4e1dd",
           300: "#ddd8d2",
           400: "#c4bfb8",
           500: "#a8a29e",
-          600: "#5c5c5c",
-          700: "#3a3a3a",
-          800: "#2a2826",
-          900: "#303030",
-          950: "#1a1a1a",
+          600: "#6b6b6b",
+          700: "#3d3d3d",
+          800: "#2e2e2e",  // cards / elevated surfaces (dark)
+          900: "#222222",  // page bg (dark)
+          950: "#191919",  // deepest recessed areas (dark)
         },
       },
       fontFamily: {
