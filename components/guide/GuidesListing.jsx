@@ -215,8 +215,9 @@ export default function GuidesListing({ initialContent = [] }) {
       <div className="flex gap-10">
         {/* Sidebar — desktop only */}
         <aside className="hidden lg:block w-56 shrink-0">
-          <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 pb-8"
-            style={{ scrollbarWidth: "thin" }}
+          <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto pb-8 p-4 rounded-sm
+                          bg-sand-100 dark:bg-sand-800"
+            style={{ scrollbarWidth: "thin", border: "1px solid rgba(128,128,128,0.15)" }}
           >
             {/* Guides list */}
             <p className="font-mono text-[0.6rem] uppercase tracking-widest text-sand-500 mb-2">
@@ -227,10 +228,11 @@ export default function GuidesListing({ initialContent = [] }) {
                 <Link
                   key={g.slug}
                   href={`/guides/${g.slug}`}
-                  className="block text-xs text-sand-600 dark:text-sand-500 no-underline
+                  className="flex items-start gap-2 text-xs text-sand-600 dark:text-sand-500 no-underline
                              hover:text-rugged-500 dark:hover:text-rugged-400 transition-colors
                              py-1.5 leading-snug"
                 >
+                  <span className="text-sand-400 dark:text-sand-600 mt-[3px] shrink-0 text-[8px] leading-none">&#9654;</span>
                   {g.title}
                 </Link>
               ))}
