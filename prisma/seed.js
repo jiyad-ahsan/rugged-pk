@@ -112,7 +112,7 @@ Has anyone else tried something like this? What worked, what didn't?`,
       authorId: zainab.id,
       categoryId: karachiDb.id,
       tag: "community",
-      replyCount: 3,
+      replyCount: 1,
       lastActivityAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), // 2 days ago
       createdAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
     },
@@ -147,7 +147,7 @@ Both are worth having. I'd say Motorola for simplicity (give it to family member
       authorId: bilal.id,
       categoryId: gearDb.id,
       tag: "gear",
-      replyCount: 2,
+      replyCount: 1,
       lastActivityAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), // 1 day ago
       createdAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
     },
@@ -174,7 +174,7 @@ Appreciate any advice. This is the one part of preparedness I'm struggling with.
       authorId: kamran.id,
       categoryId: familyPlansDb.id,
       tag: "family",
-      replyCount: 5,
+      replyCount: 1,
       lastActivityAt: new Date(Date.now() - 4 * 60 * 60 * 1000), // 4 hours ago
       createdAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000),
     },
