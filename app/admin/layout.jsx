@@ -1,6 +1,6 @@
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import Link from "next/link";
+import AdminNav from "@/components/admin/AdminNav";
 
 export const metadata = {
   title: "Admin — Rugged",
@@ -14,13 +14,14 @@ export default async function AdminLayout({ children }) {
   }
 
   return (
-    <div className="section-container py-12">
-      <div className="flex items-center gap-6 mb-8 pb-4" style={{ borderBottom: "1px solid rgba(128,128,128,0.15)" }}>
-        <Link href="/admin/products" className="text-xs font-mono uppercase tracking-wider text-sand-600 dark:text-sand-500 hover:text-rugged-500 dark:hover:text-rugged-400 transition-colors">
-          Products
-        </Link>
-      </div>
-      {children}
+    <div className="min-h-screen flex flex-col md:flex-row">
+      {/* Sidebar */}
+      <AdminNav />
+
+      {/* Main content */}
+      <main className="flex-1 p-6 md:p-10 overflow-auto">
+        {children}
+      </main>
     </div>
   );
 }
