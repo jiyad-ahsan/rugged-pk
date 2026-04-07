@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Divider from "@/components/Divider";
+import prisma from "@/lib/db";
 
 // Eventually these come from a CMS or markdown files — hardcoded for now
 const featuredGuides = [
@@ -23,33 +24,6 @@ const featuredGuides = [
   },
 ];
 
-const recentDiscussions = [
-  {
-    id: 1,
-    title: "May tensions — anyone else quietly prepping their go-bags this week?",
-    author: "Kamran A.",
-    time: "4 hours ago",
-    replies: 73,
-    tag: "planning",
-  },
-  {
-    id: 2,
-    title: "We started a 12-house cluster in North Nazimabad. Here's how we did it.",
-    author: "Zainab S.",
-    time: "3 days ago",
-    replies: 88,
-    tag: "community",
-  },
-  {
-    id: 3,
-    title: "Realistic talk: what does an actual urban conflict scenario look like for Karachi?",
-    author: "Bilal F.",
-    time: "5 days ago",
-    replies: 134,
-    tag: "planning",
-  },
-];
-
 const tagColor = {
   essentials: "text-rugged-500 dark:text-rugged-400",
   "food & water": "text-cyan-700 dark:text-cyan-400",
@@ -57,9 +31,41 @@ const tagColor = {
   community: "text-emerald-700 dark:text-emerald-400",
   planning: "text-rugged-500 dark:text-rugged-400",
   gear: "text-amber-800 dark:text-amber-500",
+  family: "text-violet-700 dark:text-violet-400",
+  medical: "text-rose-700 dark:text-rose-400",
 };
 
-export default function Home() {
+function timeAgo(date) {
+  const seconds = Math.floor((Date.now() - new Date(date).getTime()) / 1000);
+  if (seconds < 60) return "just now";
+  const minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return `${minutes}m ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  if (days < 7) return `${days}d ago`;
+  const weeks = Math.floor(days / 7);
+  if (weeks < 5) return `${weeks}w ago`;
+  return new Date(date).toLocaleDateString("en-PK", { day: "numeric", month: "short" });
+}
+
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  let recentThreads = [];
+  try {
+    recentThreads = await prisma.forumThread.findMany({
+      where: { isHidden: false },
+      orderBy: { lastActivityAt: "desc" },
+      take: 3,
+      include: {
+        author: { select: { name: true } },
+      },
+    });
+  } catch {
+    // Database not available — show nothing
+  }
+
   return (
     <>
       {/* ══════ HERO ══════ */}
@@ -84,7 +90,7 @@ export default function Home() {
             </Link>
             <Link
               href="/shop"
-              className="font-mono text-sm text-sand-600 dark:text-sand-500 
+              className="font-mono text-sm text-sand-600 dark:text-sand-500
                          hover:text-neutral-900 dark:hover:text-sand-100 transition-colors"
             >
               See the kits
@@ -173,37 +179,45 @@ export default function Home() {
           your family — those conversations belong here.
         </p>
 
-        <div className="flex flex-col">
-          {recentDiscussions.map((d) => (
-            <div
-              key={d.id}
-              className="flex justify-between items-center py-5 border-b border-black/10 dark:border-white/8 cursor-pointer"
-            >
-              <div className="flex-1">
-                <div className="flex gap-5 text-xs mb-1.5">
-                  <span className={`font-medium uppercase tracking-wide ${tagColor[d.tag] || "text-rugged-500"}`}>
-                    {d.tag}
+        {recentThreads.length > 0 ? (
+          <div className="flex flex-col">
+            {recentThreads.map((t) => (
+              <Link
+                key={t.id}
+                href={`/forum/thread/${t.id}`}
+                className="flex justify-between items-center py-5 border-b border-black/10 dark:border-white/8
+                           hover:bg-sand-100/50 dark:hover:bg-sand-800/30 -mx-4 px-4 transition-colors rounded-sm no-underline"
+              >
+                <div className="flex-1 min-w-0">
+                  <div className="flex gap-5 text-xs mb-1.5">
+                    {t.tag && (
+                      <span className={`font-medium uppercase tracking-wide ${tagColor[t.tag] || "text-rugged-500"}`}>
+                        {t.tag}
+                      </span>
+                    )}
+                    <span className="text-sand-600 dark:text-sand-500">{timeAgo(t.lastActivityAt)}</span>
+                  </div>
+                  <h3 className="font-sans text-base font-medium leading-snug tracking-tight mb-1 text-neutral-900 dark:text-sand-100">
+                    {t.title}
+                  </h3>
+                  <span className="text-xs text-sand-600 dark:text-sand-500">
+                    by {t.author?.name || "Anonymous"}
                   </span>
-                  <span className="text-sand-600 dark:text-sand-500">{d.time}</span>
                 </div>
-                <h3 className="font-sans text-base font-medium leading-snug tracking-tight mb-1 text-neutral-900 dark:text-sand-100">
-                  {d.title}
-                </h3>
-                <span className="text-xs text-sand-600 dark:text-sand-500">
-                  by {d.author}
-                </span>
-              </div>
-              <div className="text-center pl-8 shrink-0">
-                <span className="font-sans text-2xl font-semibold block leading-none text-neutral-900 dark:text-sand-100">
-                  {d.replies}
-                </span>
-                <span className="text-[0.65rem] text-sand-600 dark:text-sand-500 uppercase tracking-wider">
-                  replies
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+                <div className="text-center pl-8 shrink-0">
+                  <span className="font-sans text-2xl font-semibold block leading-none text-neutral-900 dark:text-sand-100">
+                    {t.replyCount}
+                  </span>
+                  <span className="text-[0.65rem] text-sand-600 dark:text-sand-500 uppercase tracking-wider">
+                    {t.replyCount === 1 ? "reply" : "replies"}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-sand-500 py-4">Conversations coming soon.</p>
+        )}
       </section>
 
       <Divider />
