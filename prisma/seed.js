@@ -218,6 +218,76 @@ Appreciate any advice. This is the one part of preparedness I'm struggling with.
   });
 
   console.log("Starter threads and replies seeded");
+
+  // ── Shop ──
+  const shopCategories = [
+    { name: "Kits", slug: "kits", sortOrder: 0 },
+    { name: "Communication", slug: "communication", sortOrder: 1 },
+    { name: "Power", slug: "power", sortOrder: 2 },
+    { name: "Water", slug: "water", sortOrder: 3 },
+    { name: "Food", slug: "food", sortOrder: 4 },
+    { name: "Medical", slug: "medical", sortOrder: 5 },
+    { name: "Shelter & Tools", slug: "shelter-tools", sortOrder: 6 },
+  ];
+
+  for (const cat of shopCategories) {
+    await prisma.productCategory.upsert({
+      where: { slug: cat.slug },
+      update: { name: cat.name, sortOrder: cat.sortOrder },
+      create: cat,
+    });
+  }
+
+  const catMap = {};
+  for (const cat of shopCategories) {
+    catMap[cat.slug] = (await prisma.productCategory.findUnique({ where: { slug: cat.slug } })).id;
+  }
+
+  const products = [
+    // Kits
+    { name: "Starter Kit", slug: "starter-kit", subtitle: "72 hours. One person.", price: 10000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Start here", sortOrder: 0, items: ["9 meals — 1,800+ cal/day, shelf-stable local foods", "Water purification for 72L (3 days drinking + cooking)", "LED torch + 48-hour battery supply", "First aid kit — 35+ components", "Waterproof document safe", "Canvas grab bag — ready to move"], description: "Everything one person needs to survive 72 hours with no infrastructure. Packed in a grab-and-go canvas bag that lives by your front door." },
+    { name: "Family Kit", slug: "family-kit", subtitle: "4–5 days. Four people.", price: 40000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Most popular", sortOrder: 1, items: ["60+ meals — 2,000 cal/person/day for 4 people", "Gravity water filter — processes 500L+", "Walkie-talkie pair — pre-set, 1–2km urban range", "20,000mAh power bank", "Comprehensive medical kit — 80+ components", "Emergency shelter + 4× thermal blankets"], description: "Your household covered for almost a week. Enough food for four people at full calories, a way to communicate when the networks collapse, and medical supplies that go beyond band-aids." },
+    { name: "Urban Conflict Kit", slug: "urban-conflict-kit", subtitle: "5+ days. Full readiness.", price: 95000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Complete protection", sortOrder: 2, items: ["80+ meals — 2,000 cal/person/day, 5-day supply for 4", "Filtration system — processes 1,000L of any freshwater", "Long-range walkie-talkies — 2–3km urban, spare batteries", "Solar panel + power bank hybrid — daytime recharge in sun", "Trauma medical — tourniquets, chest seals, splints, 120+ items", "Multi-tool, document safe, full printed inventory"], description: "Built for the scenario nobody wants to say out loud. Trauma-grade medical. Solar power that doesn't depend on anything. Extended comms. Enough to sustain your household while you figure out your next move." },
+    // Communication
+    { name: "Walkie-Talkie Pair", slug: "walkie-talkie-pair", subtitle: "Pre-set frequencies", price: 6500, categoryId: catMap["communication"], sortOrder: 0 },
+    { name: "Long-Range Walkie-Talkies", slug: "long-range-walkie-talkies", subtitle: "2–3km urban range", price: 14000, categoryId: catMap["communication"], sortOrder: 1 },
+    { name: "Emergency Whistle (3-pack)", slug: "emergency-whistle-3pack", price: 500, categoryId: catMap["communication"], sortOrder: 2 },
+    // Power
+    { name: "Rugged Power Bank", slug: "rugged-power-bank", subtitle: "20,000mAh", price: 5500, categoryId: catMap["power"], badge: "branded", sortOrder: 0 },
+    { name: "Portable Solar Panel", slug: "portable-solar-panel", subtitle: "Foldable, 20W", price: 12000, categoryId: catMap["power"], sortOrder: 1 },
+    { name: "AA Battery Pack", slug: "aa-battery-pack-48", subtitle: "48 count", price: 1200, categoryId: catMap["power"], sortOrder: 2 },
+    { name: "LED Torch", slug: "led-torch-500lm", subtitle: "500 lumens, AA powered", price: 1800, categoryId: catMap["power"], sortOrder: 3 },
+    { name: "Hand-Crank Radio + Torch", slug: "hand-crank-radio", price: 3500, categoryId: catMap["power"], sortOrder: 4 },
+    // Water
+    { name: "Gravity Water Filter", slug: "gravity-water-filter", subtitle: "Processes 1000L", price: 8500, categoryId: catMap["water"], sortOrder: 0 },
+    { name: "Water Purification Tablets", slug: "water-purification-tablets", subtitle: "100 count", price: 1200, categoryId: catMap["water"], sortOrder: 1 },
+    { name: "Collapsible Water Container", slug: "collapsible-water-container", subtitle: "10L", price: 1500, categoryId: catMap["water"], sortOrder: 2 },
+    // Food
+    { name: "Sattu Emergency Pack", slug: "sattu-emergency-pack", subtitle: "5-day supply", price: 1800, categoryId: catMap["food"], badge: "local", sortOrder: 0 },
+    { name: "Dried Dates & Apricot Mix", slug: "dates-apricot-mix", subtitle: "1kg", price: 1200, categoryId: catMap["food"], badge: "local", sortOrder: 1 },
+    { name: "Roasted Chana", slug: "roasted-chana-1kg", subtitle: "1kg, vacuum sealed", price: 800, categoryId: catMap["food"], badge: "local", sortOrder: 2 },
+    { name: "Complete Food Box", slug: "complete-food-box", subtitle: "4 people, 3 days", price: 4500, categoryId: catMap["food"], badge: "local", sortOrder: 3 },
+    // Medical
+    { name: "First Aid Essentials Kit", slug: "first-aid-essentials", price: 2500, categoryId: catMap["medical"], sortOrder: 0 },
+    { name: "Comprehensive Medical Kit", slug: "comprehensive-medical-kit", price: 7500, categoryId: catMap["medical"], sortOrder: 1 },
+    { name: "Trauma Kit", slug: "trauma-kit", subtitle: "Tourniquets, chest seals, splints", price: 15000, categoryId: catMap["medical"], sortOrder: 2 },
+    // Shelter & Tools
+    { name: "2-Person Emergency Tent", slug: "emergency-tent-2p", price: 8000, categoryId: catMap["shelter-tools"], sortOrder: 0 },
+    { name: "Thermal Blankets (4-pack)", slug: "thermal-blankets-4pack", price: 1500, categoryId: catMap["shelter-tools"], sortOrder: 1 },
+    { name: "Heavy-Duty Multi-Tool", slug: "multi-tool", price: 3500, categoryId: catMap["shelter-tools"], sortOrder: 2 },
+    { name: "Waterproof Documents Pouch", slug: "waterproof-documents-pouch", price: 900, categoryId: catMap["shelter-tools"], sortOrder: 3 },
+    { name: "550 Paracord (30m)", slug: "paracord-30m", price: 700, categoryId: catMap["shelter-tools"], sortOrder: 4 },
+  ];
+
+  for (const p of products) {
+    await prisma.product.upsert({
+      where: { slug: p.slug },
+      update: { name: p.name, price: p.price, subtitle: p.subtitle || null, description: p.description || null, categoryId: p.categoryId, badge: p.badge || null, isKit: p.isKit || false, isFeatured: p.isFeatured || false, kitHighlight: p.kitHighlight || null, items: p.items || [], sortOrder: p.sortOrder || 0 },
+      create: { name: p.name, slug: p.slug, price: p.price, subtitle: p.subtitle || null, description: p.description || null, categoryId: p.categoryId, badge: p.badge || null, isKit: p.isKit || false, isFeatured: p.isFeatured || false, kitHighlight: p.kitHighlight || null, items: p.items || [], sortOrder: p.sortOrder || 0, status: "coming_soon" },
+    });
+  }
+
+  console.log("Shop categories and products seeded");
 }
 
 main()

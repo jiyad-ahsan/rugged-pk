@@ -74,6 +74,42 @@ model VerificationToken {
   @@id([identifier, token])
 }
 
+// ──── Shop Models ────
+
+model ProductCategory {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  slug      String    @unique
+  sortOrder Int       @default(0)
+  products  Product[]
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  subtitle    String?
+  description String?
+  price       Int      // in PKR, whole number
+  comparePrice Int?    // original price for discount display
+  categoryId  String
+  badge       String?  // "local", "branded", "new", etc.
+  status      String   @default("coming_soon") // available, coming_soon, sold_out
+  isKit       Boolean  @default(false)
+  isFeatured  Boolean  @default(false)
+  kitHighlight String? // "Start here", "Most popular", "Complete protection"
+  items       String[] // bullet points for kits
+  images      String[] // URLs
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  category ProductCategory @relation(fields: [categoryId], references: [id])
+
+  @@index([categoryId])
+  @@index([status])
+}
+
 // ──── Forum Models ────
 
 model ForumCategory {
