@@ -237,34 +237,34 @@ export default async function Home() {
         {/* Just the hero product highlighted on homepage */}
         <div className="card border-2 !border-rugged-500 dark:!border-rugged-400 p-8 md:p-10 relative max-w-2xl">
           <div className="absolute -top-3 left-8 bg-rugged-500 dark:bg-rugged-400 text-white text-xs font-mono tracking-widest px-3 py-1 rounded-sm">
-            ★ MOST COMPREHENSIVE
+            ★ START HERE
           </div>
           <span className="text-xs text-rugged-500 dark:text-rugged-400 uppercase tracking-widest font-medium">
-            Complete protection
+            Essential readiness
           </span>
           <h3 className="font-sans text-2xl font-bold tracking-tight mt-1 mb-1">
-            Urban Conflict Kit
+            Basic Survival Kit
           </h3>
           <p className="text-sm text-sand-600 dark:text-sand-500 mb-4">
-            5+ days. Full readiness.
+            72 hours. The essentials covered.
           </p>
           <div className="flex items-baseline gap-1.5 mb-4">
             <span className="text-sm text-sand-600 dark:text-sand-500">Rs.</span>
-            <span className="font-sans text-3xl font-bold tracking-tight">95,000</span>
+            <span className="font-sans text-3xl font-bold tracking-tight">25,000</span>
           </div>
           <p className="text-sm text-sand-600 dark:text-sand-500 leading-relaxed mb-5 max-w-lg">
-            Built for the scenario nobody wants to say out loud. Trauma-grade medical.
-            Solar power that doesn't depend on anything. Extended comms. Enough to sustain
-            your household while you figure out your next move.
+            Everything a family needs to get through the first 72 hours of any emergency —
+            power outage, earthquake, flooding, or supply disruption. Locally sourced food,
+            clean water solution, basic medical, and light.
           </p>
           <div className="text-sm text-neutral-900 dark:text-sand-100 space-y-1.5 mb-6">
-            <p>· 80+ meals — 2,000 cal/person/day for a family of 4</p>
-            <p>· Trauma medical — 120+ items including tourniquets and chest seals</p>
-            <p>· Solar panel + power bank — daytime recharge, grid-independent</p>
+            <p>· 72 hours of food — local staples your family already knows</p>
+            <p>· Water purification — enough for a family of 4 for 3 days</p>
+            <p>· First aid kit — bandages, antiseptic, essential medications</p>
           </div>
           <div className="flex gap-4">
             <Link href="/shop" className="btn-primary">
-              Get the full kit →
+              Get the kit →
             </Link>
             <Link href="/shop" className="font-mono text-sm text-sand-600 dark:text-sand-500 self-center">
               Compare all kits
