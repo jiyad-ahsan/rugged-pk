@@ -20,11 +20,17 @@ function timeAgo(date) {
   return `${months}mo ago`;
 }
 
+const inputClass = "w-full px-3 py-2 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm text-neutral-900 dark:text-sand-100 focus:outline-none";
+
 export default function UserManager({ initialUsers = [] }) {
   const [users, setUsers] = useState(initialUsers);
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState("all");
   const [updating, setUpdating] = useState(null);
+  const [showAdd, setShowAdd] = useState(false);
+  const [addForm, setAddForm] = useState({ name: "", email: "", password: "", role: "USER" });
+  const [addError, setAddError] = useState("");
+  const [adding, setAdding] = useState(false);
 
   const filtered = users.filter((u) => {
     if (roleFilter !== "all" && u.role !== roleFilter) return false;
@@ -57,12 +63,90 @@ export default function UserManager({ initialUsers = [] }) {
     setUpdating(null);
   };
 
+  const handleAddUser = async () => {
+    if (!addForm.email || !addForm.password) {
+      setAddError("Email and password are required");
+      return;
+    }
+    setAdding(true);
+    setAddError("");
+
+    const res = await fetch("/api/admin/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(addForm),
+    });
+
+    if (res.ok) {
+      const newUser = await res.json();
+      setUsers([{ ...newUser, _count: { threads: 0, replies: 0 } }, ...users]);
+      setShowAdd(false);
+      setAddForm({ name: "", email: "", password: "", role: "USER" });
+    } else {
+      const data = await res.json();
+      setAddError(data.error || "Failed to create user");
+    }
+    setAdding(false);
+  };
+
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="font-sans text-2xl font-bold tracking-tight mb-1">Users</h1>
-        <p className="text-sm text-sand-500">{users.length} registered users.</p>
+      <div className="flex justify-between items-center mb-8">
+        <div>
+          <h1 className="font-sans text-2xl font-bold tracking-tight mb-1">Users</h1>
+          <p className="text-sm text-sand-500">{users.length} registered users.</p>
+        </div>
+        <button onClick={() => { setShowAdd(!showAdd); setAddError(""); }} className="btn-primary text-sm px-4 py-2">
+          + Add user
+        </button>
       </div>
+
+      {/* Add user form */}
+      {showAdd && (
+        <div className="card p-6 mb-8">
+          <h3 className="font-sans text-lg font-semibold mb-4">New User</h3>
+          {addError && <p className="text-sm text-rose-600 mb-4">{addError}</p>}
+
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Name</label>
+              <input type="text" value={addForm.name} onChange={(e) => setAddForm({ ...addForm, name: e.target.value })}
+                placeholder="Optional" className={inputClass} />
+            </div>
+            <div>
+              <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Email *</label>
+              <input type="email" value={addForm.email} onChange={(e) => setAddForm({ ...addForm, email: e.target.value })}
+                placeholder="user@example.com" className={inputClass} />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Password *</label>
+              <input type="text" value={addForm.password} onChange={(e) => setAddForm({ ...addForm, password: e.target.value })}
+                placeholder="Min 6 characters" className={inputClass} />
+            </div>
+            <div>
+              <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Role</label>
+              <select value={addForm.role} onChange={(e) => setAddForm({ ...addForm, role: e.target.value })}
+                className={inputClass}>
+                <option value="USER">User</option>
+                <option value="MODERATOR">Moderator</option>
+                <option value="ADMIN">Admin</option>
+              </select>
+            </div>
+          </div>
+
+          <p className="text-xs text-sand-500 mb-4">Admin-created users are automatically email-verified.</p>
+
+          <div className="flex gap-3 justify-end">
+            <button onClick={() => setShowAdd(false)} className="btn-outline text-sm px-4 py-2">Cancel</button>
+            <button onClick={handleAddUser} disabled={adding} className="btn-primary text-sm px-6 py-2 disabled:opacity-50">
+              {adding ? "Creating..." : "Create user"}
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Filters */}
       <div className="flex flex-col sm:flex-row gap-4 mb-6">

@@ -1,6 +1,50 @@
 import prisma from "@/lib/db";
 import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
+import bcrypt from "bcryptjs";
+
+export async function POST(req) {
+  const session = await auth();
+  if (!session?.user?.id || session.user.role !== "ADMIN") {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const { name, email, password, role } = await req.json();
+
+  if (!email?.trim() || !password?.trim()) {
+    return NextResponse.json({ error: "Email and password are required" }, { status: 400 });
+  }
+
+  if (password.length < 6) {
+    return NextResponse.json({ error: "Password must be at least 6 characters" }, { status: 400 });
+  }
+
+  const validRoles = ["USER", "MODERATOR", "ADMIN"];
+  const userRole = validRoles.includes(role) ? role : "USER";
+
+  // Check if user already exists
+  const existing = await prisma.user.findUnique({ where: { email: email.trim().toLowerCase() } });
+  if (existing) {
+    return NextResponse.json({ error: "A user with this email already exists" }, { status: 409 });
+  }
+
+  const hashedPassword = await bcrypt.hash(password, 12);
+
+  const user = await prisma.user.create({
+    data: {
+      name: name?.trim() || null,
+      email: email.trim().toLowerCase(),
+      password: hashedPassword,
+      role: userRole,
+      emailVerified: new Date(), // admin-created users are pre-verified
+    },
+    select: {
+      id: true, name: true, email: true, role: true, createdAt: true, emailVerified: true,
+    },
+  });
+
+  return NextResponse.json(user, { status: 201 });
+}
 
 export async function PATCH(req) {
   const session = await auth();
