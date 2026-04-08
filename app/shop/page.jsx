@@ -6,7 +6,7 @@ export const metadata = {
   description: "Preparedness kits and individual gear built for Pakistani families. Local foods, reliable power, real medical supplies.",
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60; // regenerate every 60 seconds
 
 export default async function ShopPage() {
   let products = [];

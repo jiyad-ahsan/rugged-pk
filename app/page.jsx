@@ -49,7 +49,7 @@ function timeAgo(date) {
   return new Date(date).toLocaleDateString("en-PK", { day: "numeric", month: "short" });
 }
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60; // regenerate every 60 seconds
 
 export default async function Home() {
   let recentThreads = [];

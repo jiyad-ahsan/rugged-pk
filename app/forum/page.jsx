@@ -1,4 +1,3 @@
-import { auth } from "@/lib/auth";
 import prisma from "@/lib/db";
 import ThreadList from "@/components/forum/ThreadList";
 
@@ -7,18 +6,14 @@ export const metadata = {
   description: "Private, practical discussions about real preparedness for Pakistani families.",
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60; // regenerate every 60 seconds
 
 export default async function ForumPage() {
-  let session = null;
   let categories = [];
   try {
-    [session, categories] = await Promise.all([
-      auth(),
-      prisma.forumCategory.findMany({ orderBy: { sortOrder: "asc" } }),
-    ]);
+    categories = await prisma.forumCategory.findMany({ orderBy: { sortOrder: "asc" } });
   } catch {
-    session = await auth();
+    // Database unavailable
   }
 
   return (
@@ -43,7 +38,6 @@ export default async function ForumPage() {
 
       <ThreadList
         categories={JSON.parse(JSON.stringify(categories))}
-        session={session ? { user: { id: session.user.id, name: session.user.name, role: session.user.role } } : null}
       />
     </div>
   );

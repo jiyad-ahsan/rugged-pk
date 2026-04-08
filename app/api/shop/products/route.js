@@ -25,7 +25,9 @@ export async function GET(req) {
     include: { category: { select: { name: true, slug: true } } },
   });
 
-  return NextResponse.json(products);
+  const res = NextResponse.json(products);
+  res.headers.set("Cache-Control", "public, s-maxage=60, stale-while-revalidate=120");
+  return res;
 }
 
 // Admin: create product

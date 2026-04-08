@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 const tagColor = {
   planning: "text-rugged-500 dark:text-rugged-400",
@@ -32,7 +33,8 @@ function timeAgo(dateStr) {
   return new Date(dateStr).toLocaleDateString("en-PK", { day: "numeric", month: "short" });
 }
 
-export default function ThreadList({ categories, session }) {
+export default function ThreadList({ categories }) {
+  const { data: session } = useSession();
   const [threads, setThreads] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
@@ -157,8 +159,23 @@ export default function ThreadList({ categories, session }) {
 
       {/* Thread list */}
       {loading ? (
-        <div className="py-16 text-center text-sand-600 dark:text-sand-500 text-sm">
-          Loading threads...
+        <div className="flex flex-col">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div key={i} className="flex justify-between items-center py-5 border-b border-black/10 dark:border-white/8 animate-pulse">
+              <div className="flex-1">
+                <div className="flex gap-4 mb-2">
+                  <div className="h-3 w-16 bg-sand-300 dark:bg-sand-700 rounded-sm" />
+                  <div className="h-3 w-24 bg-sand-300 dark:bg-sand-700 rounded-sm" />
+                </div>
+                <div className="h-5 w-3/4 bg-sand-300 dark:bg-sand-700 rounded-sm mb-2" />
+                <div className="h-3 w-20 bg-sand-300 dark:bg-sand-700 rounded-sm" />
+              </div>
+              <div className="pl-6 text-center">
+                <div className="h-7 w-8 bg-sand-300 dark:bg-sand-700 rounded-sm mx-auto mb-1" />
+                <div className="h-2 w-10 bg-sand-300 dark:bg-sand-700 rounded-sm" />
+              </div>
+            </div>
+          ))}
         </div>
       ) : threads.length === 0 ? (
         <div className="py-16 text-center">

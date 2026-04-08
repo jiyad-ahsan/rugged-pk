@@ -40,7 +40,9 @@ export async function GET(req) {
     prisma.forumThread.count({ where }),
   ]);
 
-  return NextResponse.json({ threads, total, page, totalPages: Math.ceil(total / limit) });
+  const res = NextResponse.json({ threads, total, page, totalPages: Math.ceil(total / limit) });
+  res.headers.set("Cache-Control", "public, s-maxage=30, stale-while-revalidate=60");
+  return res;
 }
 
 export async function POST(req) {
