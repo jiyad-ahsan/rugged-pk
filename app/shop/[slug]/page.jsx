@@ -1,6 +1,9 @@
 import prisma from "@/lib/db";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
+
+export const revalidate = 3600;
 
 function formatPrice(price) {
   return price.toLocaleString("en-PK");
@@ -60,9 +63,9 @@ export default async function ProductPage({ params }) {
 
       <div className="grid md:grid-cols-2 gap-12">
         {/* Image / placeholder */}
-        <div className="bg-sand-100 dark:bg-sand-800 rounded-sm aspect-square flex items-center justify-center border border-black/10 dark:border-white/8">
+        <div className="bg-sand-100 dark:bg-sand-800 rounded-sm aspect-square flex items-center justify-center border border-black/10 dark:border-white/8 relative">
           {product.images?.length > 0 ? (
-            <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover rounded-sm" />
+            <Image src={product.images[0]} alt={product.name} fill className="object-cover rounded-sm" sizes="(max-width: 768px) 100vw, 50vw" />
           ) : (
             <div className="text-center px-8">
               <span className="text-4xl mb-3 block">📦</span>

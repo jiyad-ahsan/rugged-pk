@@ -1,8 +1,34 @@
 import "./globals.css";
+import { IBM_Plex_Mono, Inter } from "next/font/google";
 import AuthProvider from "@/components/SessionProvider";
 import ThemeProvider from "@/components/ThemeProvider";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#e4e1dd" },
+    { media: "(prefers-color-scheme: dark)", color: "#222222" },
+  ],
+};
 
 export const metadata = {
   title: "Rugged — Preparedness for Pakistani Families",
@@ -14,7 +40,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
       <body>
         <AuthProvider>
           <ThemeProvider>

@@ -11,7 +11,25 @@
       "Bash(cp app/api/auth/verify/route.js app/api/verify/route.js)",
       "Bash(cp app/api/auth/forgot-password/route.js app/api/forgot-password/route.js)",
       "Bash(cp app/api/auth/reset-password/route.js app/api/reset-password/route.js)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "mcp__98c28963-5fba-469b-82e7-639bf3a90455__search_docs",
+      "mcp__98c28963-5fba-469b-82e7-639bf3a90455__get_project_url",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(curl -s http://localhost:3000/guides/30-minute-window)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/guides/30-minute-window)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(tasklist)",
+      "Bash(taskkill /f /pid 4112)",
+      "Bash(node -e \"console.log\\(require\\(''next-mdx-remote/package.json''\\).version\\)\")",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npx prisma:*)",
+      "mcp__98c28963-5fba-469b-82e7-639bf3a90455__execute_sql",
+      "Bash(node -e \"const { PrismaClient } = require\\(''@prisma/client''\\); const p = new PrismaClient\\(\\); p.product.count\\(\\).then\\(c => { console.log\\(''Products:'', c\\); return p.productCategory.count\\(\\); }\\).then\\(c => { console.log\\(''Categories:'', c\\); process.exit\\(0\\); }\\).catch\\(e => { console.error\\(e.message\\); process.exit\\(1\\); }\\)\")",
+      "Bash(npx tailwindcss:*)",
+      "mcp__98c28963-5fba-469b-82e7-639bf3a90455__get_publishable_keys"
     ]
   }
 }

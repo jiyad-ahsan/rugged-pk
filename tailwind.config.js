@@ -35,8 +35,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        mono: ["'IBM Plex Mono'", "Courier New", "monospace"],
-        sans: ["'Inter'", "-apple-system", "Segoe UI", "sans-serif"],
+        mono: ["var(--font-mono)", "Courier New", "monospace"],
+        sans: ["var(--font-sans)", "-apple-system", "Segoe UI", "sans-serif"],
       },
     },
   },

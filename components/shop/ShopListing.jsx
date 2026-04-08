@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function formatPrice(price) {
   return price.toLocaleString("en-PK");
@@ -212,14 +213,16 @@ export default function ShopListing({ products = [], categories = [] }) {
               className="card p-0 no-underline group overflow-hidden flex flex-col"
             >
               {/* Image / placeholder */}
-              <div className="aspect-square bg-sand-50 dark:bg-sand-900 flex items-center justify-center relative overflow-hidden"
+              <div className="aspect-square bg-sand-50 dark:bg-sand-900 flex items-center justify-center relative overflow-hidden select-none"
                 style={{ borderBottom: "1px solid rgba(128,128,128,0.1)" }}
               >
                 {product.images?.length > 0 ? (
-                  <img
+                  <Image
                     src={product.images[0]}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                 ) : (
                   <div className="text-center px-4">
