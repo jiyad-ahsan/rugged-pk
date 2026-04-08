@@ -27,7 +27,7 @@ export async function PATCH(req, { params }) {
   if (data.kitHighlight !== undefined) updateData.kitHighlight = data.kitHighlight?.trim() || null;
   if (data.items !== undefined) updateData.items = data.items;
   if (data.images !== undefined) updateData.images = data.images;
-  if (data.sortOrder !== undefined) updateData.sortOrder = data.sortOrder;
+  if (data.sortOrder !== undefined) updateData.sortOrder = parseInt(data.sortOrder, 10) || 0;
 
   const product = await prisma.product.update({
     where: { id },

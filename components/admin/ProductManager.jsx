@@ -409,6 +409,7 @@ export default function ProductManager({ categories }) {
                 </div>
               )}
               <span className="text-sm font-medium text-neutral-900 dark:text-sand-100">{p.name}</span>
+              <span className="text-[0.6rem] text-sand-400 tabular-nums">#{p.sortOrder}</span>
               {p.isKit && <span className="text-[0.6rem] uppercase tracking-widest font-medium text-rugged-500 px-1.5 py-0.5 rounded-sm bg-rugged-500/10">kit</span>}
               <span className={`text-[0.6rem] uppercase tracking-widest font-medium px-1.5 py-0.5 rounded-sm ${
                 p.status === "available" ? "text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20" :
