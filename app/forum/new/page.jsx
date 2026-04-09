@@ -12,6 +12,12 @@ export default async function NewThreadPage() {
   const session = await auth();
   if (!session?.user) redirect("/login?callbackUrl=/forum/new");
 
+  // Check email verification
+  const user = await prisma.user.findUnique({
+    where: { id: session.user.id },
+    select: { emailVerified: true },
+  });
+
   const categories = await prisma.forumCategory.findMany({ orderBy: { sortOrder: "asc" } });
 
   return (
@@ -27,7 +33,18 @@ export default async function NewThreadPage() {
         Start a new thread
       </h1>
 
-      <NewThreadForm categories={JSON.parse(JSON.stringify(categories))} />
+      {user?.emailVerified ? (
+        <NewThreadForm categories={JSON.parse(JSON.stringify(categories))} />
+      ) : (
+        <div className="text-center py-8 px-4 border border-amber-300 dark:border-amber-700 rounded-sm bg-amber-50 dark:bg-amber-900/20">
+          <p className="text-sm text-amber-700 dark:text-amber-400 mb-3">
+            Please verify your email before creating threads.
+          </p>
+          <Link href="/verify" className="btn-primary text-sm px-6 py-2 no-underline inline-block">
+            Verify email
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

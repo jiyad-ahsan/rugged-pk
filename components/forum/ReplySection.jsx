@@ -177,26 +177,34 @@ export default function ReplySection({ threadId, isLocked, session, isMod }) {
 
       {/* Reply form */}
       {session?.user && !isLocked ? (
-        <form onSubmit={handleSubmit} className="mt-8">
-          <textarea
-            value={replyBody}
-            onChange={(e) => setReplyBody(e.target.value)}
-            placeholder="Write your reply..."
-            rows={4}
-            className="w-full px-4 py-3 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm
-                       text-neutral-900 dark:text-sand-100 placeholder:text-sand-500
-                       focus:outline-none focus:border-rugged-500 dark:focus:border-rugged-400 resize-y"
-          />
-          <div className="flex justify-end mt-3">
-            <button
-              type="submit"
-              disabled={!replyBody.trim() || submitting}
-              className="btn-primary text-sm px-6 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {submitting ? "Posting..." : "Post reply"}
-            </button>
+        session.user.emailVerified ? (
+          <form onSubmit={handleSubmit} className="mt-8">
+            <textarea
+              value={replyBody}
+              onChange={(e) => setReplyBody(e.target.value)}
+              placeholder="Write your reply..."
+              rows={4}
+              className="w-full px-4 py-3 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm
+                         text-neutral-900 dark:text-sand-100 placeholder:text-sand-500
+                         focus:outline-none focus:border-rugged-500 dark:focus:border-rugged-400 resize-y"
+            />
+            <div className="flex justify-end mt-3">
+              <button
+                type="submit"
+                disabled={!replyBody.trim() || submitting}
+                className="btn-primary text-sm px-6 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {submitting ? "Posting..." : "Post reply"}
+              </button>
+            </div>
+          </form>
+        ) : (
+          <div className="mt-8 text-center py-4 px-4 border border-amber-300 dark:border-amber-700 rounded-sm bg-amber-50 dark:bg-amber-900/20">
+            <p className="text-sm text-amber-700 dark:text-amber-400">
+              Please <a href="/verify" className="underline font-medium">verify your email</a> to post replies.
+            </p>
           </div>
-        </form>
+        )
       ) : isLocked ? (
         <p className="mt-8 text-sm text-sand-500 text-center py-4 border border-black/10 dark:border-white/8 rounded-sm">
           This thread is locked. No new replies can be posted.

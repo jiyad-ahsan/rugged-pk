@@ -56,7 +56,7 @@ export default function SignupPage() {
     if (result?.error) {
       setError("Account created but login failed. Try logging in.");
     } else {
-      router.push("/");
+      router.push("/verify");
       router.refresh();
     }
   }

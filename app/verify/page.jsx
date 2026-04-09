@@ -1,14 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 export default function VerifyPage() {
   const router = useRouter();
+  const { update } = useSession();
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [resending, setResending] = useState(false);
+  const [resendMsg, setResendMsg] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -28,7 +32,29 @@ export default function VerifyPage() {
       setError(data.error || "Invalid code");
     } else {
       setSuccess(true);
-      setTimeout(() => router.push("/"), 2000);
+      // Refresh the session so emailVerified propagates to the JWT
+      await update();
+      setTimeout(() => {
+        router.push("/");
+        router.refresh();
+      }, 1500);
+    }
+  }
+
+  async function handleResend() {
+    setResending(true);
+    setResendMsg("");
+    setError("");
+
+    const res = await fetch("/api/verify/resend", { method: "POST" });
+    const data = await res.json();
+    setResending(false);
+
+    if (!res.ok) {
+      setError(data.error || "Failed to resend code");
+    } else {
+      setResendMsg("New code sent — check your email");
+      setCode("");
     }
   }
 
@@ -56,6 +82,13 @@ export default function VerifyPage() {
               </div>
             )}
 
+            {resendMsg && (
+              <div className="text-emerald-600 dark:text-emerald-400 text-xs mb-4 p-3 rounded-sm"
+                   style={{ border: "1px solid rgba(16,185,129,0.3)", background: "rgba(16,185,129,0.05)" }}>
+                {resendMsg}
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block font-mono text-xs text-sand-600 dark:text-sand-500 mb-1.5">
@@ -67,6 +100,7 @@ export default function VerifyPage() {
                   onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
                   required
                   maxLength={6}
+                  autoFocus
                   className="w-full font-mono text-lg tracking-[0.5em] text-center bg-sand-100 dark:bg-sand-800 text-neutral-900 dark:text-sand-100 px-4 py-3 rounded-sm outline-none transition-colors duration-200"
                   style={{ border: "1px solid rgba(128,128,128,0.2)" }}
                   placeholder="000000"
@@ -81,6 +115,16 @@ export default function VerifyPage() {
                 {loading ? "Verifying..." : "Verify"}
               </button>
             </form>
+
+            <div className="text-center mt-6">
+              <button
+                onClick={handleResend}
+                disabled={resending}
+                className="font-mono text-xs text-rugged-500 dark:text-rugged-400 hover:underline disabled:opacity-50 disabled:no-underline"
+              >
+                {resending ? "Sending..." : "Didn't get the code? Resend"}
+              </button>
+            </div>
           </>
         )}
       </div>

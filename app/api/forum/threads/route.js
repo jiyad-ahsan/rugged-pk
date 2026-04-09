@@ -51,6 +51,15 @@ export async function POST(req) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // Require email verification to post
+  const user = await prisma.user.findUnique({
+    where: { id: session.user.id },
+    select: { emailVerified: true },
+  });
+  if (!user?.emailVerified) {
+    return NextResponse.json({ error: "Please verify your email before posting" }, { status: 403 });
+  }
+
   const { title, body, categoryId, tag } = await req.json();
 
   if (!title?.trim() || !body?.trim() || !categoryId) {
