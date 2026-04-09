@@ -42,9 +42,15 @@ export default function Nav() {
                      text-neutral-900 dark:text-sand-100
                      flex items-center gap-2"
         >
-          <span className="text-rugged-500 dark:text-rugged-400 text-xl leading-none">
-            ▮
-          </span>
+          <svg
+            width="22" height="18" viewBox="0 0 22 18"
+            fill="currentColor"
+            className="text-rugged-500 dark:text-rugged-400 shrink-0"
+            aria-hidden="true"
+          >
+            <path d="M8 1L0 17h16L8 1z" opacity="0.5" />
+            <path d="M15 5L8.5 17H21.5L15 5z" />
+          </svg>
           RUGGED
         </Link>
 
