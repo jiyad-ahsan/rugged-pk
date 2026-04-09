@@ -245,28 +245,30 @@ export default async function Home() {
             Essential readiness
           </span>
           <h3 className="font-sans text-2xl font-bold tracking-tight mt-1 mb-1">
-            Basic Survival Kit
+            Starter Kit
           </h3>
           <p className="text-sm text-sand-600 dark:text-sand-500 mb-4">
-            72 hours. The essentials covered.
+            72 hours. One person.
           </p>
           <div className="flex items-baseline gap-1.5 mb-4">
             <span className="text-sm text-sand-600 dark:text-sand-500">Rs.</span>
-            <span className="font-sans text-3xl font-bold tracking-tight">25,000</span>
+            <span className="font-sans text-3xl font-bold tracking-tight">10,000</span>
           </div>
           <p className="text-sm text-sand-600 dark:text-sand-500 leading-relaxed mb-5 max-w-lg">
-            Everything a family needs to get through the first 72 hours of any emergency —
-            power outage, earthquake, flooding, or supply disruption. Locally sourced food,
-            clean water solution, basic medical, and light.
+            Everything one person needs to survive 72 hours with no infrastructure.
+            Packed in a grab-and-go canvas bag that lives by your front door.
           </p>
           <div className="text-sm text-neutral-900 dark:text-sand-100 space-y-1.5 mb-6">
-            <p>· 72 hours of food — local staples your family already knows</p>
-            <p>· Water purification — enough for a family of 4 for 3 days</p>
-            <p>· First aid kit — bandages, antiseptic, essential medications</p>
+            <p>· 9 meals — 1,800+ cal/day, shelf-stable local foods</p>
+            <p>· Water purification for 72L (3 days drinking + cooking)</p>
+            <p>· LED torch + 48-hour battery supply</p>
+            <p>· First aid kit — 35+ components</p>
+            <p>· Waterproof document safe</p>
+            <p>· Canvas grab bag — ready to move</p>
           </div>
           <div className="flex gap-4">
-            <Link href="/shop" className="btn-primary">
-              Get the kit →
+            <Link href="/shop/starter-kit" className="btn-primary">
+              View kit →
             </Link>
             <Link href="/shop" className="font-mono text-sm text-sand-600 dark:text-sand-500 self-center">
               Compare all kits
