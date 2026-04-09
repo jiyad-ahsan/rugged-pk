@@ -58,7 +58,8 @@ export default async function Home() {
       where: { isHidden: false },
       orderBy: { lastActivityAt: "desc" },
       take: 3,
-      include: {
+      select: {
+        id: true, title: true, tag: true, replyCount: true, lastActivityAt: true,
         author: { select: { name: true } },
       },
     });

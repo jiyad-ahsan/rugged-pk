@@ -11,7 +11,10 @@ export const revalidate = 60; // regenerate every 60 seconds
 export default async function ForumPage() {
   let categories = [];
   try {
-    categories = await prisma.forumCategory.findMany({ orderBy: { sortOrder: "asc" } });
+    categories = await prisma.forumCategory.findMany({
+      orderBy: { sortOrder: "asc" },
+      select: { id: true, name: true, slug: true },
+    });
   } catch {
     // Database unavailable
   }

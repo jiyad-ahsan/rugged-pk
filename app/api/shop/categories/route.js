@@ -2,14 +2,14 @@ import prisma from "@/lib/db";
 import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
-
 export async function GET() {
   const categories = await prisma.productCategory.findMany({
     orderBy: { sortOrder: "asc" },
     include: { _count: { select: { products: true } } },
   });
-  return NextResponse.json(categories);
+  const res = NextResponse.json(categories);
+  res.headers.set("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+  return res;
 }
 
 export async function POST(req) {

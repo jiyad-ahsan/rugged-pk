@@ -29,7 +29,10 @@
       "mcp__98c28963-5fba-469b-82e7-639bf3a90455__execute_sql",
       "Bash(node -e \"const { PrismaClient } = require\\(''@prisma/client''\\); const p = new PrismaClient\\(\\); p.product.count\\(\\).then\\(c => { console.log\\(''Products:'', c\\); return p.productCategory.count\\(\\); }\\).then\\(c => { console.log\\(''Categories:'', c\\); process.exit\\(0\\); }\\).catch\\(e => { console.error\\(e.message\\); process.exit\\(1\\); }\\)\")",
       "Bash(npx tailwindcss:*)",
-      "mcp__98c28963-5fba-469b-82e7-639bf3a90455__get_publishable_keys"
+      "mcp__98c28963-5fba-469b-82e7-639bf3a90455__get_publishable_keys",
+      "Bash(grep -n \"revalidate\\\\|force-dynamic\\\\|Cache-Control\" /c/Users/jiyad/rugged-pk/app/**/*.jsx)",
+      "Bash(grep -n \"findMany\\\\|findFirst\" /c/Users/jiyad/rugged-pk/app/api/**/*.js)",
+      "Bash(grep -n \"force-dynamic\" /c/Users/jiyad/rugged-pk/app/api/**/*.js)"
     ]
   }
 }

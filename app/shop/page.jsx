@@ -15,7 +15,12 @@ export default async function ShopPage() {
   try {
     products = await prisma.product.findMany({
       orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
-      include: { category: { select: { name: true, slug: true } } },
+      select: {
+        id: true, name: true, slug: true, subtitle: true, description: true,
+        price: true, comparePrice: true, badge: true, status: true,
+        isKit: true, items: true, images: true, sortOrder: true,
+        category: { select: { name: true, slug: true } },
+      },
     });
 
     categories = await prisma.productCategory.findMany({

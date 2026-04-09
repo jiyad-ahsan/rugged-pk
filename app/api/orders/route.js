@@ -2,8 +2,6 @@ import prisma from "@/lib/db";
 import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
-
 // Place an order (public — guest checkout allowed)
 export async function POST(req) {
   const data = await req.json();
@@ -24,10 +22,11 @@ export async function POST(req) {
   }
 
   try {
-    // Fetch all products from DB to get real prices (don't trust client)
+    // Fetch only needed fields from DB to get real prices (don't trust client)
     const productIds = data.items.map((i) => i.productId);
     const products = await prisma.product.findMany({
       where: { id: { in: productIds } },
+      select: { id: true, name: true, price: true, status: true },
     });
 
     // Validate all products exist and are available

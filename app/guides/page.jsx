@@ -1,6 +1,8 @@
 import { getAllContent } from "@/lib/guides";
 import GuidesListing from "@/components/guide/GuidesListing";
 
+export const revalidate = 3600;
+
 // Fallback data for guides not yet in markdown files
 const fallbackGuides = [
   {

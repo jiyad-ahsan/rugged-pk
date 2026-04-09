@@ -15,13 +15,15 @@ export async function GET(req, { params }) {
       skip: (page - 1) * limit,
       take: limit,
       include: {
-        author: { select: { id: true, name: true, image: true, createdAt: true } },
+        author: { select: { id: true, name: true, image: true } },
       },
     }),
     prisma.forumReply.count({ where: { threadId: id, isHidden: false } }),
   ]);
 
-  return NextResponse.json({ replies, total, page, totalPages: Math.ceil(total / limit) });
+  const res = NextResponse.json({ replies, total, page, totalPages: Math.ceil(total / limit) });
+  res.headers.set("Cache-Control", "public, s-maxage=15, stale-while-revalidate=30");
+  return res;
 }
 
 export async function POST(req, { params }) {
@@ -62,7 +64,7 @@ export async function POST(req, { params }) {
         authorId: session.user.id,
       },
       include: {
-        author: { select: { id: true, name: true, image: true, createdAt: true } },
+        author: { select: { id: true, name: true, image: true } },
       },
     }),
     prisma.forumThread.update({

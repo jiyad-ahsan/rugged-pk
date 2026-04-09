@@ -2,8 +2,6 @@ import prisma from "@/lib/db";
 import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
-
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const categorySlug = searchParams.get("category");
@@ -12,7 +10,10 @@ export async function GET(req) {
 
   const where = {};
   if (categorySlug) {
-    const cat = await prisma.productCategory.findUnique({ where: { slug: categorySlug } });
+    const cat = await prisma.productCategory.findUnique({
+      where: { slug: categorySlug },
+      select: { id: true },
+    });
     if (cat) where.categoryId = cat.id;
   }
   if (isKit === "true") where.isKit = true;
@@ -22,7 +23,12 @@ export async function GET(req) {
   const products = await prisma.product.findMany({
     where,
     orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
-    include: { category: { select: { name: true, slug: true } } },
+    select: {
+      id: true, name: true, slug: true, subtitle: true, description: true,
+      price: true, comparePrice: true, badge: true, status: true,
+      isKit: true, isFeatured: true, items: true, images: true, sortOrder: true,
+      category: { select: { name: true, slug: true } },
+    },
   });
 
   const res = NextResponse.json(products);
