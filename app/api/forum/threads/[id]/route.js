@@ -8,7 +8,7 @@ export async function GET(req, { params }) {
   const thread = await prisma.forumThread.findUnique({
     where: { id },
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, displayName: true, image: true } },
       category: { select: { id: true, name: true, slug: true } },
     },
   });

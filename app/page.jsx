@@ -60,7 +60,7 @@ export default async function Home() {
       take: 3,
       select: {
         id: true, title: true, tag: true, replyCount: true, lastActivityAt: true,
-        author: { select: { name: true } },
+        author: { select: { name: true, displayName: true } },
       },
     });
   } catch {
@@ -203,7 +203,7 @@ export default async function Home() {
                     {t.title}
                   </h3>
                   <span className="text-xs text-sand-600 dark:text-sand-500">
-                    by {t.author?.name || "Anonymous"}
+                    by {t.author?.displayName || t.author?.name || "Anonymous"}
                   </span>
                 </div>
                 <div className="text-center pl-8 shrink-0">

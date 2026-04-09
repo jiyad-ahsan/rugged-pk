@@ -34,7 +34,7 @@ export default async function ThreadPage({ params }) {
     prisma.forumThread.findUnique({
       where: { id },
       include: {
-        author: { select: { id: true, name: true, image: true, createdAt: true } },
+        author: { select: { id: true, name: true, displayName: true, image: true, createdAt: true } },
         category: { select: { id: true, name: true, slug: true } },
       },
     }),
@@ -95,7 +95,7 @@ export default async function ThreadPage({ params }) {
 
         <div className="flex gap-4 items-center text-xs text-sand-500 mb-6">
           <span className="font-medium text-neutral-800 dark:text-sand-200">
-            {thread.author?.name || "Anonymous"}
+            {thread.author?.displayName || thread.author?.name || "Anonymous"}
           </span>
           {memberSince && <span>member since {memberSince}</span>}
           <span>{timeAgo(thread.createdAt)}</span>

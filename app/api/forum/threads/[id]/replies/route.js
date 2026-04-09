@@ -15,7 +15,7 @@ export async function GET(req, { params }) {
       skip: (page - 1) * limit,
       take: limit,
       include: {
-        author: { select: { id: true, name: true, image: true } },
+        author: { select: { id: true, name: true, displayName: true, image: true } },
       },
     }),
     prisma.forumReply.count({ where: { threadId: id, isHidden: false } }),
@@ -73,7 +73,7 @@ export async function POST(req, { params }) {
         authorId: session.user.id,
       },
       include: {
-        author: { select: { id: true, name: true, image: true } },
+        author: { select: { id: true, name: true, displayName: true, image: true } },
       },
     }),
     prisma.forumThread.update({

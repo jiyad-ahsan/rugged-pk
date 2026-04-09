@@ -34,7 +34,7 @@ export async function GET() {
       where: { isHidden: false },
       select: {
         id: true, title: true, createdAt: true, replyCount: true,
-        author: { select: { name: true } },
+        author: { select: { name: true, displayName: true } },
         category: { select: { name: true } },
       },
     }),

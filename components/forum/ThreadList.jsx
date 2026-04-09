@@ -225,7 +225,7 @@ export default function ThreadList({ categories }) {
                   {t.title}
                 </h3>
                 <span className="text-xs text-sand-600 dark:text-sand-500">
-                  by {t.author?.name || "Anonymous"}
+                  by {t.author?.displayName || t.author?.name || "Anonymous"}
                 </span>
               </div>
               <div className="text-center pl-6 shrink-0">

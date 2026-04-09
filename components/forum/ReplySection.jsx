@@ -130,7 +130,7 @@ export default function ReplySection({ threadId, isLocked, session, isMod }) {
               <div className="flex justify-between items-start mb-2">
                 <div className="flex gap-3 items-center text-xs">
                   <span className="font-medium text-neutral-900 dark:text-sand-100">
-                    {r.author?.name || "Anonymous"}
+                    {r.author?.displayName || r.author?.name || "Anonymous"}
                   </span>
                   <span className="text-sand-500">{timeAgo(r.createdAt)}</span>
                 </div>

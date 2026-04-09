@@ -33,7 +33,7 @@ export async function GET(req) {
       skip: (page - 1) * limit,
       take: limit,
       include: {
-        author: { select: { id: true, name: true, image: true } },
+        author: { select: { id: true, name: true, displayName: true, image: true } },
         category: { select: { id: true, name: true, slug: true } },
       },
     }),
@@ -88,7 +88,7 @@ export async function POST(req) {
       authorId: session.user.id,
     },
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, displayName: true, image: true } },
       category: { select: { id: true, name: true, slug: true } },
     },
   });

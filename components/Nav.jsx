@@ -137,14 +137,20 @@ export default function Nav() {
                   admin
                 </Link>
               )}
+              <Link
+                href="/account"
+                className="font-mono text-sm no-underline text-sand-600 dark:text-sand-500
+                           hover:text-neutral-900 dark:hover:text-sand-100 transition-colors duration-200"
+              >
+                {session.user.name?.split(" ")[0] || "account"}
+              </Link>
               <button
                 onClick={() => signOut({ callbackUrl: "/" })}
-                className="font-mono text-sm text-sand-600 dark:text-sand-500
-                           hover:text-neutral-900 dark:hover:text-sand-100
+                className="font-mono text-sm text-rugged-500 dark:text-rugged-400
+                           hover:text-rugged-600 dark:hover:text-rugged-300
                            bg-transparent border-none cursor-pointer transition-colors duration-200"
               >
-                {session.user.name?.split(" ")[0] || "account"} ·{" "}
-                <span className="text-rugged-500 dark:text-rugged-400">logout</span>
+                logout
               </button>
             </div>
           ) : (
