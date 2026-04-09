@@ -81,9 +81,10 @@ export default async function Home() {
             <span className="text-rugged-500 dark:text-rugged-400">be ready.</span>
           </h1>
           <p className="text-sm text-sand-600 dark:text-sand-500 max-w-xl leading-relaxed mb-8">
-            Free guides written for our reality. A private community that takes this seriously.
-            Kits packed with things that actually work here — not imported survival fantasies,
-            not tacticool nonsense. Just practical readiness for Pakistani families.
+            Most Pakistani families have no plan. No supplies. No idea where to start.
+            Rugged changes that — with free guides written for our conditions, a community
+            of people who take this seriously, and kits built from what actually works here.
+            Not imported fantasy. Practical readiness, starting today.
           </p>
           <div className="flex gap-4 items-center">
             <Link href="/guides" className="btn-primary">
