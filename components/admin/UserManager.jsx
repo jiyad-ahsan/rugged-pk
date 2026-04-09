@@ -63,6 +63,26 @@ export default function UserManager({ initialUsers = [] }) {
     setUpdating(null);
   };
 
+  const handleToggleVerify = async (userId, isCurrentlyVerified) => {
+    const action = isCurrentlyVerified ? "unverify" : "verify";
+    setUpdating(userId);
+
+    const res = await fetch("/api/admin/users", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId, action }),
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      setUsers(users.map((u) => u.id === userId ? { ...u, emailVerified: data.emailVerified } : u));
+    } else {
+      const data = await res.json();
+      alert(data.error || "Failed to update verification");
+    }
+    setUpdating(null);
+  };
+
   const handleAddUser = async () => {
     if (!addForm.email || !addForm.password) {
       setAddError("Email and password are required");
@@ -235,12 +255,20 @@ export default function UserManager({ initialUsers = [] }) {
             </span>
 
             {/* Verified */}
-            <span className="md:col-span-1 text-xs">
-              {user.emailVerified
-                ? <span className="text-emerald-600 dark:text-emerald-400">✓</span>
-                : <span className="text-sand-400">—</span>
-              }
-            </span>
+            <div className="md:col-span-1">
+              <button
+                onClick={() => handleToggleVerify(user.id, !!user.emailVerified)}
+                disabled={updating === user.id}
+                className={`text-xs px-1.5 py-0.5 rounded-sm cursor-pointer transition-all disabled:opacity-50 ${
+                  user.emailVerified
+                    ? "text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10"
+                    : "text-sand-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-500/10"
+                }`}
+                title={user.emailVerified ? "Click to unverify" : "Click to verify"}
+              >
+                {user.emailVerified ? "✓ Yes" : "✗ No"}
+              </button>
+            </div>
 
             {/* Joined */}
             <span className="md:col-span-1 text-[0.65rem] text-sand-500 tabular-nums">{timeAgo(user.createdAt)}</span>

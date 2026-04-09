@@ -52,10 +52,25 @@ export async function PATCH(req) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { userId, role } = await req.json();
+  const { userId, role, action } = await req.json();
 
-  if (!userId || !["USER", "MODERATOR", "ADMIN"].includes(role)) {
-    return NextResponse.json({ error: "Invalid user or role" }, { status: 400 });
+  if (!userId) {
+    return NextResponse.json({ error: "User ID is required" }, { status: 400 });
+  }
+
+  // Handle verify/unverify action
+  if (action === "verify" || action === "unverify") {
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: { emailVerified: action === "verify" ? new Date() : null },
+      select: { id: true, name: true, email: true, role: true, emailVerified: true },
+    });
+    return NextResponse.json(user);
+  }
+
+  // Handle role change
+  if (!role || !["USER", "MODERATOR", "ADMIN"].includes(role)) {
+    return NextResponse.json({ error: "Invalid role" }, { status: 400 });
   }
 
   // Prevent demoting yourself
@@ -66,7 +81,7 @@ export async function PATCH(req) {
   const user = await prisma.user.update({
     where: { id: userId },
     data: { role },
-    select: { id: true, name: true, email: true, role: true },
+    select: { id: true, name: true, email: true, role: true, emailVerified: true },
   });
 
   return NextResponse.json(user);
