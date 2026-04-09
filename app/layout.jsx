@@ -2,7 +2,9 @@ import "./globals.css";
 import { IBM_Plex_Mono, Inter } from "next/font/google";
 import AuthProvider from "@/components/SessionProvider";
 import ThemeProvider from "@/components/ThemeProvider";
+import CartProvider from "@/components/CartProvider";
 import Nav from "@/components/Nav";
+import CartDrawer from "@/components/shop/CartDrawer";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
@@ -44,9 +46,12 @@ export default function RootLayout({ children }) {
       <body>
         <AuthProvider>
           <ThemeProvider>
-            <Nav />
-            <main className="pt-[72px] min-h-screen">{children}</main>
-            <Footer />
+            <CartProvider>
+              <Nav />
+              <CartDrawer />
+              <main className="pt-[72px] min-h-screen">{children}</main>
+              <Footer />
+            </CartProvider>
           </ThemeProvider>
         </AuthProvider>
       </body>

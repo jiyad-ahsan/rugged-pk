@@ -2,6 +2,7 @@ import prisma from "@/lib/db";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import AddToCartButton from "@/components/shop/AddToCartButton";
 
 export const revalidate = 3600;
 
@@ -123,9 +124,7 @@ export default async function ProductPage({ params }) {
 
           {/* Action */}
           {product.status === "available" ? (
-            <button className="btn-primary w-full text-center mt-4">
-              Add to cart →
-            </button>
+            <AddToCartButton product={{ id: product.id, slug: product.slug, name: product.name, price: product.price, images: product.images }} />
           ) : (
             <div className={`border rounded-sm px-4 py-3 text-center mt-4 ${statusColor}`}>
               <span className="text-sm font-medium">{statusLabel}</span>

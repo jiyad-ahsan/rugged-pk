@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { useTheme } from "./ThemeProvider";
+import { useCart } from "./CartProvider";
 
 const links = [
   { href: "/guides", label: "guides" },
@@ -16,6 +17,7 @@ export default function Nav() {
   const pathname = usePathname();
   const { dark, toggle } = useTheme();
   const { data: session } = useSession();
+  const { cartCount, setCartOpen } = useCart();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -95,6 +97,31 @@ export default function Nav() {
             aria-label="Toggle dark mode"
           >
             {dark ? "☀" : "☾"}
+          </button>
+
+          {/* Cart */}
+          <button
+            onClick={() => setCartOpen(true)}
+            className="
+              relative bg-black/5 dark:bg-white/8
+              border border-black/10 dark:border-white/10
+              rounded-full px-3 py-1.5
+              font-mono text-sm text-sand-600 dark:text-sand-500
+              cursor-pointer transition-all duration-300
+              hover:border-black/20 dark:hover:border-white/20
+            "
+            aria-label="Open cart"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 1L2 4v9a1 1 0 001 1h10a1 1 0 001-1V4L12 1H4z" />
+              <path d="M2 4h12" />
+              <path d="M6 7a2 2 0 004 0" />
+            </svg>
+            {cartCount > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 bg-rugged-500 text-white text-[0.55rem] font-mono font-semibold w-4 h-4 rounded-full flex items-center justify-center leading-none">
+                {cartCount > 9 ? "9+" : cartCount}
+              </span>
+            )}
           </button>
 
           {/* Auth */}
