@@ -146,6 +146,8 @@ export default function ProductManager({ categories }) {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
+  const [dragId, setDragId] = useState(null);
+  const [dragOverId, setDragOverId] = useState(null);
 
   const fetchProducts = useCallback(async () => {
     setLoading(true);
@@ -157,44 +159,60 @@ export default function ProductManager({ categories }) {
 
   useEffect(() => { fetchProducts(); }, [fetchProducts]);
 
-  // Inline sort — swap sortOrder with neighbor and save both
-  const moveProduct = async (index, direction) => {
-    const sorted = [...products];
-    const targetIndex = index + direction;
-    if (targetIndex < 0 || targetIndex >= sorted.length) return;
+  // Drag and drop reorder
+  const handleDragStart = (e, id) => {
+    setDragId(id);
+    e.dataTransfer.effectAllowed = "move";
+    // Make the drag ghost slightly transparent
+    e.currentTarget.style.opacity = "0.4";
+  };
 
-    const current = sorted[index];
-    const neighbor = sorted[targetIndex];
+  const handleDragEnd = (e) => {
+    e.currentTarget.style.opacity = "1";
+    setDragId(null);
+    setDragOverId(null);
+  };
 
-    // Swap their sortOrder values
-    const currentOrder = current.sortOrder;
-    const neighborOrder = neighbor.sortOrder;
+  const handleDragOver = (e, id) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    if (id !== dragOverId) setDragOverId(id);
+  };
 
-    // If they have the same sortOrder, offset by 1
-    const newCurrentOrder = neighborOrder;
-    const newNeighborOrder = currentOrder === neighborOrder
-      ? currentOrder + direction
-      : currentOrder;
+  const handleDrop = async (e, targetId) => {
+    e.preventDefault();
+    setDragOverId(null);
 
-    // Optimistically update UI
-    sorted[index] = { ...current, sortOrder: newCurrentOrder };
-    sorted[targetIndex] = { ...neighbor, sortOrder: newNeighborOrder };
-    sorted.sort((a, b) => a.sortOrder - b.sortOrder || a.name.localeCompare(b.name));
-    setProducts(sorted);
+    if (!dragId || dragId === targetId) return;
 
-    // Save both to server
-    await Promise.all([
-      fetch(`/api/shop/products/${current.id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sortOrder: newCurrentOrder }),
-      }),
-      fetch(`/api/shop/products/${neighbor.id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sortOrder: newNeighborOrder }),
-      }),
-    ]);
+    const fromIndex = products.findIndex((p) => p.id === dragId);
+    const toIndex = products.findIndex((p) => p.id === targetId);
+    if (fromIndex === -1 || toIndex === -1) return;
+
+    // Reorder the array
+    const reordered = [...products];
+    const [moved] = reordered.splice(fromIndex, 1);
+    reordered.splice(toIndex, 0, moved);
+
+    // Assign new sequential sortOrder values
+    const updated = reordered.map((p, i) => ({ ...p, sortOrder: i }));
+    setProducts(updated);
+
+    // Save all changed sortOrders to the server
+    const changes = updated.filter((p, i) => {
+      const original = products.find((op) => op.id === p.id);
+      return original && original.sortOrder !== i;
+    });
+
+    await Promise.all(
+      changes.map((p) =>
+        fetch(`/api/shop/products/${p.id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sortOrder: p.sortOrder }),
+        })
+      )
+    );
   };
 
   // Quick status change from the list
@@ -417,7 +435,7 @@ export default function ProductManager({ categories }) {
             onChange={(images) => setForm({ ...form, images })}
           />
 
-          <div className="grid grid-cols-3 gap-4 mb-4">
+          <div className="flex gap-6 mb-4">
             <label className="flex items-center gap-2 text-sm text-neutral-900 dark:text-sand-100">
               <input type="checkbox" checked={form.isKit} onChange={(e) => setForm({ ...form, isKit: e.target.checked })} />
               Kit product
@@ -426,11 +444,6 @@ export default function ProductManager({ categories }) {
               <input type="checkbox" checked={form.isFeatured} onChange={(e) => setForm({ ...form, isFeatured: e.target.checked })} />
               Featured
             </label>
-            <div>
-              <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Sort Order</label>
-              <input type="number" value={form.sortOrder} onChange={(e) => setForm({ ...form, sortOrder: e.target.value })}
-                className="w-full px-3 py-2 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm text-neutral-900 dark:text-sand-100 focus:outline-none" />
-            </div>
           </div>
 
           {form.isKit && (
@@ -464,24 +477,35 @@ export default function ProductManager({ categories }) {
         {filtered.length === 0 && (
           <p className="text-sm text-sand-500 py-8 text-center">No products in this category.</p>
         )}
-        {filtered.map((p, index) => {
+        {filtered.map((p) => {
           const sc = statusConfig[p.status] || statusConfig.draft;
+          const isDragging = dragId === p.id;
+          const isDragOver = dragOverId === p.id && dragId !== p.id;
           return (
-            <div key={p.id} className="flex items-center justify-between py-3" style={{ borderBottom: "1px solid rgba(128,128,128,0.1)" }}>
-              {/* Sort controls */}
-              <div className="flex flex-col mr-3 shrink-0">
-                <button
-                  onClick={() => moveProduct(products.indexOf(p), -1)}
-                  disabled={products.indexOf(p) === 0}
-                  className="text-[0.65rem] text-sand-400 hover:text-neutral-900 dark:hover:text-sand-100 disabled:opacity-20 disabled:cursor-default bg-transparent border-none cursor-pointer leading-none py-0.5"
-                  title="Move up"
-                >▲</button>
-                <button
-                  onClick={() => moveProduct(products.indexOf(p), 1)}
-                  disabled={products.indexOf(p) === products.length - 1}
-                  className="text-[0.65rem] text-sand-400 hover:text-neutral-900 dark:hover:text-sand-100 disabled:opacity-20 disabled:cursor-default bg-transparent border-none cursor-pointer leading-none py-0.5"
-                  title="Move down"
-                >▼</button>
+            <div
+              key={p.id}
+              draggable
+              onDragStart={(e) => handleDragStart(e, p.id)}
+              onDragEnd={handleDragEnd}
+              onDragOver={(e) => handleDragOver(e, p.id)}
+              onDrop={(e) => handleDrop(e, p.id)}
+              className={`flex items-center justify-between py-3 transition-colors ${isDragOver ? "bg-rugged-500/5" : ""}`}
+              style={{
+                borderBottom: "1px solid rgba(128,128,128,0.1)",
+                borderTop: isDragOver ? "2px solid rgb(201, 75, 48)" : "2px solid transparent",
+                cursor: "grab",
+              }}
+            >
+              {/* Drag handle */}
+              <div className="mr-3 shrink-0 text-sand-400 dark:text-sand-600 select-none" title="Drag to reorder">
+                <svg width="12" height="16" viewBox="0 0 12 16" fill="currentColor">
+                  <circle cx="3" cy="3" r="1.5" />
+                  <circle cx="9" cy="3" r="1.5" />
+                  <circle cx="3" cy="8" r="1.5" />
+                  <circle cx="9" cy="8" r="1.5" />
+                  <circle cx="3" cy="13" r="1.5" />
+                  <circle cx="9" cy="13" r="1.5" />
+                </svg>
               </div>
 
               <div className="flex items-center gap-3 flex-1 min-w-0">
