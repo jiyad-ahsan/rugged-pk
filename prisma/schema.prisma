@@ -80,7 +80,7 @@ model ProductCategory {
   id        String    @id @default(cuid())
   name      String    @unique
   slug      String    @unique
-  sortOrder Int       @default(0)
+  sortOrder Int       @default(5)
   products  Product[]
 }
 
@@ -100,7 +100,7 @@ model Product {
   kitHighlight String? // "Start here", "Most popular", "Complete protection"
   items       String[] // bullet points for kits
   images      String[] // URLs
-  sortOrder   Int      @default(0)
+  sortOrder   Int      @default(5)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
@@ -117,7 +117,7 @@ model ForumCategory {
   name        String        @unique
   slug        String        @unique
   description String?
-  sortOrder   Int           @default(0)
+  sortOrder   Int           @default(5)
   threads     ForumThread[]
 }
 

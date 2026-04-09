@@ -58,7 +58,7 @@ export async function POST(req) {
       kitHighlight: data.kitHighlight?.trim() || null,
       items: data.items || [],
       images: data.images || [],
-      sortOrder: parseInt(data.sortOrder, 10) || 0,
+      sortOrder: isNaN(parseInt(data.sortOrder, 10)) ? 5 : parseInt(data.sortOrder, 10),
     },
     include: { category: { select: { name: true, slug: true } } },
   });

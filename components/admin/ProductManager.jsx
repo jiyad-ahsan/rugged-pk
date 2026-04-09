@@ -201,7 +201,7 @@ export default function ProductManager({ categories }) {
       kitHighlight: product.kitHighlight || "",
       items: (product.items || []).join("\n"),
       images: product.images || [],
-      sortOrder: product.sortOrder || 0,
+      sortOrder: product.sortOrder ?? 5,
     });
     setError("");
   };
@@ -212,7 +212,7 @@ export default function ProductManager({ categories }) {
       name: "", slug: "", subtitle: "", description: "", price: "",
       comparePrice: "", categoryId: categories[0]?.id || "", badge: "",
       status: "coming_soon", isKit: false, isFeatured: false,
-      kitHighlight: "", items: "", images: [], sortOrder: 0,
+      kitHighlight: "", items: "", images: [], sortOrder: 5,
     });
     setError("");
   };
@@ -232,7 +232,7 @@ export default function ProductManager({ categories }) {
       comparePrice: form.comparePrice ? parseInt(form.comparePrice, 10) : null,
       items: form.items ? form.items.split("\n").filter(Boolean) : [],
       images: form.images || [],
-      sortOrder: parseInt(form.sortOrder, 10) || 0,
+      sortOrder: isNaN(parseInt(form.sortOrder, 10)) ? 5 : parseInt(form.sortOrder, 10),
     };
 
     const url = editing === "new" ? "/api/shop/products" : `/api/shop/products/${editing}`;
