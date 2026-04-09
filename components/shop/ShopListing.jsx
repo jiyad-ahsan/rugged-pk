@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useCart } from "@/components/CartProvider";
 
 function formatPrice(price) {
   return price.toLocaleString("en-PK");
@@ -26,6 +27,151 @@ const badgeStyles = {
   local: { text: "text-emerald-700 dark:text-emerald-400", bg: "rgba(4, 120, 87, 0.08)" },
   new: { text: "text-sky-700 dark:text-sky-400", bg: "rgba(3, 105, 161, 0.08)" },
 };
+
+function ProductCard({ product }) {
+  const { addToCart, setCartOpen } = useCart();
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart({
+      productId: product.id,
+      slug: product.slug,
+      name: product.name,
+      price: product.price,
+      image: product.images?.[0] || null,
+    });
+    setCartOpen(true);
+  };
+
+  return (
+    <div className="card p-0 overflow-hidden flex flex-col group">
+      {/* Clickable area — image + details */}
+      <Link href={`/shop/${product.slug}`} className="no-underline flex-1 flex flex-col">
+        {/* Image / placeholder */}
+        <div
+          className="aspect-square bg-sand-50 dark:bg-sand-900 flex items-center justify-center relative overflow-hidden select-none"
+          style={{ borderBottom: "1px solid rgba(128,128,128,0.1)" }}
+        >
+          {product.images?.length > 0 ? (
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            />
+          ) : (
+            <div className="text-center px-4">
+              <span className="text-3xl mb-2 block opacity-40">📦</span>
+              <span className="text-[0.6rem] text-sand-500 dark:text-sand-600 uppercase tracking-wider">
+                Photo coming soon
+              </span>
+            </div>
+          )}
+
+          {/* Badges overlay */}
+          <div className="absolute top-2 left-2 flex flex-col gap-1">
+            {product.isKit && (
+              <span className="text-[0.55rem] uppercase tracking-widest font-semibold text-white bg-rugged-500 dark:bg-rugged-400 px-2 py-0.5 rounded-sm">
+                Kit
+              </span>
+            )}
+            {product.badge && badgeStyles[product.badge] && (
+              <span
+                className={`text-[0.55rem] uppercase tracking-widest font-medium px-2 py-0.5 rounded-sm ${badgeStyles[product.badge].text}`}
+                style={{ background: badgeStyles[product.badge].bg, backdropFilter: "blur(8px)" }}
+              >
+                {product.badge}
+              </span>
+            )}
+          </div>
+
+          {/* Status badge */}
+          {product.status !== "available" && (
+            <div className="absolute top-2 right-2">
+              <StatusBadge status={product.status} />
+            </div>
+          )}
+
+          {/* Compare price / discount */}
+          {product.comparePrice && (
+            <div className="absolute bottom-2 right-2">
+              <span className="text-[0.6rem] font-mono font-semibold text-white bg-emerald-600 dark:bg-emerald-500 px-2 py-0.5 rounded-sm">
+                Save {Math.round(((product.comparePrice - product.price) / product.comparePrice) * 100)}%
+              </span>
+            </div>
+          )}
+        </div>
+
+        {/* Details */}
+        <div className="p-4 flex-1 flex flex-col">
+          <span className="text-[0.6rem] font-mono uppercase tracking-wider text-sand-500 dark:text-sand-600 mb-1">
+            {product.category?.name}
+          </span>
+          <h3 className="font-sans text-sm font-semibold text-neutral-900 dark:text-sand-100
+                         group-hover:text-rugged-500 dark:group-hover:text-rugged-400
+                         transition-colors leading-snug mb-1">
+            {product.name}
+          </h3>
+          {product.subtitle && (
+            <p className="text-xs text-sand-500 dark:text-sand-600 leading-relaxed mb-3 line-clamp-2">
+              {product.subtitle}
+            </p>
+          )}
+          {product.isKit && product.items?.length > 0 && (
+            <div className="mb-3 flex-1">
+              <ul className="space-y-1">
+                {product.items.slice(0, 3).map((item, i) => (
+                  <li key={i} className="text-[0.65rem] text-sand-600 dark:text-sand-500 flex items-start gap-1.5">
+                    <span className="text-rugged-500 dark:text-rugged-400 font-bold leading-none mt-0.5">·</span>
+                    <span className="line-clamp-1">{item}</span>
+                  </li>
+                ))}
+                {product.items.length > 3 && (
+                  <li className="text-[0.6rem] text-sand-500 dark:text-sand-600">
+                    +{product.items.length - 3} more items
+                  </li>
+                )}
+              </ul>
+            </div>
+          )}
+        </div>
+      </Link>
+
+      {/* Price + Add to cart strip */}
+      <div className="mt-auto px-4 py-3 flex items-center" style={{ borderTop: "1px solid rgba(128,128,128,0.08)" }}>
+        <div className="flex items-baseline gap-1.5 flex-1 min-w-0">
+          <span className="text-[0.65rem] text-sand-500">Rs.</span>
+          <span className="font-sans text-lg font-bold tracking-tight text-neutral-900 dark:text-sand-100">
+            {formatPrice(product.price)}
+          </span>
+          {product.comparePrice && (
+            <span className="text-xs text-sand-500 line-through ml-1 hidden sm:inline">
+              Rs. {formatPrice(product.comparePrice)}
+            </span>
+          )}
+        </div>
+        {product.status === "available" ? (
+          <button
+            onClick={handleAddToCart}
+            className="text-[0.65rem] font-mono uppercase tracking-wider font-medium
+                       text-rugged-500 dark:text-rugged-400
+                       bg-rugged-500/10 hover:bg-rugged-500/20
+                       px-3 py-1.5 rounded-sm
+                       border-none cursor-pointer transition-colors shrink-0"
+          >
+            + Cart
+          </button>
+        ) : (
+          <span className="text-[0.6rem] font-mono uppercase tracking-wider text-sand-500 shrink-0">
+            {product.status === "coming_soon" ? "Soon" : "Sold out"}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function ShopListing({ products = [], categories = [] }) {
   const [search, setSearch] = useState("");
@@ -207,122 +353,7 @@ export default function ShopListing({ products = [], categories = [] }) {
       {filtered.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
           {filtered.map((product) => (
-            <Link
-              key={product.id}
-              href={`/shop/${product.slug}`}
-              className="card p-0 no-underline group overflow-hidden flex flex-col"
-            >
-              {/* Image / placeholder */}
-              <div className="aspect-square bg-sand-50 dark:bg-sand-900 flex items-center justify-center relative overflow-hidden select-none"
-                style={{ borderBottom: "1px solid rgba(128,128,128,0.1)" }}
-              >
-                {product.images?.length > 0 ? (
-                  <Image
-                    src={product.images[0]}
-                    alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  />
-                ) : (
-                  <div className="text-center px-4">
-                    <span className="text-3xl mb-2 block opacity-40">📦</span>
-                    <span className="text-[0.6rem] text-sand-500 dark:text-sand-600 uppercase tracking-wider">
-                      Photo coming soon
-                    </span>
-                  </div>
-                )}
-
-                {/* Badges overlay */}
-                <div className="absolute top-2 left-2 flex flex-col gap-1">
-                  {product.isKit && (
-                    <span className="text-[0.55rem] uppercase tracking-widest font-semibold text-white bg-rugged-500 dark:bg-rugged-400 px-2 py-0.5 rounded-sm">
-                      Kit
-                    </span>
-                  )}
-                  {product.badge && badgeStyles[product.badge] && (
-                    <span
-                      className={`text-[0.55rem] uppercase tracking-widest font-medium px-2 py-0.5 rounded-sm ${badgeStyles[product.badge].text}`}
-                      style={{ background: badgeStyles[product.badge].bg, backdropFilter: "blur(8px)" }}
-                    >
-                      {product.badge}
-                    </span>
-                  )}
-                </div>
-
-                {/* Status badge */}
-                {product.status !== "available" && (
-                  <div className="absolute top-2 right-2">
-                    <StatusBadge status={product.status} />
-                  </div>
-                )}
-
-                {/* Compare price / discount */}
-                {product.comparePrice && (
-                  <div className="absolute bottom-2 right-2">
-                    <span className="text-[0.6rem] font-mono font-semibold text-white bg-emerald-600 dark:bg-emerald-500 px-2 py-0.5 rounded-sm">
-                      Save {Math.round(((product.comparePrice - product.price) / product.comparePrice) * 100)}%
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              {/* Details */}
-              <div className="p-4 flex-1 flex flex-col">
-                {/* Category */}
-                <span className="text-[0.6rem] font-mono uppercase tracking-wider text-sand-500 dark:text-sand-600 mb-1">
-                  {product.category?.name}
-                </span>
-
-                {/* Name */}
-                <h3 className="font-sans text-sm font-semibold text-neutral-900 dark:text-sand-100
-                               group-hover:text-rugged-500 dark:group-hover:text-rugged-400
-                               transition-colors leading-snug mb-1">
-                  {product.name}
-                </h3>
-
-                {/* Subtitle */}
-                {product.subtitle && (
-                  <p className="text-xs text-sand-500 dark:text-sand-600 leading-relaxed mb-3 line-clamp-2">
-                    {product.subtitle}
-                  </p>
-                )}
-
-                {/* Kit items preview */}
-                {product.isKit && product.items?.length > 0 && (
-                  <div className="mb-3 flex-1">
-                    <ul className="space-y-1">
-                      {product.items.slice(0, 3).map((item, i) => (
-                        <li key={i} className="text-[0.65rem] text-sand-600 dark:text-sand-500 flex items-start gap-1.5">
-                          <span className="text-rugged-500 dark:text-rugged-400 font-bold leading-none mt-0.5">·</span>
-                          <span className="line-clamp-1">{item}</span>
-                        </li>
-                      ))}
-                      {product.items.length > 3 && (
-                        <li className="text-[0.6rem] text-sand-500 dark:text-sand-600">
-                          +{product.items.length - 3} more items
-                        </li>
-                      )}
-                    </ul>
-                  </div>
-                )}
-
-                {/* Price — pushed to bottom */}
-                <div className="mt-auto pt-3" style={{ borderTop: "1px solid rgba(128,128,128,0.08)" }}>
-                  <div className="flex items-baseline gap-1.5">
-                    <span className="text-[0.65rem] text-sand-500">Rs.</span>
-                    <span className="font-sans text-lg font-bold tracking-tight text-neutral-900 dark:text-sand-100">
-                      {formatPrice(product.price)}
-                    </span>
-                    {product.comparePrice && (
-                      <span className="text-xs text-sand-500 line-through ml-1">
-                        Rs. {formatPrice(product.comparePrice)}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </Link>
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       ) : (
