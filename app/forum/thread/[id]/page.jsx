@@ -113,7 +113,7 @@ export default async function ThreadPage({ params }) {
         threadId={thread.id}
         isPinned={thread.isPinned}
         isLocked={thread.isLocked}
-        session={session ? { user: { id: session.user.id, name: session.user.name, role: session.user.role } } : null}
+        session={session ? { user: { id: session.user.id, name: session.user.name, role: session.user.role, emailVerified: session.user.emailVerified } } : null}
         isMod={isMod}
         isAuthor={isAuthor}
       />
@@ -122,7 +122,7 @@ export default async function ThreadPage({ params }) {
       <ReplySection
         threadId={thread.id}
         isLocked={thread.isLocked}
-        session={session ? { user: { id: session.user.id, name: session.user.name, role: session.user.role } } : null}
+        session={session ? { user: { id: session.user.id, name: session.user.name, role: session.user.role, emailVerified: session.user.emailVerified } } : null}
         isMod={isMod}
       />
     </div>
