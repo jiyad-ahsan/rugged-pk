@@ -95,7 +95,7 @@ model Product {
   comparePrice Int?    // original price for discount display
   categoryId  String
   badge       String?  // "local", "branded", "new", etc.
-  status      String   @default("coming_soon") // available, coming_soon, sold_out
+  status      String   @default("draft") // draft, available, coming_soon, sold_out
   isKit       Boolean  @default(false)
   isFeatured  Boolean  @default(false)
   kitHighlight String? // "Start here", "Most popular", "Complete protection"

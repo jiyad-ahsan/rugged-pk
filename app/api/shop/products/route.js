@@ -25,8 +25,9 @@ export async function GET(req) {
     orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
     select: {
       id: true, name: true, slug: true, subtitle: true, description: true,
-      price: true, comparePrice: true, badge: true, status: true,
-      isKit: true, isFeatured: true, items: true, images: true, sortOrder: true,
+      price: true, comparePrice: true, categoryId: true, badge: true, status: true,
+      isKit: true, isFeatured: true, kitHighlight: true,
+      items: true, images: true, sortOrder: true,
       category: { select: { name: true, slug: true } },
     },
   });
@@ -58,7 +59,7 @@ export async function POST(req) {
       comparePrice: data.comparePrice ? parseInt(data.comparePrice, 10) : null,
       categoryId: data.categoryId,
       badge: data.badge?.trim() || null,
-      status: data.status || "coming_soon",
+      status: data.status || "draft",
       isKit: data.isKit || false,
       isFeatured: data.isFeatured || false,
       kitHighlight: data.kitHighlight?.trim() || null,

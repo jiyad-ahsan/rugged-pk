@@ -31,7 +31,7 @@ export default async function ProductPage({ params }) {
     include: { category: { select: { name: true, slug: true } } },
   });
 
-  if (!product) notFound();
+  if (!product || product.status === "draft") notFound();
 
   // Get related products from same category
   const related = await prisma.product.findMany({

@@ -46,16 +46,13 @@ function ImageUploader({ images = [], onChange }) {
 
   const handleRemove = async (index) => {
     const url = images[index];
-    // Try to delete from storage
     try {
       await fetch("/api/admin/upload", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ path: url }),
       });
-    } catch {
-      // Continue anyway — remove from product even if storage delete fails
-    }
+    } catch {}
     onChange(images.filter((_, i) => i !== index));
   };
 
@@ -79,7 +76,6 @@ function ImageUploader({ images = [], onChange }) {
         Images {images.length > 0 && `(${images.length})`}
       </label>
 
-      {/* Existing images */}
       {images.length > 0 && (
         <div className="flex gap-3 mb-3 flex-wrap">
           {images.map((url, i) => (
@@ -96,83 +92,60 @@ function ImageUploader({ images = [], onChange }) {
               )}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity rounded-sm flex items-center justify-center gap-1">
                 {i > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => moveImage(i, i - 1)}
-                    className="text-white text-xs bg-black/40 px-1.5 py-1 rounded-sm hover:bg-black/60 border-none cursor-pointer"
-                  >
-                    ←
-                  </button>
+                  <button type="button" onClick={() => moveImage(i, i - 1)}
+                    className="text-white text-xs bg-black/40 px-1.5 py-1 rounded-sm hover:bg-black/60 border-none cursor-pointer">←</button>
                 )}
                 {i < images.length - 1 && (
-                  <button
-                    type="button"
-                    onClick={() => moveImage(i, i + 1)}
-                    className="text-white text-xs bg-black/40 px-1.5 py-1 rounded-sm hover:bg-black/60 border-none cursor-pointer"
-                  >
-                    →
-                  </button>
+                  <button type="button" onClick={() => moveImage(i, i + 1)}
+                    className="text-white text-xs bg-black/40 px-1.5 py-1 rounded-sm hover:bg-black/60 border-none cursor-pointer">→</button>
                 )}
-                <button
-                  type="button"
-                  onClick={() => handleRemove(i)}
-                  className="text-white text-xs bg-rose-600/80 px-1.5 py-1 rounded-sm hover:bg-rose-600 border-none cursor-pointer"
-                >
-                  ✕
-                </button>
+                <button type="button" onClick={() => handleRemove(i)}
+                  className="text-white text-xs bg-rose-600/80 px-1.5 py-1 rounded-sm hover:bg-rose-600 border-none cursor-pointer">✕</button>
               </div>
             </div>
           ))}
         </div>
       )}
 
-      {/* Upload area */}
       <div
         onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
         onDragLeave={() => setDragOver(false)}
         onDrop={handleDrop}
         onClick={() => fileRef.current?.click()}
-        className={`
-          border-2 border-dashed rounded-sm p-6 text-center cursor-pointer transition-colors
-          ${dragOver
-            ? "border-rugged-500 bg-rugged-500/5"
-            : "border-black/15 dark:border-white/10 hover:border-rugged-500/50"
-          }
-        `}
+        className={`border-2 border-dashed rounded-sm p-6 text-center cursor-pointer transition-colors
+          ${dragOver ? "border-rugged-500 bg-rugged-500/5" : "border-black/15 dark:border-white/10 hover:border-rugged-500/50"}`}
       >
         {uploading ? (
           <p className="text-sm text-sand-500">Uploading...</p>
         ) : (
           <>
-            <p className="text-sm text-sand-600 dark:text-sand-500 mb-1">
-              Drop images here or click to browse
-            </p>
-            <p className="text-xs text-sand-500">
-              JPEG, PNG, WebP or AVIF — max 5MB each
-            </p>
+            <p className="text-sm text-sand-600 dark:text-sand-500 mb-1">Drop images here or click to browse</p>
+            <p className="text-xs text-sand-500">JPEG, PNG, WebP or AVIF — max 5MB each</p>
           </>
         )}
       </div>
 
-      <input
-        ref={fileRef}
-        type="file"
-        accept="image/jpeg,image/png,image/webp,image/avif"
-        multiple
-        onChange={(e) => handleUpload(Array.from(e.target.files))}
-        className="hidden"
-      />
+      <input ref={fileRef} type="file" accept="image/jpeg,image/png,image/webp,image/avif"
+        multiple onChange={(e) => handleUpload(Array.from(e.target.files))} className="hidden" />
     </div>
   );
 }
 
+const statusConfig = {
+  draft:       { label: "Draft",       color: "text-sand-500 bg-sand-200 dark:bg-sand-700" },
+  available:   { label: "Available",   color: "text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20" },
+  coming_soon: { label: "Coming soon", color: "text-amber-600 bg-amber-50 dark:bg-amber-900/20" },
+  sold_out:    { label: "Sold out",    color: "text-rose-600 bg-rose-50 dark:bg-rose-900/20" },
+};
+
 export default function ProductManager({ categories }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [editing, setEditing] = useState(null); // product id or "new"
+  const [editing, setEditing] = useState(null);
   const [form, setForm] = useState({});
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
+  const [statusFilter, setStatusFilter] = useState("all");
 
   const fetchProducts = useCallback(async () => {
     setLoading(true);
@@ -183,6 +156,56 @@ export default function ProductManager({ categories }) {
   }, []);
 
   useEffect(() => { fetchProducts(); }, [fetchProducts]);
+
+  // Inline sort — swap sortOrder with neighbor and save both
+  const moveProduct = async (index, direction) => {
+    const sorted = [...products];
+    const targetIndex = index + direction;
+    if (targetIndex < 0 || targetIndex >= sorted.length) return;
+
+    const current = sorted[index];
+    const neighbor = sorted[targetIndex];
+
+    // Swap their sortOrder values
+    const currentOrder = current.sortOrder;
+    const neighborOrder = neighbor.sortOrder;
+
+    // If they have the same sortOrder, offset by 1
+    const newCurrentOrder = neighborOrder;
+    const newNeighborOrder = currentOrder === neighborOrder
+      ? currentOrder + direction
+      : currentOrder;
+
+    // Optimistically update UI
+    sorted[index] = { ...current, sortOrder: newCurrentOrder };
+    sorted[targetIndex] = { ...neighbor, sortOrder: newNeighborOrder };
+    sorted.sort((a, b) => a.sortOrder - b.sortOrder || a.name.localeCompare(b.name));
+    setProducts(sorted);
+
+    // Save both to server
+    await Promise.all([
+      fetch(`/api/shop/products/${current.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sortOrder: newCurrentOrder }),
+      }),
+      fetch(`/api/shop/products/${neighbor.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sortOrder: newNeighborOrder }),
+      }),
+    ]);
+  };
+
+  // Quick status change from the list
+  const quickSetStatus = async (id, status) => {
+    setProducts((prev) => prev.map((p) => p.id === id ? { ...p, status } : p));
+    await fetch(`/api/shop/products/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ status }),
+    });
+  };
 
   const startEdit = (product) => {
     setEditing(product.id);
@@ -211,7 +234,7 @@ export default function ProductManager({ categories }) {
     setForm({
       name: "", slug: "", subtitle: "", description: "", price: "",
       comparePrice: "", categoryId: categories[0]?.id || "", badge: "",
-      status: "coming_soon", isKit: false, isFeatured: false,
+      status: "draft", isKit: false, isFeatured: false,
       kitHighlight: "", items: "", images: [], sortOrder: 5,
     });
     setError("");
@@ -225,14 +248,23 @@ export default function ProductManager({ categories }) {
     setSaving(true);
     setError("");
 
+    const sortVal = parseInt(form.sortOrder, 10);
     const payload = {
-      ...form,
+      name: form.name,
       slug: form.slug || slugify(form.name),
+      subtitle: form.subtitle,
+      description: form.description,
       price: parseInt(form.price, 10),
       comparePrice: form.comparePrice ? parseInt(form.comparePrice, 10) : null,
+      categoryId: form.categoryId,
+      badge: form.badge,
+      status: form.status,
+      isKit: form.isKit,
+      isFeatured: form.isFeatured,
+      kitHighlight: form.kitHighlight,
       items: form.items ? form.items.split("\n").filter(Boolean) : [],
       images: form.images || [],
-      sortOrder: isNaN(parseInt(form.sortOrder, 10)) ? 5 : parseInt(form.sortOrder, 10),
+      sortOrder: isNaN(sortVal) ? 5 : sortVal,
     };
 
     const url = editing === "new" ? "/api/shop/products" : `/api/shop/products/${editing}`;
@@ -260,18 +292,50 @@ export default function ProductManager({ categories }) {
     fetchProducts();
   };
 
+  const filtered = statusFilter === "all"
+    ? products
+    : products.filter((p) => p.status === statusFilter);
+
   if (loading) return <p className="text-sm text-sand-500">Loading products...</p>;
+
+  const statusCounts = {};
+  for (const p of products) {
+    statusCounts[p.status] = (statusCounts[p.status] || 0) + 1;
+  }
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-8">
+      <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="font-sans text-2xl font-bold tracking-tight mb-1">Products</h1>
-          <p className="text-sm text-sand-500">{products.length} products in the shop.</p>
+          <p className="text-sm text-sand-500">{products.length} products total.</p>
         </div>
         <button onClick={startNew} className="btn-primary text-sm px-4 py-2">
           + Add product
         </button>
+      </div>
+
+      {/* Status filter tabs */}
+      <div className="flex gap-2 mb-6 flex-wrap">
+        {[
+          { key: "all", label: "All", count: products.length },
+          { key: "draft", label: "Draft", count: statusCounts.draft || 0 },
+          { key: "available", label: "Available", count: statusCounts.available || 0 },
+          { key: "coming_soon", label: "Coming Soon", count: statusCounts.coming_soon || 0 },
+          { key: "sold_out", label: "Sold Out", count: statusCounts.sold_out || 0 },
+        ].map((tab) => (
+          <button
+            key={tab.key}
+            onClick={() => setStatusFilter(tab.key)}
+            className={`text-xs font-mono px-3 py-1.5 rounded-sm cursor-pointer transition-all border
+              ${statusFilter === tab.key
+                ? "bg-neutral-900 dark:bg-sand-100 text-white dark:text-sand-900 border-transparent"
+                : "bg-transparent text-sand-600 dark:text-sand-500 border-black/10 dark:border-white/10 hover:text-neutral-900 dark:hover:text-sand-100"
+              }`}
+          >
+            {tab.label} ({tab.count})
+          </button>
+        ))}
       </div>
 
       {/* Edit/New form */}
@@ -322,6 +386,7 @@ export default function ProductManager({ categories }) {
               <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Status</label>
               <select value={form.status} onChange={(e) => setForm({ ...form, status: e.target.value })}
                 className="w-full px-3 py-2 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm text-neutral-900 dark:text-sand-100 focus:outline-none">
+                <option value="draft">Draft</option>
                 <option value="coming_soon">Coming Soon</option>
                 <option value="available">Available</option>
                 <option value="sold_out">Sold Out</option>
@@ -347,7 +412,6 @@ export default function ProductManager({ categories }) {
               className="w-full px-3 py-2 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm text-neutral-900 dark:text-sand-100 focus:outline-none resize-y" />
           </div>
 
-          {/* Image upload */}
           <ImageUploader
             images={form.images || []}
             onChange={(images) => setForm({ ...form, images })}
@@ -397,39 +461,71 @@ export default function ProductManager({ categories }) {
 
       {/* Product list */}
       <div className="space-y-0">
-        {products.map((p) => (
-          <div key={p.id} className="flex items-center justify-between py-3" style={{ borderBottom: "1px solid rgba(128,128,128,0.1)" }}>
-            <div className="flex items-center gap-3 flex-1 min-w-0">
-              {/* Thumbnail */}
-              {p.images?.length > 0 ? (
-                <img src={p.images[0]} alt="" className="w-10 h-10 object-cover rounded-sm border border-black/10 dark:border-white/8 shrink-0" />
-              ) : (
-                <div className="w-10 h-10 bg-sand-100 dark:bg-sand-800 rounded-sm border border-black/10 dark:border-white/8 flex items-center justify-center shrink-0">
-                  <span className="text-xs text-sand-400">📦</span>
+        {filtered.length === 0 && (
+          <p className="text-sm text-sand-500 py-8 text-center">No products in this category.</p>
+        )}
+        {filtered.map((p, index) => {
+          const sc = statusConfig[p.status] || statusConfig.draft;
+          return (
+            <div key={p.id} className="flex items-center justify-between py-3" style={{ borderBottom: "1px solid rgba(128,128,128,0.1)" }}>
+              {/* Sort controls */}
+              <div className="flex flex-col mr-3 shrink-0">
+                <button
+                  onClick={() => moveProduct(products.indexOf(p), -1)}
+                  disabled={products.indexOf(p) === 0}
+                  className="text-[0.65rem] text-sand-400 hover:text-neutral-900 dark:hover:text-sand-100 disabled:opacity-20 disabled:cursor-default bg-transparent border-none cursor-pointer leading-none py-0.5"
+                  title="Move up"
+                >▲</button>
+                <button
+                  onClick={() => moveProduct(products.indexOf(p), 1)}
+                  disabled={products.indexOf(p) === products.length - 1}
+                  className="text-[0.65rem] text-sand-400 hover:text-neutral-900 dark:hover:text-sand-100 disabled:opacity-20 disabled:cursor-default bg-transparent border-none cursor-pointer leading-none py-0.5"
+                  title="Move down"
+                >▼</button>
+              </div>
+
+              <div className="flex items-center gap-3 flex-1 min-w-0">
+                {/* Thumbnail */}
+                {p.images?.length > 0 ? (
+                  <img src={p.images[0]} alt="" className="w-10 h-10 object-cover rounded-sm border border-black/10 dark:border-white/8 shrink-0" />
+                ) : (
+                  <div className="w-10 h-10 bg-sand-100 dark:bg-sand-800 rounded-sm border border-black/10 dark:border-white/8 flex items-center justify-center shrink-0">
+                    <span className="text-xs text-sand-400">📦</span>
+                  </div>
+                )}
+                <div className="min-w-0 flex-1">
+                  <span className="text-sm font-medium text-neutral-900 dark:text-sand-100 block truncate">{p.name}</span>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    {p.isKit && <span className="text-[0.55rem] uppercase tracking-widest font-medium text-rugged-500 px-1 py-0.5 rounded-sm bg-rugged-500/10">kit</span>}
+                    <span className={`text-[0.55rem] uppercase tracking-widest font-medium px-1 py-0.5 rounded-sm ${sc.color}`}>
+                      {sc.label}
+                    </span>
+                    <span className="text-[0.6rem] text-sand-400">{p.category?.name}</span>
+                  </div>
                 </div>
-              )}
-              <span className="text-sm font-medium text-neutral-900 dark:text-sand-100">{p.name}</span>
-              <span className="text-[0.6rem] text-sand-400 tabular-nums">#{p.sortOrder}</span>
-              {p.isKit && <span className="text-[0.6rem] uppercase tracking-widest font-medium text-rugged-500 px-1.5 py-0.5 rounded-sm bg-rugged-500/10">kit</span>}
-              <span className={`text-[0.6rem] uppercase tracking-widest font-medium px-1.5 py-0.5 rounded-sm ${
-                p.status === "available" ? "text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20" :
-                p.status === "coming_soon" ? "text-amber-600 bg-amber-50 dark:bg-amber-900/20" :
-                "text-rose-600 bg-rose-50 dark:bg-rose-900/20"
-              }`}>
-                {p.status.replace("_", " ")}
-              </span>
-              <span className="text-xs text-sand-500">{p.category?.name}</span>
-              {p.images?.length > 0 && (
-                <span className="text-xs text-sand-400">{p.images.length} img</span>
-              )}
+              </div>
+
+              <div className="flex items-center gap-3 shrink-0">
+                {/* Quick status toggle */}
+                {p.status === "draft" && (
+                  <button onClick={() => quickSetStatus(p.id, "available")}
+                    className="text-[0.6rem] font-mono text-emerald-600 hover:text-emerald-700 bg-emerald-50 dark:bg-emerald-900/20 px-2 py-1 rounded-sm border-none cursor-pointer">
+                    Publish
+                  </button>
+                )}
+                {p.status === "available" && (
+                  <button onClick={() => quickSetStatus(p.id, "draft")}
+                    className="text-[0.6rem] font-mono text-sand-500 hover:text-sand-700 bg-sand-200 dark:bg-sand-700 px-2 py-1 rounded-sm border-none cursor-pointer">
+                    Unpublish
+                  </button>
+                )}
+                <span className="text-sm text-sand-600 tabular-nums w-24 text-right">Rs. {p.price.toLocaleString("en-PK")}</span>
+                <button onClick={() => startEdit(p)} className="text-xs text-rugged-500 hover:text-rugged-600 bg-transparent border-none cursor-pointer">Edit</button>
+                <button onClick={() => handleDelete(p.id)} className="text-xs text-sand-500 hover:text-rose-500 bg-transparent border-none cursor-pointer">Delete</button>
+              </div>
             </div>
-            <div className="flex items-center gap-4 shrink-0">
-              <span className="text-sm text-sand-600 tabular-nums">Rs. {p.price.toLocaleString("en-PK")}</span>
-              <button onClick={() => startEdit(p)} className="text-xs text-rugged-500 hover:text-rugged-600">Edit</button>
-              <button onClick={() => handleDelete(p.id)} className="text-xs text-sand-500 hover:text-rose-500">Delete</button>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

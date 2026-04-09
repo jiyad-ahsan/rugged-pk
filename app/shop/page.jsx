@@ -14,6 +14,7 @@ export default async function ShopPage() {
 
   try {
     products = await prisma.product.findMany({
+      where: { status: { not: "draft" } },
       orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
       select: {
         id: true, name: true, slug: true, subtitle: true, description: true,

@@ -11,7 +11,7 @@ function formatPrice(price) {
 
 function StatusBadge({ status }) {
   if (status === "available") return null;
-  const label = status === "coming_soon" ? "Coming soon" : "Sold out";
+  const label = status === "coming_soon" ? "Coming soon" : status === "draft" ? "Draft" : "Sold out";
   const color = status === "coming_soon"
     ? "text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20"
     : "text-rose-700 dark:text-rose-400 bg-rose-50 dark:bg-rose-900/20";
