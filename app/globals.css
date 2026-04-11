@@ -117,15 +117,23 @@
 .animate-delay-200 { animation-delay: 0.2s; opacity: 0; }
 .animate-delay-300 { animation-delay: 0.3s; opacity: 0; }
 
-/* Print styles — guides and field cards should print cleanly */
+/* Print styles — branded PDF output for guides */
 @media print {
   body::before {
     display: none !important;
   }
 
+  /* Hide all non-content elements */
   nav, footer, .print\\:hidden,
-  [class*="SaveOffline"], [class*="btn-outline"] {
+  [class*="SaveOffline"], [class*="btn-outline"], [class*="btn-primary"],
+  [class*="TableOfContents"], [class*="CartDrawer"],
+  button, select {
     display: none !important;
+  }
+
+  /* Show print-only elements */
+  .print\\:block {
+    display: block !important;
   }
 
   main {
@@ -134,31 +142,113 @@
 
   body {
     background: white !important;
-    color: black !important;
+    color: #1a1a1a !important;
     font-size: 11pt;
-  }
-
-  .card {
-    border: 1px solid #ddd !important;
-    box-shadow: none !important;
-    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .section-container {
     max-width: 100% !important;
-    padding: 0 !important;
+    padding: 0 20px !important;
+  }
+
+  /* Print header branding */
+  .print-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin-bottom: 24px;
+    border-bottom: 3px solid #c94b30;
+  }
+
+  .print-header-logo {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #c94b30;
+  }
+
+  .print-header-url {
+    font-family: monospace;
+    font-size: 9pt;
+    color: #888;
+  }
+
+  /* Print footer branding */
+  .print-footer {
+    display: block !important;
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #c94b30;
+    page-break-inside: avoid;
+  }
+
+  .print-footer-content {
+    font-family: monospace;
+    font-size: 8pt;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .print-footer-brand {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #c94b30;
+    letter-spacing: 2px;
+  }
+
+  /* Content styling for print */
+  .card {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    background: #f9f7f4 !important;
   }
 
   .guide-content h2 {
     break-after: avoid;
+    color: #1a1a1a !important;
+    border-top: 1px solid #ddd !important;
+  }
+
+  .guide-content h3 {
+    break-after: avoid;
+    color: #1a1a1a !important;
   }
 
   .guide-content p, .guide-content li {
     orphans: 3;
     widows: 3;
+    color: #333 !important;
+  }
+
+  .guide-content strong {
+    color: #1a1a1a !important;
+  }
+
+  .guide-content blockquote {
+    border-left: 3px solid #c94b30 !important;
+    color: #555 !important;
+  }
+
+  a {
+    color: #c94b30 !important;
+    text-decoration: none !important;
   }
 
   a[href]::after {
     content: none !important;
+  }
+
+  /* Page margins */
+  @page {
+    margin: 1.5cm 2cm;
+  }
+
+  @page :first {
+    margin-top: 1cm;
   }
 }

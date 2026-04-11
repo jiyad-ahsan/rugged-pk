@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getContentBySlug, getAllContent, extractTOC, getRelatedContent } from "@/lib/guides";
-import SaveOfflineButton from "@/components/SaveOfflineButton";
+import PrintButton from "@/components/guide/PrintButton";
 import GuideContent from "@/components/guide/GuideContent";
 import TableOfContents from "@/components/guide/TableOfContents";
 import SketchRenderer from "@/components/guide/SketchRenderer";
@@ -90,6 +90,14 @@ export default async function GuidePage({ params }) {
       />
 
       <article className="section-container py-16">
+        {/* Print-only branded header */}
+        <div className="print-header hidden print:block" aria-hidden="true">
+          <div>
+            <span className="print-header-logo">RUGGED</span>
+          </div>
+          <div className="print-header-url">rugged.pk</div>
+        </div>
+
         {/* Breadcrumb */}
         <Link
           href="/guides"
@@ -137,9 +145,8 @@ export default async function GuidePage({ params }) {
               </p>
             )}
 
-            <div className="flex gap-3">
-              <SaveOfflineButton slug={params.slug} />
-              <button className="btn-outline text-sm">Share guide</button>
+            <div className="flex gap-3 print:hidden">
+              <PrintButton />
             </div>
           </div>
 
@@ -247,6 +254,20 @@ export default async function GuidePage({ params }) {
             </div>
           </div>
         )}
+        {/* Print-only branded footer */}
+        <div className="print-footer hidden print:block" aria-hidden="true">
+          <div className="print-footer-content">
+            <span className="print-footer-brand">RUGGED</span>
+            <br />
+            rugged.pk — Pakistan&apos;s first preparedness brand
+            <br />
+            This guide is free to download, print, and share with your family.
+            <br />
+            All content is the intellectual property of Rugged (rugged.pk).
+            <br />
+            Reproduction for commercial purposes is prohibited without written permission.
+          </div>
+        </div>
       </article>
     </>
   );
