@@ -25,7 +25,7 @@ status: "published"
 
 - Handful of roasted chana (150g)
 - Small piece of gur (jaggery)
-- Eat together — the chana gives you protein, the gur gives you energy
+- Eat together; the chana gives you protein, the gur gives you energy
 
 **~400 calories.** Traditional combination that has fuelled labourers for generations.
 
@@ -33,7 +33,7 @@ status: "published"
 
 - Leftover roti or naan (keeps 24–48 hours without refrigeration)
 - Achar (pickle) from the jar
-- Any available raw vegetables — cucumber, tomato, onion
+- Any available raw vegetables: cucumber, tomato, onion
 
 **~250 calories.** Works as long as you have bread. Make extra rotis whenever you cook.
 
@@ -41,7 +41,7 @@ status: "published"
 
 - 8–10 dates (khajoor)
 - Handful of peanuts (moong phali)
-- Eat alternately — dates for quick sugar, peanuts for sustained energy
+- Eat alternately: dates for quick sugar, peanuts for sustained energy
 
 **~450 calories.** Both keep for months without refrigeration.
 
@@ -59,7 +59,7 @@ status: "published"
 - **Active adult**: 2,000–2,500 cal/day
 - **Child (5–12)**: 1,200–1,500 cal/day
 
-In an emergency, you can survive on less. Prioritise water over food — you can go days without food but only hours without water in Karachi's heat.
+In an emergency, you can survive on less. Prioritise water over food. You can go days without food but only hours without water in Karachi's heat.
 
 ## Storage note
 

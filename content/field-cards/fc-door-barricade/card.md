@@ -32,12 +32,12 @@ Focus your effort on the **main entrance** and any door that leads to your safe 
 ### Chair under handle
 1. Tilt a **sturdy chair** so the top of its back is wedged under the door handle
 2. The front chair legs should press firmly into the floor
-3. Works best on smooth floors — on carpet, place a thin board under the legs
+3. Works best on smooth floors; on carpet, place a thin board under the legs
 4. Only works if the handle is the lever type, not a round knob
 
 ### Belt/rope lash
 1. If the door opens outward (hinges visible), loop a **strong belt or rope** around the handle
-2. Tie the other end to a heavy fixed point — radiator pipe, bed frame bolted to the floor, balcony railing
+2. Tie the other end to a heavy fixed point: a radiator pipe, bed frame bolted to the floor, or balcony railing
 3. Keep the line tight and low
 
 ## Additional reinforcement
@@ -50,4 +50,4 @@ Focus your effort on the **main entrance** and any door that leads to your safe 
 
 - Pushing light furniture against the door without bracing it
 - Locking a door with a simple latch (these can be forced with a kick)
-- Interior hollow-core doors — these can be punched through
+- Interior hollow-core doors: these can be punched through

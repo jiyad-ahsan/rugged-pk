@@ -40,9 +40,9 @@ status: "published"
 
 ## Important notes
 
-- Bleach does **not** remove chemicals, heavy metals, or salt — only pathogens
+- Bleach does **not** remove chemicals, heavy metals, or salt. It only kills pathogens.
 - Old bleach loses strength over time. If the bottle is more than 6 months old, increase the dose by 50%.
-- Store bleach in a cool, dark place — heat and sunlight degrade it
+- Store bleach in a cool, dark place; heat and sunlight degrade it
 - Never mix bleach with any other chemical
 
 ## For your go-bag

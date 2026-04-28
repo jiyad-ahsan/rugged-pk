@@ -43,7 +43,7 @@ You need something **airtight and smooth**:
 1. **Cut the material** to a square at least 5cm larger than the wound on all sides
 2. **Wipe blood and sweat** away from the skin around the wound (the seal needs to stick)
 3. **Place the plastic over the wound** while the person breathes out (this reduces air in the chest)
-4. **Tape three sides** — leave the bottom side open. This creates a flutter valve: air can escape but not enter
+4. **Tape three sides:** leave the bottom side open. This creates a flutter valve: air can escape but not enter
 5. If no tape, have someone **hold it in place** with firm pressure
 
 ## Why three sides, not four?
@@ -55,4 +55,4 @@ Taping only three sides creates a one-way valve. When the person breathes in, th
 - Place the person in the **recovery position** on their injured side (wound side down)
 - Monitor their breathing closely
 - If breathing gets worse after sealing, briefly lift the untaped edge to release trapped air, then reseal
-- Get to a hospital immediately — this is a temporary measure
+- Get to a hospital immediately; this is a temporary measure

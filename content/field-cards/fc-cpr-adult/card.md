@@ -7,7 +7,7 @@ tag: "medical"
 date: "2026-04"
 readTime: "2 min"
 sketch: "medical"
-excerpt: "Hands-only CPR for adults. No certification needed — if someone's heart stops, this is what keeps blood flowing to their brain until help arrives."
+excerpt: "Hands-only CPR for adults. No certification needed. If someone's heart stops, this is what keeps blood flowing to their brain until help arrives."
 relatedGuides: ["trauma-first-aid"]
 status: "published"
 ---
@@ -26,7 +26,7 @@ If in doubt, start CPR. Doing CPR on someone who doesn't need it is far less dan
 2. **Place the person** on a firm, flat surface (floor, ground, not a bed)
 3. **Hand position:** place the heel of one hand on the centre of their chest (on the breastbone, between the nipples). Place your other hand on top, interlocking your fingers.
 4. **Push hard and fast:** press down **5–6cm deep**, at a rate of **100–120 pushes per minute**
-5. **Let the chest recoil** fully between each compression — don't lean on the chest
+5. **Let the chest recoil** fully between each compression; don't lean on the chest
 6. **Don't stop:** continue until help arrives, the person starts breathing, or you physically cannot continue
 
 ## Depth and speed

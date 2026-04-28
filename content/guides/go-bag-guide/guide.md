@@ -22,17 +22,17 @@ status: "published"
 
 You're not going to have time to pack.
 
-When the news breaks — border escalation, airstrikes, a sudden evacuation order — you'll have minutes, not hours. Your hands will be shaking. Your kids will be asking what's happening. Your wife will be on the phone with her mother. You'll grab clothes and forget the documents. Grab water and forget the medications. Grab the phone charger and forget the cash.
+When the news breaks (border escalation, airstrikes, a sudden evacuation order), you'll have minutes, not hours. Your hands will be shaking. Your kids will be asking what's happening. Your wife will be on the phone with her mother. You'll grab clothes and forget the documents. Grab water and forget the medications. Grab the phone charger and forget the cash.
 
-This isn't a character flaw. It's how humans work under acute stress. The solution isn't "be calmer" — it's to have already packed.
+This isn't a character flaw. It's how humans work under acute stress. The solution isn't "be calmer"; it's to have already packed.
 
 A go-bag sits by your front door, zipped and ready. You don't touch it unless you're checking it or grabbing it on the way out. It contains everything your family needs to survive 72 hours away from home. When the moment comes, you pick it up and walk.
 
-## What goes in — the individual bag
+## What goes in: the individual bag
 
 One bag per adult. This covers one person for 72 hours. Everything below is available from shops you already visit.
 
-### Documents — the irreplaceable items
+### Documents: the irreplaceable items
 
 Nothing in your bag matters more than this. You can replace food, water, and clothes. You cannot easily replace identity documents in a crisis.
 
@@ -53,7 +53,7 @@ Nothing in your bag matters more than this. You can replace food, water, and clo
 
 For the full document prep walkthrough, see the <FieldCardRef slug="fc-document-pouch" title="Document Pouch Field Card" />.
 
-### Cash — because ATMs won't work
+### Cash: ATMs won't be running
 
 In any crisis, whether earthquakes, political unrest, or conflict, ATMs either run dry or go offline within hours. Digital payments require internet. The only universally accepted payment method in a crisis is cash.
 
@@ -83,7 +83,7 @@ In any crisis, whether earthquakes, political unrest, or conflict, ATMs either r
 <Item name="ORS sachets" detail="5 sachets" />
 </SupplyList>
 
-This gives you roughly 5,000-6,000 calories spread across three days. It's not comfortable eating — it's survival eating. The sattu mixes with water for a complete meal. The chana and dates are grab-and-eat energy. The glucose biscuits keep kids quiet and fed.
+This gives you roughly 5,000-6,000 calories spread across three days. It's not comfortable eating; it's survival eating. The sattu mixes with water for a complete meal. The chana and dates are grab-and-eat energy. The glucose biscuits keep kids quiet and fed.
 
 ### Power and light
 
@@ -95,7 +95,7 @@ This gives you roughly 5,000-6,000 calories spread across three days. It's not c
 
 ### First aid and medications
 
-**Medications:** If anyone in your family takes daily medication — blood pressure, diabetes, thyroid, anything — pack a 7-day supply in the bag. This is critical. Pharmacies may be closed. You may not be near your regular one. Seven days of prescribed meds in the original packaging with the prescription label.
+**Medications:** If anyone in your family takes daily medication (blood pressure, diabetes, thyroid, anything), pack a 7-day supply in the bag. This is critical. Pharmacies may be closed. You may not be near your regular one. Seven days of prescribed meds in the original packaging with the prescription label.
 
 **Basic first aid:**
 - Paracetamol (strip of 10)
@@ -113,11 +113,11 @@ This gives you roughly 5,000-6,000 calories spread across three days. It's not c
 
 **Rain cover:** A plastic poncho from a Rs. 100 shop or a large garbage bag with a hole for your head. Getting soaked in a crisis leads to hypothermia in winter or skin infections in monsoon.
 
-**Comfort items:** One small thing that matters to you. A tasbeeh, a small Quran, a family photo. Don't overthink this — just one thing that keeps you grounded.
+**Comfort items:** One small thing that matters to you. A tasbeeh, a small Quran, a family photo. Don't overthink this; just one thing that keeps you grounded.
 
 ### Tools
 
-**Knife or multi-tool:** A small folding knife costs Rs. 300-800. Useful for cutting bandages, rope, packaging, food preparation, and a hundred other tasks. Nothing tactical — a simple folding blade.
+**Knife or multi-tool:** A small folding knife costs Rs. 300-800. Useful for cutting bandages, rope, packaging, food preparation, and a hundred other tasks. Nothing tactical: a simple folding blade.
 
 **Lighter or matches:** In a waterproof bag. You might need to start a fire for warmth, signalling, or boiling water.
 
@@ -129,7 +129,7 @@ This gives you roughly 5,000-6,000 calories spread across three days. It's not c
 
 Here's everything in one list:
 
-<SupplyList title="Complete Go-Bag — Per Adult">
+<SupplyList title="Complete Go-Bag: Per Adult">
 <Item name="Document pouch" detail="Sealed, waterproof, top compartment" priority="critical" />
 <Item name="Cash" detail="Rs. 20,000-50,000 in small denominations, split between bag and person" priority="critical" />
 <Item name="Water" detail="1.5L bottle" priority="critical" />
@@ -154,13 +154,13 @@ Here's everything in one list:
 
 ## Weight limits
 
-Your bag should weigh **7-10 kg maximum.** That's not a suggestion — it's a hard limit.
+Your bag should weigh **7-10 kg maximum.** That's not a suggestion; it's a hard limit.
 
 Why: because you might be carrying a child on your other arm. You might be walking for hours. You might be running. An overpacked 15 kg bag will slow you down and exhaust you when you need energy most.
 
 **Weigh your bag.** Use a bathroom scale: step on holding the bag, subtract your weight. If it's over 10 kg, take things out. Start with items that duplicate something else or the "just in case" extras you added.
 
-**The heaviest items in your bag are water and cash.** Everything else is relatively light. Don't try to save weight on water — dehydration is a bigger threat than a slightly heavy bag.
+**The heaviest items in your bag are water and cash.** Everything else is relatively light. Don't try to save weight on water; dehydration is a bigger threat than a slightly heavy bag.
 
 ### Priority order if you need to cut weight
 
@@ -224,15 +224,15 @@ This is the most important item in your child's bag. A laminated card (get it do
 - Blood type (if known)
 - Any allergies or medical conditions
 
-If your child gets separated from you — in a crowd, during an evacuation, at a relief camp — this card is everything. Pin it inside their clothing or put it in a pocket they can always reach.
+If your child gets separated from you (in a crowd, during an evacuation, at a relief camp), this card is everything. Pin it inside their clothing or put it in a pocket they can always reach.
 
 <Callout type="important" title="Practice with your kids">
-Don't just pack their bag — talk them through it. "This is your emergency bag. It has water and snacks and your torch. If we ever need to leave quickly, you grab this bag. Can you show me where it is?" Make it normal, not scary. A child who knows where their bag is and what's in it is calmer than one who doesn't.
+Don't just pack their bag; talk them through it. "This is your emergency bag. It has water and snacks and your torch. If we ever need to leave quickly, you grab this bag. Can you show me where it is?" Make it normal, not scary. A child who knows where their bag is and what's in it is calmer than one who doesn't.
 </Callout>
 
 ## Where the bag lives
 
-**By the front door.** Not in the bedroom closet. Not in the storage room. Not in the car boot (that's your car kit — a different thing).
+**By the front door.** Not in the bedroom closet. Not in the storage room. Not in the car boot (that's your car kit, not the same thing).
 
 By the front door, in a spot where you can grab it on the way out without stopping. Everyone in the family should know where every bag is.
 
@@ -240,7 +240,7 @@ If you have multiple exit points (ground floor house with a back door), consider
 
 **In an apartment:** Near the shoe rack by the front door is fine. If you're worried about it looking out of place, get a plain backpack that doesn't scream "survival bag." A normal-looking school backpack works perfectly.
 
-## Maintenance — the quarterly check
+## Maintenance: the quarterly check
 
 An unchecked bag is worse than no bag. You'll grab it in a crisis, open it to find expired medicine, a dead power bank, and food that went bad months ago.
 
@@ -248,7 +248,7 @@ An unchecked bag is worse than no bag. You'll grab it in a crisis, open it to fi
 
 1. **Power bank:** Charge it to 100%. If it won't hold a charge, replace it.
 2. **Water:** Replace the bottle with a fresh one. Sealed water doesn't go bad quickly, but rotate it anyway.
-3. **Food:** Check sattu for rancid smell (should smell roasted and nutty). Check biscuit expiry dates. Replace anything questionable. Eat what you remove — it's not waste.
+3. **Food:** Check sattu for rancid smell (should smell roasted and nutty). Check biscuit expiry dates. Replace anything questionable. Eat what you remove; it's not waste.
 4. **Medications:** Check expiry dates. Replace with fresh prescriptions. Update if medications have changed.
 5. **Documents:** Any new IDs? Updated passport? New property papers? Swap in current copies.
 6. **Cash:** Still there? Still correct amount? Hasn't been "borrowed" by a family member? Check.
@@ -266,7 +266,7 @@ Use the same approach as your emergency food shelf: eat the sattu, snack on the 
 The temptation is to overpack. Resist it. Every extra item is weight, and most of what people add "just in case" never gets used.
 
 **Don't pack:**
-- **Sentimental items beyond one.** Your wedding album, family jewellery, kids' trophies — leave them. If your house survives, they'll be there when you return. If it doesn't, they were things. Your family is alive.
+- **Sentimental items beyond one.** Your wedding album, family jewellery, kids' trophies: leave them. If your house survives, they'll be there when you return. If it doesn't, they were things. Your family is alive.
 - **Too many clothes.** You're not going on holiday. One change. That's it.
 - **Gear you haven't tested.** A fire starter you bought on Daraz and never tried. A water filter still in its packaging. If you haven't used it, you won't figure it out under stress. Test everything before it goes in the bag.
 - **Heavy luxury food.** Canned goods, protein powder, elaborate meal kits. Every gram matters. Sattu and chana are lighter, calorie-denser, and simpler.
@@ -280,7 +280,7 @@ The temptation is to overpack. Resist it. Every extra item is weight, and most o
 4. **Add a water bottle.** Full, sealed.
 5. **Put it by the front door.** Tell your family: "This is our emergency bag. Don't move it."
 
-That's a 20-minute exercise. Your bag is not complete, but it exists. It has documents, cash, and water — the three things you absolutely cannot evacuate without. Build it out over the next two weeks. Add the food, the power bank, the torch, the first aid supplies. One item per trip to the shops.
+That's a 20-minute exercise. Your bag is not complete, but it exists. It has documents, cash, and water: the three things you absolutely cannot evacuate without. Build it out over the next two weeks. Add the food, the power bank, the torch, the first aid supplies. One item per trip to the shops.
 
 The perfect go-bag is the one that's packed and by the door. Not the one you're still planning to build.
 

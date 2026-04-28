@@ -19,11 +19,11 @@ relatedGuides: ["30-minute-window", "water-when-taps-stop", "sattu-chana-emergen
 status: "published"
 ---
 
-Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound — you don't know where, you don't know how many. Pakistan's geopolitical neighbourhood means this kind of scenario isn't hypothetical.
+Air raid sirens. Your phone lights up with an emergency alert. Drones or missiles inbound; you don't know where, you don't know how many. Pakistan's geopolitical neighbourhood means this kind of scenario isn't hypothetical.
 
 You're not going anywhere. So now what?
 
-The 30-Minute Window covers when you can leave. This guide covers when you can't, or when leaving is more dangerous than staying. Whether it's an airstrike warning, a sudden escalation at the border, an earthquake that's made the streets unsafe, or a curfew during unrest — the situation is the same. You're at home, you're staying at home, and how well you manage depends on what you did before it happened.
+The 30-Minute Window covers when you can leave. This guide covers when you can't, or when leaving is more dangerous than staying. Whether it's an airstrike warning, a sudden escalation at the border, an earthquake that's made the streets unsafe, or a curfew during unrest. The situation is the same. You're at home, you're staying at home, and how well you manage depends on what you did before it happened.
 
 ## Home hardening
 
@@ -49,7 +49,7 @@ Most Pakistani homes have window grills, metal bars welded over windows. In norm
 
 - **Tape X-patterns on glass.** This doesn't prevent the glass from breaking, but it reduces shatter spray. A nearby blast can turn a window into shrapnel. Packing tape or masking tape in an X across each pane. Takes five minutes per window.
 - **Cover windows.** Cardboard, plywood if you have it, thick blankets. This catches glass fragments from blast pressure or impacts, and blocks visibility from outside.
-- **Blackout.** If the power is out on your street but you're running a UPS or generator, light from your windows tells everyone you have resources. Black garbage bags taped over windows, dark blankets, cardboard — seal the edges so no light leaks. This isn't paranoia. During extended curfews, houses with visible light have been targeted for theft.
+- **Blackout.** If the power is out on your street but you're running a UPS or generator, light from your windows tells everyone you have resources. Black garbage bags taped over windows, dark blankets, cardboard. Seal the edges so no light leaks. This isn't paranoia. During extended curfews, houses with visible light have been targeted for theft.
 
 ### The safe room
 
@@ -96,7 +96,7 @@ You can stretch food further than you think.
 - **Eat perishables first.** Fridge contents go bad fast once power cuts. Eat the fresh stuff on day one.
 - **Cook what needs cooking while you still have gas.** If sui gas is still running, cook rice, dal, or whatever you have in bulk. Cooked food lasts longer than raw ingredients once power is out.
 - **Then shift to shelf-stable.** Sattu, roasted chana, dates, rusks, glucose biscuits. These don't need cooking or refrigeration.
-- **Calorie target.** An adult sitting around the house needs roughly 1,500-1,800 calories per day. Kids less. You're not running marathons — you're waiting. Eat enough to function, not enough to feel full.
+- **Calorie target.** An adult sitting around the house needs roughly 1,500-1,800 calories per day. Kids less. You're not running marathons; you're waiting. Eat enough to function, not enough to feel full.
 
 <Callout type="tip" title="Morale matters">
 Make chai if you can. It sounds trivial, but hot chai twice a day does more for family morale during a lockdown than almost anything else. If sui gas is cut, a portable gas stove and a small canister will get you through a week of chai.
@@ -108,12 +108,12 @@ Your UPS is not going to save you. A standard home UPS with 2 batteries gives yo
 
 **Priority order for device charging:**
 
-1. **Phones.** Communication is survival. Charge phones first, always. Put them in airplane mode when not actively using them — extends battery by 3-4x.
+1. **Phones.** Communication is survival. Charge phones first, always. Put them in airplane mode when not actively using them; this extends battery life by 3-4x.
 2. **Power bank.** If you have one, charge it while the UPS is running. A 20,000mAh power bank gives you roughly 4-5 full phone charges.
 3. **Torch.** If it's rechargeable, charge it. If it's battery-powered, confirm you have spares.
-4. **Everything else can wait.** The TV, the laptop, the router (your ISP's backbone is probably down anyway) — none of these matter.
+4. **Everything else can wait.** The TV, the laptop, the router (your ISP's backbone is probably down anyway): none of these matter.
 
-**Generator safety:** If you're running a generator, it goes OUTSIDE. Balcony, rooftop, courtyard — never inside the house, never in a closed garage. Carbon monoxide from a generator kills silently. Every year in Pakistan, families die from running generators in enclosed spaces. There is no compromise on this.
+**Generator safety:** If you're running a generator, it goes OUTSIDE. Balcony, rooftop, courtyard: never inside the house, never in a closed garage. Carbon monoxide from a generator kills silently. Every year in Pakistan, families die from running generators in enclosed spaces. There is no compromise on this.
 
 ### Sanitation
 
@@ -121,16 +121,16 @@ Nobody talks about this, but it matters by day two.
 
 - **If water supply is cut and your flush stops working:** Use a bucket to flush. One bucket per flush. If water is scarce, flush only for solids.
 - **If plumbing fails entirely:** A bucket lined with a garbage bag, with some soil or baking soda to reduce smell. Keep it in the bathroom with the door closed. Seal used bags and store them away from living areas.
-- **Hygiene.** Hand sanitizer doesn't need water. Stock a few bottles. Wet wipes for basic cleaning. These are not luxuries during a lockdown — they prevent illness when you can't afford to get sick.
+- **Hygiene.** Hand sanitizer doesn't need water. Stock a few bottles. Wet wipes for basic cleaning. These are not luxuries during a lockdown; they prevent illness when you can't afford to get sick.
 
 ## Information gathering
 
 During a shelter-in-place, information is the difference between calm and panic. But bad information is worse than no information.
 
-### Sources — ranked by reliability
+### Sources: ranked by reliability
 
 1. **FM radio.** If you have a battery-powered or hand-crank radio, this is your most reliable source. Radio Pakistan, local FM stations. They broadcast during internet shutdowns.
-2. **TV news.** If you have power. Watch multiple channels — no single channel is fully reliable. Look for patterns across sources, not individual claims.
+2. **TV news.** If you have power. Watch multiple channels; no single channel is fully reliable. Look for patterns across sources, not individual claims.
 3. **Phone calls.** Direct calls to people you trust who are in other areas. "What's happening on your street?" is more useful than any news ticker.
 4. **WhatsApp.** Useful for coordination with family and neighbours. Terrible for news. Forwards are mostly rumours, old videos recycled, and panic. Verify before believing.
 5. **Social media.** Lowest reliability. Treat everything as unverified until confirmed by multiple independent sources.
@@ -174,7 +174,7 @@ A 3-day shelter-in-place is 90% boredom and 10% fear. The boredom is harder to m
 - **Talk to each other.** This sounds obvious but during sustained stress, families go quiet. Check in. "How are you doing? Are you scared? Me too. We're okay."
 
 <Callout type="important" title="Kids absorb your energy">
-Your children will mirror your state. If you're calm, they'll be calmer. If you're pacing and checking your phone every 30 seconds, they'll know something is very wrong. You don't have to pretend everything is fine — but you do have to demonstrate that you have a plan and you're in control of what you can control.
+Your children will mirror your state. If you're calm, they'll be calmer. If you're pacing and checking your phone every 30 seconds, they'll know something is very wrong. You don't have to pretend everything is fine, but you do have to demonstrate that you have a plan and you're in control of what you can control.
 </Callout>
 
 ## The stay-or-go decision
@@ -211,7 +211,7 @@ You don't need to buy anything tonight. Just do this:
 4. **Charge a power bank.** Keep it charged from now on. Always.
 5. **Talk to your spouse.** Not about what might happen, but about what you'll do if it does. "If there's a curfew, here's our plan."
 
-The crisis you shelter through won't be the one you expected. But a family that has talked about it, picked a room, knows where the water is, and has a charged phone — that family will be okay.
+The crisis you shelter through won't be the one you expected. But a family that has talked about it, picked a room, knows where the water is, and has a charged phone will be okay.
 
 <EmergencyNumbers />
 

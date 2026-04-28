@@ -14,7 +14,7 @@ sections:
   - "Document prep"
   - "Roles and responsibilities"
   - "The rehearsal"
-excerpt: "If something happened while your family was scattered — you at work, wife at home, kids at school, parents across town — does everyone know what to do? Where to meet? Who to call? If the answer is 'we'd figure it out,' that's not a plan."
+excerpt: "If something happened while your family was scattered (you at work, wife at home, kids at school, parents across town), does everyone know what to do? Where to meet? Who to call? If the answer is 'we'd figure it out,' that's not a plan."
 relatedCards: ["fc-go-bag-packing", "fc-document-pouch"]
 relatedGuides: ["30-minute-window", "shelter-in-place", "go-bag-guide", "towers-go-down"]
 status: "published"
@@ -22,7 +22,7 @@ status: "published"
 
 It's 2pm on a Tuesday. You're at work in Clifton. Your wife is at home in Gulshan. Your kids are at school in North Nazimabad. Your parents are across town in PECHS. Your brother is at his office in Saddar.
 
-Something happens. A strike warning, an earthquake, an explosion — it doesn't matter what. Suddenly everyone needs to get to safety and nobody knows where the others are or what they're doing.
+Something happens. A strike warning, an earthquake, an explosion; it doesn't matter what. Suddenly everyone needs to get to safety and nobody knows where the others are or what they're doing.
 
 Your wife calls you. You don't answer because you're already in the car, trying to get to the kids' school. She assumes the worst. Your mother calls your wife, who's now panicking and can't get through to you. Your brother drives to your parents' house but they've already left for your house. Everyone is moving. Nobody knows where anyone else is going.
 
@@ -56,10 +56,10 @@ The default assumption is that everyone heads home. If you're at work and someth
 
 This is the fallback when home isn't an option. It must be:
 
-- **Walkable from home** — 15-20 minutes on foot at most. You might not have a vehicle. You might be carrying a child.
-- **Known to every family member** — including older children, with no ambiguity. Not "somewhere near Nani's house" but the specific address.
-- **Has space for your family** — a relative's house, a trusted neighbour's, a mosque the family uses, a school building you have access to.
-- **Has a gate or boundary wall** — basic privacy and security, not an open park.
+- **Walkable from home:** 15-20 minutes on foot at most. You might not have a vehicle. You might be carrying a child.
+- **Known to every family member:** including older children, with no ambiguity. Not "somewhere near Nani's house" but the specific address.
+- **Has space for your family:** a relative's house, a trusted neighbour's, a mosque the family uses, or a school building you have access to.
+- **Has a gate or boundary wall:** basic privacy and security, not an open park.
 
 Good options in Karachi: a relative's house in the same neighbourhood, your neighbourhood mosque, a community hall or clubhouse you have access to.
 
@@ -83,7 +83,7 @@ Know which route you'd take. Know the fuel stops. Know how long it takes on a no
 
 ## Contact chain
 
-When cell networks overload, you can't afford everyone calling everyone. The 30-Minute Window guide covers this in detail — here's the structure.
+When cell networks overload, you can't afford everyone calling everyone. The 30-Minute Window guide covers this in detail; here's the structure.
 
 ### The 3-person rule
 
@@ -116,14 +116,14 @@ Everyone should know these. Write them on the plan. Rehearse them once so they d
 
 ### If phones don't work at all
 
-- **WhatsApp voice note** — send one even if it shows a single tick. It will deliver when connectivity returns.
-- **SMS** — text messages use less bandwidth than calls and sometimes get through when calls don't.
-- **Walkie-talkie** — if you've set up the system from the When the Towers Go Down guide.
-- **Physical check** — walk to your neighbour's house. Send someone to the secondary rally point to wait. Leave a written note on your door: "Family safe, gone to [location], [date/time]."
+- **WhatsApp voice note:** send one even if it shows a single tick. It will deliver when connectivity returns.
+- **SMS:** text messages use less bandwidth than calls and sometimes get through when calls don't.
+- **Walkie-talkie:** if you've set up the system from the When the Towers Go Down guide.
+- **Physical check:** walk to your neighbour's house. Send someone to the secondary rally point to wait. Leave a written note on your door: "Family safe, gone to [location], [date/time]."
 
 ## Document prep
 
-Your CNIC, passport, property papers — losing these in a crisis creates months of bureaucratic nightmares on top of everything else.
+Your CNIC, passport, property papers: losing these in a crisis creates months of bureaucratic nightmares on top of everything else.
 
 ### The three-layer approach
 
@@ -137,24 +137,24 @@ Your CNIC, passport, property papers — losing these in a crisis creates months
 
 In order of priority:
 
-1. **CNIC** — every family member's, including children's B-forms
-2. **Passports** — photo page plus any active visa pages
-3. **Birth certificates** — especially for children
-4. **Marriage certificate** — Nikah Nama
-5. **Property documents** — house deed, allotment letter, lease agreement
-6. **Vehicle registration** — car, motorcycle
-7. **Academic certificates** — degrees, school records for kids
-8. **Medical records** — ongoing prescriptions, chronic conditions, allergies, blood types
-9. **Insurance policies** — if you have any
-10. **Bank account information** — account numbers, branch, IBAN (written, not just in the app)
+1. **CNIC:** every family member's, including children's B-forms
+2. **Passports:** photo page plus any active visa pages
+3. **Birth certificates:** especially for children
+4. **Marriage certificate:** Nikah Nama
+5. **Property documents:** house deed, allotment letter, lease agreement
+6. **Vehicle registration:** car, motorcycle
+7. **Academic certificates:** degrees, school records for kids
+8. **Medical records:** ongoing prescriptions, chronic conditions, allergies, blood types
+9. **Insurance policies:** if you have any
+10. **Bank account information:** account numbers, branch, IBAN (written, not just in the app)
 
 <Callout type="tip" title="The 30-minute document sprint">
-Right now, gather every important document you have. Spread them on the floor. Take a photo of each one with your phone. Email the entire set to yourself and your spouse. Upload to a cloud drive. Done — Layer 2 and 3 are complete. Get photocopies made this week for Layer 1. Total time: 30 minutes.
+Right now, gather every important document you have. Spread them on the floor. Take a photo of each one with your phone. Email the entire set to yourself and your spouse. Upload to a cloud drive. Done. Layer 2 and 3 are complete. Get photocopies made this week for Layer 1. Total time: 30 minutes.
 </Callout>
 
 ### Precious items protocol
 
-Documents you can replace with effort. Some things you can't: family photos, heirloom jewellery, children's keepsakes. Don't pack these in your go-bag — they add weight and aren't survival items.
+Documents you can replace with effort. Some things you can't: family photos, heirloom jewellery, children's keepsakes. Don't pack these in your go-bag; they add weight and aren't survival items.
 
 Instead: know where they are. If you have time (and you might, since not every evacuation is 30 minutes), you can grab them. A fire-resistant safe for important jewellery and irreplaceable documents is worth the investment (Rs. 5,000-15,000 at hardware stores).
 
@@ -190,7 +190,7 @@ In a crisis, everyone needs a job. Not because the tasks are complicated, but be
 
 ### Joint family considerations
 
-Pakistani families often live jointly — parents, siblings, their families under one roof. This changes the plan:
+Pakistani families often live jointly: parents, siblings, their families under one roof. This changes the plan:
 
 - **More people means more coordination.** Assign roles to every adult. Your father can be the information officer (radio/TV monitoring). Your mother can manage the children. Your brother handles vehicles.
 - **Elderly family members need specific planning.** Can they walk to the secondary rally point? Do they need medication that takes time to gather? Who carries their bag?
@@ -200,10 +200,10 @@ Pakistani families often live jointly — parents, siblings, their families unde
 
 If your kids are at school when something happens:
 
-1. **Know the school's emergency policy.** Most schools have one — they may lock down and keep children until parents arrive, or they may release them. Ask the school administration. Get it in writing if possible.
+1. **Know the school's emergency policy.** Most schools have one; they may lock down and keep children until parents arrive, or they may release them. Ask the school administration. Get it in writing if possible.
 2. **Authorised pickup list.** Make sure the school has an updated list of people authorised to pick up your children. Include at least 3 people: you, your spouse, and one trusted relative or family friend who lives nearby.
-3. **Assign a "school person."** In your plan, designate who goes to get the kids — usually the parent who's physically closest or has the most flexible schedule.
-4. **If you can't get to the school:** Call the "school person" backup. If nobody can get through, call the school directly. If phones are down, the school will hold children — trust the process and don't panic. Get there when you can.
+3. **Assign a "school person."** In your plan, designate who goes to get the kids (usually the parent who's physically closest or has the most flexible schedule).
+4. **If you can't get to the school:** Call the "school person" backup. If nobody can get through, call the school directly. If phones are down, the school will hold children. Trust the process and don't panic. Get there when you can.
 
 ## The stay-or-go decision
 
@@ -232,7 +232,7 @@ This is covered in depth in the Shelter in Place guide, but your family plan nee
 - Infrastructure collapse (water, power, hospitals) with no timeline for restoration
 - Confirmed safe destination and viable route
 
-**The default is always stay.** Moving during a crisis is almost always more dangerous than staying put in a structurally sound home with supplies. Write this in your plan so it's agreed — it prevents panic-driven decisions.
+**The default is always stay.** Moving during a crisis is almost always more dangerous than staying put in a structurally sound home with supplies. Write this in your plan so it's agreed; it prevents panic-driven decisions.
 
 ## Writing your plan
 

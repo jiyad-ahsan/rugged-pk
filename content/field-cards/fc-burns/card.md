@@ -15,7 +15,7 @@ status: "published"
 ## Immediate response (first 20 minutes)
 
 1. **Remove the source:** get the person away from fire, heat, or electrical source
-2. **Cool the burn:** hold under cool running water for **20 minutes minimum**. Not ice water, not ice — cool tap water.
+2. **Cool the burn:** hold under cool running water for **20 minutes minimum**. Not ice water, not ice. Just cool tap water.
 3. **Remove clothing and jewellery** near the burn, but do NOT pull off anything stuck to the skin
 4. **Cover loosely** with clean cling wrap or a clean, non-fluffy cloth
 

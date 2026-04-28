@@ -27,7 +27,7 @@ This guide is about those first 30 minutes: what you do, in what order, and what
 
 ## Why 30 minutes
 
-Karachi has roughly 20 million people and a road network that chokes on a regular Tuesday. In a crisis — a border escalation, strikes, a major attack — the window between "news breaks" and "roads are completely jammed" is short. Modern conflict doesn't give you a week's warning. It gives you minutes.
+Karachi has roughly 20 million people and a road network that chokes on a regular Tuesday. In a crisis (a border escalation, strikes, a major attack), the window between "news breaks" and "roads are completely jammed" is short. Modern conflict doesn't give you a week's warning. It gives you minutes.
 
 Thirty minutes is not a guarantee. It's a planning assumption. Some crises give you more. Some give you less. But if your family can execute a plan in 30 minutes, you're ahead of almost everyone else in the city.
 
@@ -77,7 +77,7 @@ Your grab bag lives by the front door, not in the bedroom or a cupboard. By the 
 
 You should not be packing this during a crisis. You should be picking it up and walking out.
 
-<SupplyList title="Grab Bag — Per Person">
+<SupplyList title="Grab Bag: Per Person">
 <Item name="Documents pouch" detail="CNIC copies, passport copies, property papers, medical records, 2x passport photos" priority="critical" />
 <Item name="Cash" detail="Rs. 20,000-50,000 in Rs. 500 and Rs. 1,000 notes, not Rs. 5,000 (hard to break in a crisis)" priority="critical" />
 <Item name="Water" detail="1.5L bottle minimum, refillable" priority="critical" />

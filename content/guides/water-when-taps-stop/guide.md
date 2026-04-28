@@ -19,7 +19,7 @@ relatedGuides: ["sattu-chana-emergency-food", "shelter-in-place", "trauma-first-
 status: "published"
 ---
 
-The tanker didn't come today. It's not coming tomorrow either — the roads are blocked and nobody's sure if the depot is even operational. Your overhead tank has maybe 200 litres left and there are five people in the house. You do the maths and it doesn't add up, because at normal usage it isn't enough.
+The tanker didn't come today. It's not coming tomorrow either; the roads are blocked and nobody's sure if the depot is even operational. Your overhead tank has maybe 200 litres left and there are five people in the house. You do the maths and it doesn't add up, because at normal usage it isn't enough.
 
 Water is the first utility to fail in any crisis. Before power, before gas, before food supply chains. In Karachi, water is already fragile on a normal day: tanker-dependent neighbourhoods, low-pressure mains, contaminated lines. In a crisis, it goes from fragile to gone.
 
@@ -56,7 +56,7 @@ Drinking is only part of it. Here's where water actually goes in a household:
 On a normal day, a family of four uses 300-500 litres. In crisis rationing, you need to cut that to 30-50 litres total. That's a 90% reduction. The flush is where you save the most.
 
 <Callout type="important" title="The flush problem">
-Toilets are the biggest water drain in a crisis. If water is scarce: flush only for solids. Use a bucket with 3-4 litres instead of the full flush mechanism. For liquids, don't flush at all — it sounds unpleasant, but when your overhead tank is your lifeline, a full flush for every trip to the bathroom will empty it in two days.
+Toilets are the biggest water drain in a crisis. If water is scarce: flush only for solids. Use a bucket with 3-4 litres instead of the full flush mechanism. For liquids, don't flush at all. It sounds unpleasant, but when your overhead tank is your lifeline, a full flush for every trip to the bathroom will empty it in two days.
 </Callout>
 
 ## What you have right now
@@ -69,7 +69,7 @@ Before a crisis hits, know your water inventory:
 
 **Water heater (geyser):** Your geyser holds 25-50 litres of usable water. If the mains are cut, this is a reserve most people forget about. Turn off the power to it, open the drain tap at the bottom, and collect it in buckets.
 
-**Ice in the freezer:** If power goes out, your freezer ice will melt. Collect it — it's clean water. A full freezer might give you 5-10 litres.
+**Ice in the freezer:** If power goes out, your freezer ice will melt. Collect it; it's clean water. A full freezer might give you 5-10 litres.
 
 **Hot water in pipes:** There's water sitting in your plumbing right now. Open the lowest tap in your house and let gravity drain whatever's in the pipes into a container. It's not much, maybe 3-5 litres, but in a rationing situation, everything counts.
 
@@ -77,7 +77,7 @@ For more hidden household water sources, see the <FieldCardRef slug="fc-househol
 
 ## First response
 
-When you realise water supply is threatened — tanker not coming, mains cut, crisis declared — do these immediately:
+When you realise water supply is threatened (tanker not coming, mains cut, crisis declared), do these immediately:
 
 1. **Fill everything.** Every pot, every bucket, every bottle. The bathtub if you have one (bathtubs hold 150-250 litres). Fill your overhead tank if mains are still running. Do this before the mains pressure drops to zero.
 2. **Start rationing immediately.** Don't wait until the tank is half-empty. Start now. Switch to bucket flushing, stop showers, stop washing dishes with running water.
@@ -86,28 +86,28 @@ When you realise water supply is threatened — tanker not coming, mains cut, cr
 
 ## Purification
 
-If your stored water runs out and you need to use water from sources you don't trust — rain, open tanks, neighbourhood taps you're not sure about — you need to purify it.
+If your stored water runs out and you need to use water from sources you don't trust (rain, open tanks, neighbourhood taps you're not sure about), you need to purify it.
 
 Here are four methods, ranked by practicality:
 
-### 1. Boiling — the most reliable
+### 1. Boiling: the most reliable method
 
 A rolling boil for **1 minute** kills virtually all pathogens. That's it: one minute of active boiling, not simmering.
 
 - Works against bacteria, viruses, and parasites
 - Requires fuel (sui gas, portable stove, fire)
 - Doesn't remove chemicals or heavy metals
-- Let it cool naturally — don't add ice or cold water
+- Let it cool naturally. Don't add ice or cold water.
 
 **The downside:** You need fuel. If sui gas is cut and you don't have a portable stove, boiling isn't an option. That's why the next methods exist.
 
 For a step-by-step reference, see the <FieldCardRef slug="fc-boil-purify" title="Boiling Water for Safety Field Card" />.
 
-### 2. Chlorine (bleach) — cheap and effective
+### 2. Chlorine (bleach): cheap and effective
 
 Regular household bleach, specifically **unscented, plain sodium hypochlorite**, purifies water. Not the scented kind, not the colour-safe kind. Plain bleach.
 
-**Dosage:** 2 drops of bleach per litre of water. Stir. Wait 30 minutes. The water should have a faint chlorine smell after 30 minutes — if it doesn't, add 2 more drops and wait another 15 minutes.
+**Dosage:** 2 drops of bleach per litre of water. Stir. Wait 30 minutes. The water should have a faint chlorine smell after 30 minutes. If it doesn't, add 2 more drops and wait another 15 minutes.
 
 - A single bottle of bleach can purify thousands of litres
 - Costs almost nothing
@@ -126,17 +126,17 @@ Available from pharmacies and outdoor stores. Aquatabs are the most common brand
 - One tablet typically treats 1-5 litres (check packaging)
 - Wait 30 minutes after dissolving
 - Pack of 50 tablets: Rs. 300-500
-- Extremely portable — keep a strip in every grab bag
+- Extremely portable: keep a strip in every grab bag
 - Effective against bacteria, viruses, most parasites
 
 These are the easiest option for water purification on the move. If you're evacuating and need to use water from unknown sources along the way, Aquatabs are what you want.
 
-### 4. SODIS — when you have nothing else
+### 4. SODIS: when you have nothing else
 
 Solar Water Disinfection. It's slow but it works and needs zero supplies except a clear plastic bottle and sunlight.
 
 - Fill a clear PET bottle (like a disposable mineral water bottle) with water
-- The water must be relatively clear — if it's muddy, let it settle first, then pour off the clear part
+- The water must be relatively clear. If it's muddy, let it settle first and pour off the clear part.
 - Lay the bottle on its side in direct sunlight
 - Wait 6 hours in full sun. If it's cloudy, wait a full day.
 - UV-A radiation from the sun kills bacteria and viruses
@@ -171,21 +171,21 @@ How you store water matters as much as how much you have.
 
 Minimum recommendation: **10 litres per person** as a permanent reserve. Family of four = 40 litres. That's two jerry cans. Keep them filled, keep them sealed, check them quarterly.
 
-Better: **20 litres per person** — 80 litres for a family. Four jerry cans. This gives you 5-7 days of drinking water at strict rationing, buying time for the situation to resolve or for you to find more.
+Better: **20 litres per person**, or 80 litres for a family. Four jerry cans. This gives you 5-7 days of drinking water at strict rationing, buying time for the situation to resolve or for you to find more.
 
 ## Rationing protocol
 
 When you don't know how long the disruption will last:
 
 **Days 1-2: Moderate conservation**
-- Normal drinking — don't dehydrate yourself
+- Normal drinking: stay hydrated
 - Bucket flushing only
-- No showers — wet cloth wipe-down if needed
-- Minimal cooking water — one-pot meals
+- No showers: wet cloth wipe-down if needed
+- Minimal cooking water: one-pot meals
 
 **Days 3-5: Active rationing**
-- Measured drinking — each person gets a set daily amount poured into their own bottle
-- Cooking with minimum water — sattu and no-cook meals over rice and dal
+- Measured drinking: each person gets a set daily amount poured into their own bottle
+- Cooking with minimum water: sattu and no-cook meals over rice and dal
 - Bucket flush only for solids
 - Hand sanitizer instead of hand washing where possible
 
@@ -216,7 +216,7 @@ Recognising dehydration matters, especially in children and elderly family membe
 - Rapid heartbeat
 - Low blood pressure when standing
 
-If someone is dehydrated: small, frequent sips of water with ORS (oral rehydration salts). Not large gulps — the stomach will reject large amounts. ORS sachets are available at every pharmacy for Rs. 10-15 each. Stock a dozen.
+If someone is dehydrated: small, frequent sips of water with ORS (oral rehydration salts). Not large gulps; the stomach will reject large amounts. ORS sachets are available at every pharmacy for Rs. 10-15 each. Stock a dozen.
 
 If you don't have ORS, you can make it: 1 litre clean water + 6 level teaspoons sugar + half a level teaspoon salt. It should taste like tears. See the <FieldCardRef slug="fc-ors" title="ORS from Scratch Field Card" /> for exact measurements.
 
