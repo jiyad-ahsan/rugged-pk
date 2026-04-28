@@ -2,12 +2,12 @@
 type: "field-card"
 slug: "fc-document-pouch"
 title: "Document Pouch"
-subtitle: "The papers that prove you exist."
+subtitle: "Every critical document, in one waterproof pouch."
 tag: "essentials"
 date: "2026-04"
 readTime: "2 min"
 sketch: "backpack"
-excerpt: "Every document you need in a waterproof pouch, ready to grab. Originals stay home in a fireproof spot — this pouch carries copies."
+excerpt: "A waterproof pouch with photocopies of every critical document, ready to grab with your go-bag. Originals stay home; this carries copies."
 relatedGuides: ["go-bag-guide", "30-minute-window", "family-emergency-plan"]
 status: "published"
 ---

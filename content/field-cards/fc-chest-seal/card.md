@@ -2,7 +2,7 @@
 type: "field-card"
 slug: "fc-chest-seal"
 title: "Improvised Chest Seal"
-subtitle: "Seal a chest wound. Keep air out."
+subtitle: "How to seal a penetrating chest wound with household materials."
 tag: "medical"
 date: "2026-04"
 readTime: "2 min"

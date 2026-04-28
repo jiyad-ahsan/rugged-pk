@@ -17,7 +17,7 @@ sections:
   - "Shock"
   - "What not to do"
   - "Triage"
-excerpt: "Someone is bleeding badly and 1122 isn't answering. The blood is soaking through whatever you've pressed against it. You have what's in this room and what's in your head. Right now, the second one matters more."
+excerpt: "Someone is bleeding badly and 1122 isn't answering. The blood is soaking through whatever you've pressed against it. This guide covers what to do in those first minutes, before help arrives."
 relatedCards: ["fc-tourniquet", "fc-wound-disinfection", "fc-wound-packing", "fc-chest-seal", "fc-splint", "fc-pressure-bandage", "fc-shock", "fc-recovery-position", "fc-cpr-adult", "fc-burns"]
 relatedGuides: ["shelter-in-place", "30-minute-window"]
 status: "published"

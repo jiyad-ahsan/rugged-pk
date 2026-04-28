@@ -15,7 +15,7 @@ sections:
   - "Check-in protocol"
   - "Offline messaging"
   - "FM radio"
-excerpt: "The government shut down mobile internet for 'security reasons.' Millions couldn't reach their families. It lasted days. It will happen again — and next time it might not just be the internet."
+excerpt: "Pakistan's government has shut down mobile networks multiple times. When it happens, calls don't connect and WhatsApp sits on single ticks. This guide covers what to set up now so your family can still reach each other."
 relatedCards: ["fc-walkie-quickstart"]
 relatedGuides: ["30-minute-window", "shelter-in-place", "family-emergency-plan"]
 status: "published"

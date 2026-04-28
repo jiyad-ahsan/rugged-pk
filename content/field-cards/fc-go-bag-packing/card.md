@@ -2,7 +2,7 @@
 type: "field-card"
 slug: "fc-go-bag-packing"
 title: "Go-Bag Packing List"
-subtitle: "What goes in. What stays out."
+subtitle: "A complete packing reference for your 72-hour bag."
 tag: "essentials"
 date: "2026-04"
 readTime: "2 min"

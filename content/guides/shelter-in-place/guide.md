@@ -13,7 +13,7 @@ sections:
   - "Resource management"
   - "Information gathering"
   - "Decision framework"
-excerpt: "Sometimes the safest move is no move at all. How to fortify your home for a multi-day lockdown — securing entry points, managing power and water, keeping your family calm, and knowing when it's finally time to go."
+excerpt: "Leaving isn't always the right call. This guide covers how to secure your home for a multi-day lockdown: entry points, water, power, keeping the family calm, and knowing when it's actually time to go."
 relatedCards: ["fc-door-barricade", "fc-window-reinforce", "fc-shutoff-utilities", "fc-blackout-curtains"]
 relatedGuides: ["30-minute-window", "water-when-taps-stop", "sattu-chana-emergency-food", "family-emergency-plan"]
 status: "published"

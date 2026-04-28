@@ -2,7 +2,7 @@
 type: "guide"
 slug: "go-bag-guide"
 title: "Your Go-Bag"
-subtitle: "Pack It Tonight, Forget It Exists Until You Can't"
+subtitle: "Pack Once, Grab It When You Need It"
 tag: "planning"
 date: "2026-03"
 lastUpdated: "2026-03"
@@ -14,7 +14,7 @@ sections:
   - "Seasonal adjustments"
   - "Kids' bags"
   - "Maintenance"
-excerpt: "You will not have time to pack when it matters. You'll be shaking, your kids will be crying, and you'll forget half the important stuff. Pack it now. Put it by the door. Check it every 3 months."
+excerpt: "When the moment comes, you won't have time to gather everything. Pack the bag tonight, put it by the front door, and check it every 3 months. That's the whole system."
 relatedCards: ["fc-go-bag-packing", "fc-document-pouch", "fc-siphon-fuel"]
 relatedGuides: ["30-minute-window", "family-emergency-plan", "towers-go-down"]
 status: "published"

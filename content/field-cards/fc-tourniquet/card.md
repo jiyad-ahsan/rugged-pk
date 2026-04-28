@@ -2,7 +2,7 @@
 type: "field-card"
 slug: "fc-tourniquet"
 title: "Tourniquet Application"
-subtitle: "Stop the bleed. Buy time."
+subtitle: "How to apply a tourniquet for severe limb bleeding."
 tag: "medical"
 date: "2026-04"
 readTime: "2 min"

@@ -13,7 +13,7 @@ sections:
   - "Sourcing guide"
   - "Storage in heat"
   - "Calorie planning"
-excerpt: "Forget freeze-dried Western rations nobody here has tasted. Pakistan already has the perfect emergency foods — sattu alone can sustain you for days and costs almost nothing."
+excerpt: "Most Western emergency food advice doesn't apply here. Pakistan already has shelf-stable, calorie-dense foods your family actually eats: sattu, roasted chana, dates. This guide covers what to stock, how much, and how to store it through the heat."
 relatedCards: ["fc-start-fire", "fc-improvised-stove", "fc-no-cook-meals", "fc-food-preservation"]
 relatedGuides: ["water-when-taps-stop", "shelter-in-place"]
 status: "published"
