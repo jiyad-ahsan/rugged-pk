@@ -23,7 +23,7 @@ A border escalation hits the news. Your wife calls from home. WhatsApp groups ar
 
 You have maybe 30 minutes before Karachi's roads become unusable. Maybe less.
 
-This guide is about those first 30 minutes. What you do, in what order, and what you should have already done so that tonight — right now — you can build a plan your family can execute without thinking.
+This guide is about those first 30 minutes: what you do, in what order, and what you should have already done so that tonight you can build a plan your family can execute without thinking.
 
 ## Why 30 minutes
 
@@ -33,60 +33,60 @@ Thirty minutes is not a guarantee. It's a planning assumption. Some crises give 
 
 ## Rally points
 
-You need three. Not one — three. Because the first one might be compromised, flooded, or on the wrong side of a roadblock.
+You need three, not one, because the first might be compromised, flooded, or on the wrong side of a roadblock.
 
 **Primary rally point:** Your home. This is where everyone heads first if they can. The assumption is that home is safe and accessible. If you're all already home, you skip to the decision: stay or go.
 
 **Secondary rally point:** A location within walking distance that everyone in the family can reach without a vehicle. A relative's house in your neighbourhood, a mosque your family knows, a school. The key criteria:
 
 - Walkable from home in under 20 minutes
-- Everyone knows exactly where it is — no ambiguity
+- Everyone knows exactly where it is, with no ambiguity
 - It has space for your family to wait
-- Ideally has a gate or wall (privacy and basic security)
+- Ideally has a gate or wall for privacy and basic security
 
-**Tertiary rally point:** Out of the city. This is your evacuation destination. For most Karachi families, this means the Northern Bypass toward Hyderabad, or Superhighway. But be specific — not just "Hyderabad" but a specific address. A family member's house. A hotel you've identified. A friend's farm.
+**Tertiary rally point:** Out of the city. This is your evacuation destination. For most Karachi families, this means the Northern Bypass toward Hyderabad, or Superhighway. Be specific, though: not "Hyderabad" in general, but a specific address. A family member's house. A hotel you've identified. A friend's farm.
 
 Write all three down. Print them. Put a copy in every bag, every wallet, on the fridge.
 
 ## Vehicle prep
 
-If you own a car, it's your lifeline in an evacuation. But only if it's ready.
+If you own a car, it's your lifeline in an evacuation, but only if it's ready.
 
-**The half-tank rule:** Never let your fuel gauge drop below half. This is the single most important vehicle habit you can build. A full tank gives you Karachi to Hyderabad and back without stopping. A quarter tank might not get you past Toll Plaza.
+**The half-tank rule:** Never let your fuel gauge drop below half. This is the single most important vehicle habit you can build. A full tank gets you from Karachi to Hyderabad and back without stopping. A quarter tank might not get you past Toll Plaza.
 
-Keep the tank above half. Always. No exceptions.
+Keep the tank above half. Always.
 
 **Your car kit** (keep in the boot permanently):
 
 <SupplyList title="Vehicle Emergency Kit">
-<Item name="Water" detail="6 litres minimum — two 3L bottles" priority="critical" />
+<Item name="Water" detail="6 litres minimum, two 3L bottles" priority="critical" />
 <Item name="Torch" detail="LED, with extra AA batteries" />
-<Item name="Phone charger" detail="Car charger + cable that works" priority="critical" />
+<Item name="Phone charger" detail="Car charger and cable that works" priority="critical" />
 <Item name="Cash" detail="Rs. 10,000 in small notes (Rs. 500, Rs. 1,000)" priority="critical" />
 <Item name="First aid basics" detail="Bandages, Pyodine, paracetamol, ORS sachets" />
-<Item name="Tyre repair kit" detail="Or a working spare + jack" />
-<Item name="Blanket" detail="One light blanket — useful for shade, warmth, or ground cover" />
+<Item name="Tyre repair kit" detail="Or a working spare and jack" />
+<Item name="Blanket" detail="One light blanket, useful for shade, warmth, or ground cover" />
 <Item name="Jumper cables" detail="Standard set from any auto shop, Rs. 800-1,200" />
 </SupplyList>
 
-**Motorcycle considerations:** Most Pakistanis ride, not drive. A motorcycle is faster in traffic but carries less and is more exposed. If you're on a bike: documents in a waterproof pouch on your person, not in a bag. Cash split between two pockets. Phone fully charged before you leave. And accept that you're carrying one other person maximum — plan accordingly.
+**Motorcycle considerations:** Most Pakistanis ride, not drive. A motorcycle is faster in traffic but carries less and is more exposed. If you're on a bike: documents in a waterproof pouch on your person, not in a bag. Cash split between two pockets. Phone fully charged before you leave. Accept that you're carrying one other person maximum and plan accordingly.
 
 ## Grab bag checklist
 
-Your grab bag lives by the front door. Not in the bedroom. Not in a cupboard. By the door, packed, zipped, ready.
+Your grab bag lives by the front door, not in the bedroom or a cupboard. By the door, packed, zipped, ready.
 
 You should not be packing this during a crisis. You should be picking it up and walking out.
 
 <SupplyList title="Grab Bag — Per Person">
 <Item name="Documents pouch" detail="CNIC copies, passport copies, property papers, medical records, 2x passport photos" priority="critical" />
-<Item name="Cash" detail="Rs. 20,000-50,000 in Rs. 500 and Rs. 1,000 notes — not Rs. 5,000 (hard to break in a crisis)" priority="critical" />
-<Item name="Water" detail="1.5L bottle minimum — refillable" priority="critical" />
+<Item name="Cash" detail="Rs. 20,000-50,000 in Rs. 500 and Rs. 1,000 notes, not Rs. 5,000 (hard to break in a crisis)" priority="critical" />
+<Item name="Water" detail="1.5L bottle minimum, refillable" priority="critical" />
 <Item name="Water purification" detail="Aquatabs (pack of 50, Rs. 300 from any pharmacy)" />
-<Item name="Food" detail="Sattu (500g), roasted chana (500g), dates, glucose biscuits — 3 days minimum" priority="critical" />
+<Item name="Food" detail="Sattu (500g), roasted chana (500g), dates, glucose biscuits, 3 days minimum" priority="critical" />
 <Item name="Torch" detail="LED, small, with extra batteries" />
-<Item name="Phone charger" detail="Power bank, 10,000mAh minimum, charged" priority="critical" />
+<Item name="Phone charger" detail="Power bank 10,000mAh minimum, charged" priority="critical" />
 <Item name="Medications" detail="Any prescription meds for 7 days, plus paracetamol, ORS, Pyodine" priority="critical" />
-<Item name="Change of clothes" detail="One set. Light. Think function, not fashion." />
+<Item name="Change of clothes" detail="One set, light, functional" />
 <Item name="Rain cover" detail="Plastic poncho or large garbage bag" />
 <Item name="Knife or multi-tool" detail="Small, practical" />
 </SupplyList>
@@ -99,13 +99,13 @@ For a detailed packing walkthrough, see the <FieldCardRef slug="fc-go-bag-packin
 
 ## Communication tree
 
-When cell networks overload — and they will — you need a system that doesn't depend on everyone calling everyone.
+When cell networks overload, and they will, you need a system that doesn't depend on everyone calling everyone.
 
 **The 3-person rule:** You call 3 people. Each of them calls 3 people. In two rounds, 12 people know your status and your plan. In three rounds, the entire extended family is informed.
 
 Your three are:
 1. **Your spouse** (or whoever is at home with the kids)
-2. **One family member** who knows the plan — ideally not in the same house
+2. **One family member** who knows the plan, ideally not in the same house
 3. **One neighbour** in your street cluster
 
 Each of them has their own three. Write it down. Everyone gets a copy.
@@ -119,10 +119,10 @@ Each of them has their own three. Write it down. Everyone gets a copy.
 - **"Moving to secondary"** = primary isn't safe, heading to secondary rally point
 - **"Going out"** = evacuating the city, heading to tertiary
 
-**Walkie-talkie backup:** If you've invested in Baofeng UV-5Rs or Motorola Talkabouts (Rs. 5,000-12,000 per pair on Daraz), pre-agree a channel and a check-in schedule. Channel 5, every hour on the hour, for the first 3 hours. Then every 3 hours after that. Keep transmissions short — battery matters.
+**Walkie-talkie backup:** If you've invested in Baofeng UV-5Rs or Motorola Talkabouts (Rs. 5,000-12,000 per pair on Daraz), pre-agree a channel and a check-in schedule. Channel 5, every hour on the hour, for the first 3 hours. Then every 3 hours after that. Keep transmissions short because battery matters.
 
 <Callout type="warning" title="Realistic walkie-talkie range">
-In urban Karachi — concrete buildings, narrow streets, electrical interference — expect 1-2km from standard handhelds. Long-range models might give you 2-3km. Ignore the 10km or 15km claims on the box. Those are open-field, line-of-sight ranges that don't exist in this city.
+In urban Karachi, with concrete buildings, narrow streets, and electrical interference, expect 1-2km from standard handhelds. Long-range models might give you 2-3km. Ignore the 10km or 15km claims on the box. Those are open-field, line-of-sight ranges that don't exist in this city.
 </Callout>
 
 ## The first 5 minutes
@@ -130,24 +130,24 @@ In urban Karachi — concrete buildings, narrow streets, electrical interference
 When the news breaks and you decide to move, here's the sequence:
 
 1. **Call your spouse.** One sentence: "We're moving. Pack the bags. I'm coming." Hang up.
-2. **Call your #2 and #3.** Same message. "We're moving." They activate their own trees.
+2. **Call your #2 and #3.** Same message: "We're moving." They activate their own trees.
 3. **Leave work.** Don't wait for permission. Don't finish the meeting. Walk out now. Every minute you wait is a minute closer to gridlock.
-4. **Drive home.** If traffic is already building, take the route you've already planned (you have a planned route, right?). Avoid main arteries — Shahra-e-Faisal will be the first to lock up.
+4. **Drive home.** If traffic is already building, take the route you've already planned. Avoid main arteries, as Shahra-e-Faisal will be the first to lock up.
 5. **At home:** Bags are by the door. Your spouse has the kids ready. One last check: documents pouch, cash, phones charged, water. Get in the car. Go.
 
-That's five minutes if you've prepared. That's forty-five minutes of panic if you haven't.
+A prepared family does this in five minutes. An unprepared one spends that time in panic.
 
 ## Tonight
 
-Here's what you do tonight. Not tomorrow. Not this weekend. Tonight.
+Here's what you do tonight.
 
 1. **Pick your three rally points.** Write them down.
 2. **Fill your tank.** If it's below half, fill it tomorrow morning. Then never let it drop below half again.
-3. **Start your grab bag.** Even if it's just documents + cash + water in a backpack by the door. That's better than nothing. Build it out over the next week.
+3. **Start your grab bag.** Even if it's just documents, cash, and water in a backpack by the door, that's better than nothing. Build it out over the next week.
 4. **Choose your three people.** Call them. Tell them they're your three. Agree on the phrases. Send them this guide.
-5. **Talk to your family.** Not to scare them — to prepare them. "If something happens, here's what we do." Kids who know the plan are calmer than kids who don't.
+5. **Talk to your family.** Not to scare them, but to prepare them. "If something happens, here's what we do." Kids who know the plan are calmer than kids who don't.
 
-You probably won't need this plan tomorrow. But when you need it, you'll need it in 30 minutes. And you won't have time to build it then.
+You probably won't need this plan tomorrow. But when you need it, you'll need it in 30 minutes, and you won't have time to build it then.
 
 <EmergencyNumbers />
 

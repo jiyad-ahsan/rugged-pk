@@ -13,7 +13,7 @@ sections:
   - "Resource management"
   - "Information gathering"
   - "Decision framework"
-excerpt: "Sometimes the safest move is no move at all. How to fortify your home for a multi-day lockdown — securing entry points, managing power and water, keeping your family calm, and knowing when it's finally time to go."
+excerpt: "Leaving isn't always the right call. This guide covers how to secure your home for a multi-day lockdown: entry points, water, power, keeping the family calm, and knowing when it's actually time to go."
 relatedCards: ["fc-door-barricade", "fc-window-reinforce", "fc-shutoff-utilities", "fc-blackout-curtains"]
 relatedGuides: ["30-minute-window", "water-when-taps-stop", "sattu-chana-emergency-food", "family-emergency-plan"]
 status: "published"
@@ -23,42 +23,42 @@ Air raid sirens. Your phone lights up with an emergency alert. Drones or missile
 
 You're not going anywhere. So now what?
 
-The 30-Minute Window covers when you can leave. This guide covers when you can't — or when leaving is more dangerous than staying. Whether it's an airstrike warning, a sudden escalation at the border, an earthquake that's made the streets unsafe, or a curfew during unrest — the situation is the same. You're at home, you're staying at home, and how well you manage depends on what you did before it happened.
+The 30-Minute Window covers when you can leave. This guide covers when you can't, or when leaving is more dangerous than staying. Whether it's an airstrike warning, a sudden escalation at the border, an earthquake that's made the streets unsafe, or a curfew during unrest — the situation is the same. You're at home, you're staying at home, and how well you manage depends on what you did before it happened.
 
 ## Home hardening
 
-Your home is not a fortress. But it doesn't need to be. You're not defending against a siege — you're making your space harder to enter, harder to see into, and safer to stay in.
+Your home isn't a fortress, but it doesn't need to be. You're not defending against a siege. The goal is making your space harder to enter, harder to see into, and safer to stay in.
 
 ### Doors
 
-Your front door is your primary vulnerability. Most residential doors in Pakistan — especially in apartments — are hollow-core or thin wood with basic locks. A determined kick breaks them open.
+Your front door is your primary vulnerability. Most residential doors in Pakistan, especially in apartments, are hollow-core or thin wood with basic locks. A determined kick breaks them open.
 
 **Immediate improvements:**
 
 - **Deadbolt.** If your front door only has a latch lock, add a deadbolt. A decent one costs Rs. 1,500-3,000 from any hardware store. This is the single highest-value security upgrade you can make.
-- **Door chain or bar.** A steel door chain adds a second layer. A horizontal door bar (the kind that braces against the floor) is even better — Rs. 2,000-4,000.
-- **Barricading during crisis.** Heavy furniture against the door. An almari doesn't stop a battering ram, but it slows entry by 30-60 seconds — which is enough time to move your family to the safe room. Push the heaviest piece you can manage flush against the door, angled so it wedges.
+- **Door chain or bar.** A steel door chain adds a second layer. A horizontal door bar (the kind that braces against the floor) is even better at Rs. 2,000-4,000.
+- **Barricading during crisis.** Heavy furniture against the door. An almari doesn't stop a battering ram, but it slows entry by 30-60 seconds, which is enough time to move your family to the safe room. Push the heaviest piece you can manage flush against the door, angled so it wedges.
 
 For step-by-step barricade techniques, see the <FieldCardRef slug="fc-door-barricade" title="Door Barricade Field Card" />.
 
 ### Windows
 
-Most Pakistani homes have window grills — metal bars welded over windows. In normal life, these are a security feature. In a fire, they're a death trap. Know the trade-off.
+Most Pakistani homes have window grills, metal bars welded over windows. In normal life, these are a security feature. In a fire, they're a death trap. Know the trade-off.
 
 **During a shelter-in-place:**
 
-- **Tape X-patterns on glass.** This doesn't prevent the glass from breaking — it reduces shatter spray. A nearby blast can turn a window into shrapnel. Packing tape or masking tape in an X across each pane. Takes five minutes per window.
+- **Tape X-patterns on glass.** This doesn't prevent the glass from breaking, but it reduces shatter spray. A nearby blast can turn a window into shrapnel. Packing tape or masking tape in an X across each pane. Takes five minutes per window.
 - **Cover windows.** Cardboard, plywood if you have it, thick blankets. This catches glass fragments from blast pressure or impacts, and blocks visibility from outside.
 - **Blackout.** If the power is out on your street but you're running a UPS or generator, light from your windows tells everyone you have resources. Black garbage bags taped over windows, dark blankets, cardboard — seal the edges so no light leaks. This isn't paranoia. During extended curfews, houses with visible light have been targeted for theft.
 
 ### The safe room
 
-Pick one room in your home as the fallback. This is where your family goes if things escalate — an airstrike warning, an explosion nearby, structural shaking, sounds of forced entry, or anything that makes the rest of the house feel exposed.
+Pick one room in your home as the fallback. This is where your family goes if things escalate: an airstrike warning, an explosion nearby, structural shaking, sounds of forced entry, or anything that makes the rest of the house feel exposed.
 
 **Criteria:**
 
 - **Interior room.** No exterior walls if possible. A bedroom or bathroom that doesn't face the street. In a strike scenario, exterior walls and windows are where shrapnel and blast pressure enter.
-- **Lower floor.** If you're in a multi-storey house, ground floor or basement. In an apartment, use the most interior room available — ideally one surrounded by other rooms, not the building's outer shell.
+- **Lower floor.** If you're in a multi-storey house, ground floor or basement. In an apartment, use the most interior room available, ideally one surrounded by other rooms, not the building's outer shell.
 - **Away from windows.** Obvious, but easy to forget when panicking.
 - **Has a lock.** Even a bathroom lock provides a few seconds of warning.
 
@@ -83,8 +83,8 @@ This is your most critical resource. You can survive days without food. Without 
 
 **Immediate actions when a curfew is declared:**
 
-1. Fill every container you own. Pots, buckets, bottles, the bathtub if you have one. Fill your overhead tank if the water is still running — it might not be by morning.
-2. Inventory what you have. A standard overhead tank holds 500-1,000 litres. But that's shared between drinking, cooking, flushing, and washing. Drinking alone: 3-4 litres per person per day. Family of four = 10-16 litres/day depending on children's ages.
+1. Fill every container you own: pots, buckets, bottles, the bathtub if you have one. Fill your overhead tank if the water is still running, as it might not be by morning.
+2. Inventory what you have. A standard overhead tank holds 500-1,000 litres, but that's shared between drinking, cooking, flushing, and washing. Drinking alone: 3-4 litres per person per day. Family of four = 10-16 litres/day depending on children's ages.
 3. Start rationing immediately if you don't know how long this will last. Don't wait until the tank is low.
 
 For purification methods if your stored water runs out, see the Water When the Taps Stop guide.
@@ -94,7 +94,7 @@ For purification methods if your stored water runs out, see the Water When the T
 You can stretch food further than you think.
 
 - **Eat perishables first.** Fridge contents go bad fast once power cuts. Eat the fresh stuff on day one.
-- **Cook what needs cooking while you still have gas.** If sui gas is still running, cook rice, dal, or whatever you have in bulk. Cooked food lasts longer than raw ingredients if power is out.
+- **Cook what needs cooking while you still have gas.** If sui gas is still running, cook rice, dal, or whatever you have in bulk. Cooked food lasts longer than raw ingredients once power is out.
 - **Then shift to shelf-stable.** Sattu, roasted chana, dates, rusks, glucose biscuits. These don't need cooking or refrigeration.
 - **Calorie target.** An adult sitting around the house needs roughly 1,500-1,800 calories per day. Kids less. You're not running marathons — you're waiting. Eat enough to function, not enough to feel full.
 
@@ -109,7 +109,7 @@ Your UPS is not going to save you. A standard home UPS with 2 batteries gives yo
 **Priority order for device charging:**
 
 1. **Phones.** Communication is survival. Charge phones first, always. Put them in airplane mode when not actively using them — extends battery by 3-4x.
-2. **Power bank.** If you have one, charge it while UPS is running. A 20,000mAh power bank gives you roughly 4-5 full phone charges.
+2. **Power bank.** If you have one, charge it while the UPS is running. A 20,000mAh power bank gives you roughly 4-5 full phone charges.
 3. **Torch.** If it's rechargeable, charge it. If it's battery-powered, confirm you have spares.
 4. **Everything else can wait.** The TV, the laptop, the router (your ISP's backbone is probably down anyway) — none of these matter.
 
@@ -130,14 +130,14 @@ During a shelter-in-place, information is the difference between calm and panic.
 ### Sources — ranked by reliability
 
 1. **FM radio.** If you have a battery-powered or hand-crank radio, this is your most reliable source. Radio Pakistan, local FM stations. They broadcast during internet shutdowns.
-2. **TV news.** If you have power. Multiple channels — no single channel is fully reliable. Watch for patterns across sources, not individual claims.
+2. **TV news.** If you have power. Watch multiple channels — no single channel is fully reliable. Look for patterns across sources, not individual claims.
 3. **Phone calls.** Direct calls to people you trust who are in other areas. "What's happening on your street?" is more useful than any news ticker.
 4. **WhatsApp.** Useful for coordination with family and neighbours. Terrible for news. Forwards are mostly rumours, old videos recycled, and panic. Verify before believing.
 5. **Social media.** Lowest reliability. Treat everything as unverified until confirmed by multiple independent sources.
 
 ### Information discipline
 
-Designate one person in the household as the "information officer." This person checks news 3 times a day — morning, afternoon, evening. They filter what the family needs to know versus what will just cause panic.
+Designate one person in the household as the "information officer." This person checks news 3 times a day: morning, afternoon, evening. They filter what the family needs to know versus what will just cause panic.
 
 Kids don't need to watch the news. If your children are young, keep the TV off in common areas. Tell them what they need to know in age-appropriate terms: "We're staying home today because the roads aren't safe. It'll be okay. We have food and water and we're together."
 
@@ -149,15 +149,15 @@ After dark, if your area has lost power but you haven't:
 - Use torches pointed downward or into walls (indirect light) rather than overhead lights.
 - Don't use your phone screen near windows.
 
-During an active conflict or strike scenario, visible light makes your building stand out. During a breakdown of civil order, it advertises that your house has power and supplies. Either way — stay dark.
+During an active conflict or strike scenario, visible light makes your building stand out. During a breakdown of civil order, it advertises that your house has power and supplies. Either way, stay dark.
 
 ## Utility shutoffs
 
 Know where your utility shutoffs are before you need them.
 
-**Sui gas:** Your gas meter has a shutoff valve. It's usually a lever or wheel on the pipe coming into your meter. Turn it perpendicular to the pipe to close. Shut off gas if you smell a leak, if there's structural damage to your building, or during an earthquake.
+**Sui gas:** Your gas meter has a shutoff valve, usually a lever or wheel on the pipe coming into your meter. Turn it perpendicular to the pipe to close. Shut off gas if you smell a leak, if there's structural damage to your building, or during an earthquake.
 
-**Electricity:** Your main breaker panel — usually near your front door or in a utility area. Know which breaker is the main. Shut off electricity if there's flooding (water + live wiring = electrocution), if you smell burning, or if wiring is damaged.
+**Electricity:** Your main breaker panel, usually near your front door or in a utility area. Know which breaker is the main. Shut off electricity if there's flooding (water plus live wiring equals electrocution), if you smell burning, or if wiring is damaged.
 
 **Water:** Your main water valve is typically near the ground-floor entry point of the supply line. Shutting it off prevents contaminated supply water from entering your tank if the mains are compromised.
 
@@ -168,9 +168,9 @@ For a visual walkthrough, see the <FieldCardRef slug="fc-shutoff-utilities" titl
 A 3-day shelter-in-place is 90% boredom and 10% fear. The boredom is harder to manage than you think, especially with kids.
 
 - **Maintain routine.** Wake up at a normal time. Eat at normal times. Have a bedtime. Structure prevents spiral.
-- **Give everyone a job.** Someone is on water duty (tracking consumption). Someone manages food prep. Someone is the information officer. Even kids can have a job — keeping the torches organised, rationing the biscuits.
+- **Give everyone a job.** Someone is on water duty (tracking consumption). Someone manages food prep. Someone is the information officer. Even kids can have a job: keeping the torches organised, rationing the biscuits.
 - **Physical activity.** Stretching, bodyweight exercises, even pacing the hall. Bodies that don't move get anxious faster.
-- **Entertainment.** Offline entertainment. Books, cards, board games, colouring books for kids. Phones will be conserved for communication, not TikTok.
+- **Entertainment.** Offline entertainment: books, cards, board games, colouring books for kids. Phones will be conserved for communication, not TikTok.
 - **Talk to each other.** This sounds obvious but during sustained stress, families go quiet. Check in. "How are you doing? Are you scared? Me too. We're okay."
 
 <Callout type="important" title="Kids absorb your energy">
@@ -193,8 +193,8 @@ This is the hardest call. You've been sheltering for two days. Things aren't get
 
 - Your building has sustained structural damage (cracks in load-bearing walls, partial collapse, fire, blast damage)
 - You're out of water with no way to get more
-- There is a direct, credible threat to your specific location — your building, your street, a nearby target (military installation, government building, infrastructure)
-- A safe corridor has been confirmed by trusted sources (not WhatsApp forwards)
+- There is a direct, credible threat to your specific location: your building, your street, a nearby target (military installation, government building, infrastructure)
+- A safe corridor has been confirmed by trusted sources, not WhatsApp forwards
 - Medical emergency that you cannot handle at home
 
 **The default is stay.** Moving during an active crisis is almost always more dangerous than staying put in a sound structure with supplies. The urge to "do something" is strong. Resist it unless the specific triggers above are met.
@@ -209,7 +209,7 @@ You don't need to buy anything tonight. Just do this:
 2. **Find your utility shutoffs.** Gas, electric, water. Can you reach them in the dark?
 3. **Count your water.** How many litres do you have stored right now? If the answer is zero, fill two 5-litre bottles and put them in a cupboard. That's a start.
 4. **Charge a power bank.** Keep it charged from now on. Always.
-5. **Talk to your spouse.** Not about what might happen — about what you'll do if it does. "If there's a curfew, here's our plan."
+5. **Talk to your spouse.** Not about what might happen, but about what you'll do if it does. "If there's a curfew, here's our plan."
 
 The crisis you shelter through won't be the one you expected. But a family that has talked about it, picked a room, knows where the water is, and has a charged phone — that family will be okay.
 

@@ -21,20 +21,20 @@ status: "published"
 
 ## What you need
 
-- **Gauze** — hemostatic gauze (like QuikClot or Celox) is ideal, but regular clean gauze works
+- **Gauze:** hemostatic gauze (like QuikClot or Celox) is ideal, but regular clean gauze works
 - **Gloves** if available
 - A clean cloth, dupatta, or torn shirt if no gauze is available
 
 ## Steps
 
-1. **Expose the wound** — remove or cut away clothing to see the full wound
-2. **Identify the source** — find where the blood is coming from inside the wound
-3. **Start packing** — push gauze firmly and directly into the wound cavity, starting at the deepest point where the bleeding is heaviest
-4. **Pack tightly** — feed gauze into the wound continuously, packing it in firmly with your fingers. Do not be gentle — you need to create pressure inside the wound
-5. **Fill the entire cavity** — keep packing until the wound is completely filled with gauze, slightly above skin level
-6. **Apply pressure** — place your palm over the packed wound and press down hard for 3–5 minutes
-7. **Bandage over it** — wrap a pressure bandage tightly over the packed wound to hold everything in place
-8. **Do not remove packing** — even if blood soaks through, add more material on top. Never pull out packing to "check"
+1. **Expose the wound:** remove or cut away clothing to see the full wound
+2. **Identify the source:** find where the blood is coming from inside the wound
+3. **Start packing:** push gauze firmly and directly into the wound cavity, starting at the deepest point where the bleeding is heaviest
+4. **Pack tightly:** feed gauze into the wound continuously, packing it in firmly with your fingers. Do not be gentle — you need to create pressure inside the wound.
+5. **Fill the entire cavity:** keep packing until the wound is completely filled with gauze, slightly above skin level
+6. **Apply pressure:** place your palm over the packed wound and press down hard for 3–5 minutes
+7. **Bandage over it:** wrap a pressure bandage tightly over the packed wound to hold everything in place
+8. **Do not remove packing:** even if blood soaks through, add more material on top. Never pull out packing to "check."
 
 ## Using improvised materials
 

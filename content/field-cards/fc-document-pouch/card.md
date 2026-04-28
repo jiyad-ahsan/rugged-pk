@@ -2,12 +2,12 @@
 type: "field-card"
 slug: "fc-document-pouch"
 title: "Document Pouch"
-subtitle: "The papers that prove you exist."
+subtitle: "Every critical document, in one waterproof pouch."
 tag: "essentials"
 date: "2026-04"
 readTime: "2 min"
 sketch: "backpack"
-excerpt: "Every document you need in a waterproof pouch, ready to grab. Originals stay home in a fireproof spot — this pouch carries copies."
+excerpt: "A waterproof pouch with photocopies of every critical document, ready to grab with your go-bag. Originals stay home; this carries copies."
 relatedGuides: ["go-bag-guide", "30-minute-window", "family-emergency-plan"]
 status: "published"
 ---
@@ -18,8 +18,8 @@ Keep **photocopies** of everything below in a waterproof zip-lock bag or dry pou
 
 ### Identity
 
-- CNIC (front and back) — every family member
-- Passport bio page — every family member
+- CNIC (front and back) for every family member
+- Passport bio page for every family member
 - Birth certificates
 - Nikah nama / marriage certificate
 - Children's B-forms
@@ -50,7 +50,7 @@ One laminated card with:
 ## Storage tips
 
 - Use a **zip-lock bag inside a dry bag** for double waterproofing
-- Store in the same spot as your go-bag — not inside it, but next to it so you can grab both
+- Store in the same spot as your go-bag, next to it rather than inside it, so you can grab both
 - Take photos of every document and store them in a password-protected folder on your phone and in cloud storage
 - Update every 6 months or when any document changes
 

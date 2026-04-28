@@ -7,7 +7,7 @@ tag: "food & water"
 date: "2026-04"
 readTime: "2 min"
 sketch: "food"
-excerpt: "Five meals you can prepare with zero cooking using only ingredients available at any Pakistani grocery store. No gas, no electricity, no problem."
+excerpt: "Five meals you can prepare without cooking, using ingredients from any Pakistani grocery store. No gas or electricity required."
 relatedGuides: ["sattu-chana-emergency-food"]
 status: "published"
 ---

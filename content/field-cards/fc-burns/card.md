@@ -14,18 +14,18 @@ status: "published"
 
 ## Immediate response (first 20 minutes)
 
-1. **Remove the source** — get the person away from fire, heat, or electrical source
-2. **Cool the burn** — hold under cool running water for **20 minutes minimum**. Not ice water, not ice — cool tap water.
-3. **Remove clothing and jewellery** near the burn — but do NOT pull off anything stuck to the skin
+1. **Remove the source:** get the person away from fire, heat, or electrical source
+2. **Cool the burn:** hold under cool running water for **20 minutes minimum**. Not ice water, not ice — cool tap water.
+3. **Remove clothing and jewellery** near the burn, but do NOT pull off anything stuck to the skin
 4. **Cover loosely** with clean cling wrap or a clean, non-fluffy cloth
 
 ## What NOT to do
 
-- **No ice** — causes frostbite on top of the burn
-- **No toothpaste, butter, oil, or egg white** — these are common home remedies in Pakistan that trap heat and cause infection
-- **No popping blisters** — blisters protect the healing skin underneath
-- **No cotton wool or fluffy fabric** — fibres stick to burns and are agonising to remove
-- **No tight bandaging** — burns swell; tight wrapping cuts off circulation
+- **No ice:** causes frostbite on top of the burn
+- **No toothpaste, butter, oil, or egg white:** these are common home remedies in Pakistan that trap heat and cause infection
+- **No popping blisters:** blisters protect the healing skin underneath
+- **No cotton wool or fluffy fabric:** fibres stick to burns and are agonising to remove
+- **No tight bandaging:** burns swell, and tight wrapping cuts off circulation
 
 ## Burn severity
 
@@ -42,7 +42,7 @@ status: "published"
 ### Severe (third-degree)
 - White, brown, or charred skin
 - May be painless (nerve damage)
-- **This is an emergency** — get to a hospital immediately
+- **This is an emergency.** Get to a hospital immediately.
 - Cover loosely, do not apply anything, keep the person warm
 
 ## When to go to hospital immediately

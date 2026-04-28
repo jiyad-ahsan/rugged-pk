@@ -2,12 +2,12 @@
 type: "field-card"
 slug: "fc-start-fire"
 title: "Starting a Fire"
-subtitle: "Three methods, zero fancy gear."
+subtitle: "Three ways to start a fire with what you already have."
 tag: "food & water"
 date: "2026-04"
 readTime: "2 min"
 sketch: "food"
-excerpt: "How to start a cooking fire safely using materials available in any Pakistani household or market. For cooking, boiling water, or warmth."
+excerpt: "How to start a cooking fire safely using materials available in any Pakistani household or market, whether for cooking, boiling water, or warmth."
 relatedGuides: ["sattu-chana-emergency-food"]
 status: "published"
 ---

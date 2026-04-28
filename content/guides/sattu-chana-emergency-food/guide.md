@@ -13,7 +13,7 @@ sections:
   - "Sourcing guide"
   - "Storage in heat"
   - "Calorie planning"
-excerpt: "Forget freeze-dried Western rations nobody here has tasted. Pakistan already has the perfect emergency foods — sattu alone can sustain you for days and costs almost nothing."
+excerpt: "Most Western emergency food advice doesn't apply here. Pakistan already has shelf-stable, calorie-dense foods your family actually eats: sattu, roasted chana, dates. This guide covers what to stock, how much, and how to store it through the heat."
 relatedCards: ["fc-start-fire", "fc-improvised-stove", "fc-no-cook-meals", "fc-food-preservation"]
 relatedGuides: ["water-when-taps-stop", "shelter-in-place"]
 status: "published"
@@ -23,7 +23,7 @@ Day three. The power hasn't come back since it went out. The fridge stopped bein
 
 Except you planned for this. You have a steel container in the cupboard with 5 kg of sattu, a tin of roasted chana, a bag of dates, and a pack of glucose biscuits. It cost you about Rs. 5,000 and it's going to keep your family fed for a week.
 
-This guide is about emergency food that's already Pakistani. No freeze-dried Western rations. No MREs you've never tasted and can't buy here anyway. The best emergency food for Pakistan is the food Pakistan already eats.
+This guide is about emergency food that's already Pakistani. No freeze-dried Western rations, no MREs you've never tasted and can't buy here anyway. The best emergency food for Pakistan is the food Pakistan already eats.
 
 ## Why local foods win
 
@@ -45,19 +45,19 @@ Sattu is the closest thing Pakistan has to a perfect emergency food. It's roaste
 
 **Why it's ideal:**
 
-- Mixes with water — hot or cold. No cooking needed.
+- Mixes with water, hot or cold. No cooking needed.
 - Calorie-dense: roughly 400 calories per 100g
 - Protein-rich: around 20g protein per 100g
 - Shelf-stable for months in a sealed container
 - Costs roughly Rs. 200-350 per kg
 
-**How to use it:** Mix 3-4 tablespoons of sattu into a glass of water. Add a pinch of salt and squeeze of lemon if you have it. That's a meal. Not a snack — a meal. You can make it sweet with sugar or gur instead. It takes 30 seconds and fills you up.
+**How to use it:** Mix 3-4 tablespoons of sattu into a glass of water. Add a pinch of salt and squeeze of lemon if you have it. That's a meal, not a snack. You can make it sweet with sugar or gur instead. It takes 30 seconds and fills you up.
 
 5 kg of sattu gives a family of four roughly 50 meals. At Rs. 300/kg, that's Rs. 1,500 for a week of backup food. There is nothing cheaper or more practical.
 
 ### Roasted chana (bhuna chana)
 
-The second pillar. Roasted chickpeas — crunchy, salty, satisfying.
+The second pillar. Roasted chickpeas: crunchy, salty, satisfying.
 
 - ~350 calories per 100g
 - Protein and fibre-rich — keeps you feeling full
@@ -83,7 +83,7 @@ Compact energy. Dates are nature's energy bar.
 
 Every Pakistani knows these. The orange-wrapper ones from every corner shop.
 
-- Cheap — Rs. 10-20 per pack
+- Cheap at Rs. 10-20 per pack
 - Kids will eat them without complaint
 - Decent quick calories
 - Long shelf life in sealed packaging
@@ -92,13 +92,13 @@ Stock 15-20 packs. These are comfort food as much as survival food. In a crisis,
 
 ### Rusks
 
-Dried bread slices — essentially hardtack. Available from any bakery.
+Dried bread slices, essentially hardtack. Available from any bakery.
 
 - Long shelf life
 - Can be eaten dry or softened in water/chai/milk
 - Rs. 100-200 per pack
 
-Stock 2-3 packs. Good for breakfast substitute.
+Stock 2-3 packs. Good as a breakfast substitute.
 
 ### Gur (jaggery)
 
@@ -141,11 +141,11 @@ One pack is enough. Prioritise for kids' nutrition.
 
 When sui gas is cut and you have no stove, here are five combinations that need zero cooking:
 
-1. **Sattu drink** — 3 tbsp sattu + glass of water + pinch of salt. Sweet version: add sugar or gur instead of salt. A complete meal in 30 seconds.
-2. **Chana chaat** — Roasted chana + diced onion (if available) + salt + lemon. Filling and protein-rich.
-3. **Date and chana mix** — Handful of dates + handful of roasted chana. Balanced energy — sugars from dates, protein from chana. Good for kids.
-4. **Rusk with powdered milk** — Rusk softened in powdered milk mixed with water. Breakfast.
-5. **Glucose biscuits with peanut butter** — If you keep a jar of peanut butter (Rs. 400-600), spreading it on glucose biscuits gives you a calorie-dense, protein-rich snack. Kids will eat this happily.
+1. **Sattu drink:** 3 tbsp sattu + glass of water + pinch of salt. Sweet version: add sugar or gur instead of salt. A complete meal in 30 seconds.
+2. **Chana chaat:** Roasted chana + diced onion (if available) + salt + lemon. Filling and protein-rich.
+3. **Date and chana mix:** Handful of dates + handful of roasted chana. Balanced energy — sugars from dates, protein from chana. Good for kids.
+4. **Rusk with powdered milk:** Rusk softened in powdered milk mixed with water. Breakfast.
+5. **Glucose biscuits with peanut butter:** If you keep a jar of peanut butter (Rs. 400-600), spreading it on glucose biscuits gives you a calorie-dense, protein-rich snack. Kids will eat this happily.
 
 For a printable reference, see the <FieldCardRef slug="fc-no-cook-meals" title="No-Cook Emergency Meals Field Card" />.
 
@@ -162,7 +162,7 @@ Don't guess. A rough framework:
 
 **Family of four (two adults, two kids) = roughly 5,500-6,500 calories per day.**
 
-You're not trying to eat normally. You're trying to maintain function — enough energy to think clearly, stay calm, and take care of your family. You'll feel hungry. That's okay. Hungry is manageable. Malnourished is not — and with the pantry above, you won't be.
+You're not trying to eat normally. You're trying to maintain function — enough energy to think clearly, stay calm, and take care of your family. You'll feel hungry. That's okay. Hungry is manageable. Malnourished is not, and with the pantry above, you won't be.
 
 **Rationing framework if duration is unknown:**
 
@@ -200,10 +200,10 @@ If sui gas is cut but you need to cook — rice, dal, chai — you have options:
 
 **Portable gas stove:** A single-burner butane stove runs Rs. 2,000-4,000. Replacement canisters are Rs. 200-400 each. One canister gives you 2-3 hours of cooking. Keep 3-4 canisters stored. This is the easiest option and handles almost everything you'd normally cook on a stovetop.
 
-**Solid fuel tablets:** Small hexamine tabs — Rs. 300-500 for a pack. Enough to boil water or heat a small pot. Good for chai, not practical for cooking rice.
+**Solid fuel tablets:** Small hexamine tabs at Rs. 300-500 for a pack. Enough to boil water or heat a small pot. Good for chai, not practical for cooking rice.
 
 <Callout type="danger" title="Carbon monoxide kills">
-Charcoal angeethi, wood fires, or generators — NEVER use these indoors or in enclosed spaces. Carbon monoxide is odourless. You won't smell it. Every year, families in Pakistan die from cooking with charcoal in closed rooms during winter or emergencies. If you're burning anything, do it outside — balcony, courtyard, rooftop. No exceptions.
+Charcoal angeethi, wood fires, or generators — NEVER use these indoors or in enclosed spaces. Carbon monoxide is odourless. You won't smell it. Every year, families in Pakistan die from cooking with charcoal in closed rooms during winter or emergencies. If you're burning anything, do it outside: balcony, courtyard, rooftop. No exceptions.
 </Callout>
 
 ## What about canned food?
@@ -216,7 +216,7 @@ If you want canned food, stock practical items:
 - Canned chickpeas (faster than cooking dry ones)
 - Condensed milk (calories, comfort, chai)
 
-But these are supplements, not the core. The core is sattu, chana, dates. Everything else is bonus.
+These are supplements, not the core. The core is sattu, chana, dates. Everything else is bonus.
 
 ## Tonight
 
@@ -225,8 +225,8 @@ But these are supplements, not the core. The core is sattu, chana, dates. Everyt
 3. **Pick a shelf.** One shelf in one cupboard. That's your emergency food shelf. Label it if you want, or just know where it is.
 4. **Tell your spouse.** "This shelf has emergency food. If things go bad, this is what we eat."
 
-Total cost for tonight: under Rs. 1,500. Time: one stop at the store and 10 minutes at home. That's it. You now have 3-4 days of backup food for your family that doesn't need cooking, doesn't need a fridge, and doesn't need electricity.
+Total cost for tonight: under Rs. 1,500. Time: one stop at the store and 10 minutes at home. You now have 3-4 days of backup food for your family that doesn't need cooking, doesn't need a fridge, and doesn't need electricity.
 
-Build it out to a full week over the next month. Replace what you eat. Check it every quarter. Done.
+Build it out to a full week over the next month. Replace what you eat. Check it every quarter.
 
 <PrintNote>Print this guide and tape the supply list to the inside of your emergency food cupboard. When you're restocking, you'll know exactly what to buy.</PrintNote>

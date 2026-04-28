@@ -15,7 +15,7 @@ sections:
   - "Check-in protocol"
   - "Offline messaging"
   - "FM radio"
-excerpt: "The government shut down mobile internet for 'security reasons.' Millions couldn't reach their families. It lasted days. It will happen again — and next time it might not just be the internet."
+excerpt: "Pakistan's government has shut down mobile networks multiple times. When it happens, calls don't connect and WhatsApp sits on single ticks. This guide covers what to set up now so your family can still reach each other."
 relatedCards: ["fc-walkie-quickstart"]
 relatedGuides: ["30-minute-window", "shelter-in-place", "family-emergency-plan"]
 status: "published"
@@ -25,7 +25,7 @@ Your phone shows full bars but WhatsApp won't connect. You switch to a call — 
 
 This isn't hypothetical. Pakistan has experienced multiple government-ordered internet and mobile shutdowns in recent years. When networks go down — whether from overload, a government order, or physical damage — calls won't connect, WhatsApp messages sit on single ticks, and families get cut off from each other.
 
-In an actual strike scenario — the kind that countries in the Middle East have experienced — cell towers can be physically destroyed. No amount of rebooting your phone fixes a tower that isn't there anymore.
+In an actual strike scenario, the kind that countries in the Middle East have experienced, cell towers can be physically destroyed. No amount of rebooting your phone fixes a tower that isn't there anymore.
 
 This guide is about what happens when your phone stops being useful for communication, and what you should have set up before that happens.
 
@@ -37,16 +37,11 @@ Understanding why helps you figure out what will still work.
 
 This is the most common failure. Everyone tries to call at the same time. Cell towers have a limited number of simultaneous connections — when a crisis hits and a million people all grab their phones, the network chokes.
 
-**What still works:** SMS sometimes gets through when calls don't. Text messages use far less bandwidth. Try a text before repeated call attempts. WhatsApp messages may queue and deliver later if internet is congested but not down.
+**What still works:** SMS sometimes gets through when calls don't. Text messages use far less bandwidth. Try a text before repeated call attempts. WhatsApp messages may queue and deliver later if internet is congested but not fully down.
 
 ### Government shutdown
 
-Pakistan has some of the most frequent internet and network shutdowns in the world. The government has shut down mobile data, social media, and sometimes entire cellular networks during:
-
-- Elections
-- Political protests
-- Military operations
-- "Security situations" (often undefined)
+Pakistan has some of the most frequent internet and network shutdowns in the world. The government has shut down mobile data, social media, and sometimes entire cellular networks during elections, political protests, military operations, and undefined "security situations."
 
 These shutdowns are typically targeted — mobile data goes first, then social media, then voice calls if things escalate. Fixed broadband (PTCL fibre, Stormfibre) usually stays up longer than mobile networks.
 
@@ -60,13 +55,13 @@ In a conflict scenario — airstrikes, missiles, or heavy bombardment — cell t
 
 ### Power failure
 
-Cell towers have battery backup — typically 4-8 hours. Extended power outages beyond that and towers start going dark one by one. You'll notice your signal gradually degrading as nearby towers die.
+Cell towers have battery backup, typically 4-8 hours. Extended power outages beyond that and towers start going dark one by one. You'll notice your signal gradually degrading as nearby towers die.
 
 **What still works:** The same as physical destruction — anything that doesn't need the cell network.
 
 ## Walkie-talkies — your best backup
 
-A pair of walkie-talkies is the cheapest, most practical communication backup a Pakistani family can own. They don't need cell towers, they don't need the internet, they don't need electricity (beyond their own batteries), and the government can't shut them down.
+A pair of walkie-talkies is the cheapest, most practical communication backup a Pakistani family can own. They don't need cell towers, they don't need the internet, they don't need electricity beyond their own batteries, and the government can't shut them down.
 
 ### What to buy
 
@@ -80,11 +75,11 @@ A pair of walkie-talkies is the cheapest, most practical communication backup a 
 **Simple option — Motorola Talkabout or equivalent:**
 - Rs. 5,000-12,000 per pair
 - Push to talk, almost no setup needed
-- Runs on AA batteries (huge advantage — you can stockpile them)
+- Runs on AA batteries (huge advantage, as you can stockpile them)
 - Simpler, more reliable for families
 - Downside: less range than Baofeng
 
-**Buy in pairs or sets.** A single walkie-talkie is useless. Buy at least 2 — one for home, one for whoever is most likely to be out (usually the person who goes to work). Better: buy 3-4 and distribute across family members or neighbours.
+**Buy in pairs or sets.** A single walkie-talkie is useless. Buy at least 2: one for home, one for whoever is most likely to be out (usually the person who goes to work). Better: buy 3-4 and distribute across family members or neighbours.
 
 ### Realistic range expectations
 
@@ -92,7 +87,7 @@ Ignore the numbers on the box. Every manufacturer claims 10km, 15km, even 30km r
 
 - **Standard handheld (Motorola Talkabout):** 0.5-1.5 km in urban Karachi
 - **Baofeng UV-5R:** 1-2 km typical, up to 3 km with clear line of sight
-- **From a rooftop to a rooftop:** Double the above. Height is the single biggest factor in range
+- **From a rooftop to a rooftop:** Double the above. Height is the single biggest factor in range.
 
 <Callout type="important" title="Height matters more than power">
 If you're trying to reach someone on a walkie-talkie and the signal is weak, go to your roof. Seriously. One person on a rooftop can often reach 3-5x further than two people at ground level. During a check-in, go upstairs.
@@ -116,7 +111,7 @@ Pick a channel and a backup channel. Write them down with your rally points and 
 
 - **Primary channel:** The one your family uses for regular check-ins. Pick something not on Channel 1 (that's what everyone defaults to). Channel 5, 8, 14 — anything specific.
 - **Backup channel:** If primary is too busy or has interference, switch to this. Everyone needs to know both channels in advance.
-- **Privacy codes (CTCSS/DCS):** Most radios support "privacy codes" — sub-channels that filter out other users on the same frequency. This doesn't actually make your communication private (anyone can hear you), but it reduces noise from other users. Set the same privacy code on all your family's radios.
+- **Privacy codes (CTCSS/DCS):** Most radios support "privacy codes" — sub-channels that filter out other users on the same frequency. This doesn't actually make your communication private (anyone can still hear you), but it reduces noise from other users. Set the same privacy code on all your family's radios.
 
 ### Radio etiquette
 
@@ -137,7 +132,7 @@ Pre-agree on when to turn on radios and check in. This conserves battery and giv
 
 - **First 3 hours of crisis:** Check in every hour, on the hour. Turn radio on at :55, listen/transmit until :10. Then off.
 - **Hours 3-12:** Check in every 3 hours (e.g., 9:00, 12:00, 15:00, 18:00, 21:00).
-- **After 12 hours:** Check in every 6 hours (morning and evening — 8:00 and 20:00).
+- **After 12 hours:** Check in every 6 hours (morning and evening, 8:00 and 20:00).
 
 **What to communicate during check-in:**
 
@@ -187,7 +182,7 @@ When everything digital fails, analogue radio still works. FM radio stations hav
 A battery-powered FM radio. Not a phone app — a radio with an actual FM receiver. Your phone's FM tuner (if it has one) works too, but uses phone battery.
 
 - **Small battery-powered radio:** Rs. 500-1,500 at any electronics shop
-- **Hand-crank radio:** Rs. 2,000-4,000 on Daraz. Never needs batteries — you crank it for a minute, get 15-30 minutes of play. Some include a torch and USB charger.
+- **Hand-crank radio:** Rs. 2,000-4,000 on Daraz. Never needs batteries — you crank it for a minute and get 15-30 minutes of play. Some include a torch and USB charger.
 - **Car radio:** Your car's FM radio works as long as the car has battery. Sit in the car, turn the key to accessory mode, listen.
 
 ### Key frequencies
@@ -199,7 +194,7 @@ Keep a card with these frequencies in your grab bag:
 - **City FM 89:** Popular Karachi station
 - **Power 99:** News updates
 
-During a major crisis, most FM stations switch to emergency broadcasting — news, government announcements, emergency instructions. If you don't know what's happening and your phone is dead, turn on the radio.
+During a major crisis, most FM stations switch to emergency broadcasting: news, government announcements, emergency instructions. If you don't know what's happening and your phone is dead, turn on the radio.
 
 <Callout type="tip" title="Test your FM radio now">
 Don't buy it and store it. Turn it on tonight, tune to a station, confirm it works. Check the batteries. If it's a hand-crank model, make sure the crank isn't stuck. A radio that doesn't work when you need it is just weight in your bag.
@@ -207,7 +202,7 @@ Don't buy it and store it. Turn it on tonight, tune to a station, confirm it wor
 
 ## Landlines — surprisingly useful
 
-If you have a PTCL landline — or your parents or in-laws do — don't disconnect it. Landlines work on a separate infrastructure from mobile networks. During mobile shutdowns, landlines often keep working.
+If you have a PTCL landline, or your parents or in-laws do, don't disconnect it. Landlines work on a separate infrastructure from mobile networks. During mobile shutdowns, landlines often keep working.
 
 Even if you don't use it daily, keep it active. In a crisis where mobile is down, that landline might be your only voice connection.
 

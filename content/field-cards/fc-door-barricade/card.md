@@ -15,9 +15,9 @@ status: "published"
 ## Assess your doors first
 
 Most Pakistani homes have:
-- **Main entrance**: usually a solid metal door — your strongest barrier
-- **Interior doors**: hollow-core or thin wood — will not stop a determined entry
-- **Sliding doors/windows**: weakest point — see FC: Window Reinforce
+- **Main entrance:** usually a solid metal door, your strongest barrier
+- **Interior doors:** hollow-core or thin wood, which won't stop a determined entry
+- **Sliding doors/windows:** weakest point (see FC: Window Reinforce)
 
 Focus your effort on the **main entrance** and any door that leads to your safe room.
 
@@ -42,9 +42,9 @@ Focus your effort on the **main entrance** and any door that leads to your safe 
 
 ## Additional reinforcement
 
-- **Door stop wedges** — rubber or wooden wedges kicked under the door provide surprisingly strong resistance
-- **Screws in the frame** — if you have time and a drill, drive 3-inch screws through the door frame into the wall stud at the latch point and hinge points
-- **Deadbolt** — if you don't have one, install one when things are calm. It's the single most effective upgrade
+- **Door stop wedges:** rubber or wooden wedges kicked under the door provide surprisingly strong resistance
+- **Screws in the frame:** if you have time and a drill, drive 3-inch screws through the door frame into the wall stud at the latch point and hinge points
+- **Deadbolt:** if you don't have one, install one when things are calm. It's the single most effective upgrade.
 
 ## What won't work
 
