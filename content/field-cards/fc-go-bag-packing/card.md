@@ -14,11 +14,11 @@ status: "published"
 
 ## Essentials (grab first)
 
-- **Cash** — Rs. 20,000–50,000 in mixed denominations (ATMs go offline early)
-- **Documents pouch** — see FC: Document Pouch for the full list
-- **Phone charger + power bank** — fully charged, 20,000mAh minimum
-- **Medications** — 7-day supply of any daily prescriptions
-- **Water** — 3 litres minimum per person
+- **Cash:** Rs. 20,000–50,000 in mixed denominations (ATMs go offline early)
+- **Documents pouch:** see FC: Document Pouch for the full list
+- **Phone charger + power bank:** fully charged, 20,000mAh minimum
+- **Medications:** 7-day supply of any daily prescriptions
+- **Water:** 3 litres minimum per person
 
 ## Food (72 hours)
 
@@ -26,7 +26,7 @@ status: "published"
 - Roasted chana (1 kg)
 - Dates or gur (500g)
 - Glucose biscuits (2 packs)
-- Electrolyte sachets (ORS — 6 packets)
+- Electrolyte sachets (ORS, 6 packets)
 
 ## Clothing & shelter
 
@@ -48,14 +48,14 @@ status: "published"
 ## Medical
 
 - Basic first aid kit (bandages, antiseptic, painkillers)
-- Tourniquet (if trained — see FC: Tourniquet)
+- Tourniquet (if trained, see FC: Tourniquet)
 - Sanitary supplies
 - Insect repellent
 - Sunscreen
 
 ## Comms
 
-- Walkie-talkie (if your family has them — see FC: Walkie Quickstart)
+- Walkie-talkie (if your family has them, see FC: Walkie Quickstart)
 - Written list of emergency phone numbers (not just on your phone)
 - Paper map of your city and surrounding areas
 

@@ -26,7 +26,7 @@ Something happens. A strike warning, an earthquake, an explosion — it doesn't 
 
 Your wife calls you. You don't answer because you're already in the car, trying to get to the kids' school. She assumes the worst. Your mother calls your wife, who's now panicking and can't get through to you. Your brother drives to your parents' house but they've already left for your house. Everyone is moving. Nobody knows where anyone else is going.
 
-This happens to thousands of families in every crisis, in every city. The families who navigate it are the ones who agreed on a plan beforehand. Not a complicated plan. Not a 50-page document. A one-page agreement that everyone has read, everyone has a copy of, and everyone can execute without thinking.
+This happens to thousands of families in every crisis, in every city. The families who navigate it are the ones who agreed on a plan beforehand. Not a complicated plan, not a 50-page document, but a one-page agreement that everyone has read, everyone has a copy of, and everyone can execute without thinking.
 
 ## The one-page plan
 
@@ -42,13 +42,13 @@ Everything below expands on these five questions. At the end of this guide, you'
 
 ## Meeting points
 
-You need three. Not one — three. Because the first one might be compromised, inaccessible, or on the wrong side of trouble.
+You need three meeting points, not one, because the first might be compromised, inaccessible, or on the wrong side of trouble.
 
 ### Primary: Your home
 
 The default assumption is that everyone heads home. If you're at work and something happens, you drive home. If the kids are at school, someone picks them up and brings them home. Home is the command centre.
 
-**When this works:** Most situations. Sudden curfew, escalation that might blow over, power outages, early warnings.
+**When this works:** Most situations: sudden curfew, escalation that might blow over, power outages, early warnings.
 
 **When this doesn't work:** Home is damaged, the route home is blocked, or home is in the danger zone.
 
@@ -56,10 +56,10 @@ The default assumption is that everyone heads home. If you're at work and someth
 
 This is the fallback when home isn't an option. It must be:
 
-- **Walkable from home** — 15-20 minutes on foot, maximum. You might not have a vehicle. You might be carrying a child.
-- **Known to every family member** — including older children. No ambiguity. Not "somewhere near Nani's house" — the specific address.
+- **Walkable from home** — 15-20 minutes on foot at most. You might not have a vehicle. You might be carrying a child.
+- **Known to every family member** — including older children, with no ambiguity. Not "somewhere near Nani's house" but the specific address.
 - **Has space for your family** — a relative's house, a trusted neighbour's, a mosque the family uses, a school building you have access to.
-- **Has a gate or boundary wall** — basic privacy and security. Not an open park.
+- **Has a gate or boundary wall** — basic privacy and security, not an open park.
 
 Good options in Karachi: a relative's house in the same neighbourhood, your neighbourhood mosque, a community hall or clubhouse you have access to.
 
@@ -67,9 +67,9 @@ Good options in Karachi: a relative's house in the same neighbourhood, your neig
 
 ### Tertiary: Out of the city
 
-This is your evacuation destination. When staying in Karachi is no longer safe.
+This is your evacuation destination, for when staying in Karachi is no longer safe.
 
-**Be specific.** Not "Hyderabad" — your uncle's house in Hyderabad, at this specific address. Not "interior Sindh" — your cousin's farm near Nawabshah, with his phone number and directions.
+**Be specific.** Not "Hyderabad" but your uncle's house in Hyderabad at a specific address. Not "interior Sindh" but your cousin's farm near Nawabshah, with his phone number and directions.
 
 For most Karachi families, the evacuation route is:
 - **Superhighway** toward Hyderabad (M-9)
@@ -92,14 +92,14 @@ You call 3 people. Each of them calls 3 people. In two rounds, 12 people know yo
 **Your three:**
 
 1. **Spouse** (or whoever is at home with the kids)
-2. **One family member** who knows the plan — ideally not in your house. A sibling, a parent, an in-law. Someone who can relay information if you go dark.
-3. **One neighbour** in your immediate street or building. Someone physically close who can check on your house if you're not there.
+2. **One family member** who knows the plan, ideally not in your house: a sibling, a parent, an in-law, someone who can relay information if you go dark
+3. **One neighbour** in your immediate street or building, someone physically close who can check on your house if you're not there
 
 ### Out-of-city relay
 
 Designate one family member who lives **outside Karachi** as your relay contact. This person's phone lines are less likely to be congested. Everyone calls them with their status, and they become the central information hub.
 
-This is an old disaster protocol and it works. Your cousin in Lahore, your uncle in Islamabad, your sister in Dubai — whoever is reliable and always reachable. Tell them this role. They should expect calls from multiple family members during a crisis and should keep a written log of who's where and what they reported.
+This is an old disaster protocol and it works. Your cousin in Lahore, your uncle in Islamabad, your sister in Dubai, whoever is reliable and always reachable. Tell them this role. They should expect calls from multiple family members during a crisis and should keep a written log of who's where and what they reported.
 
 ### Pre-agreed phrases
 
@@ -116,7 +116,7 @@ Everyone should know these. Write them on the plan. Rehearse them once so they d
 
 ### If phones don't work at all
 
-- **WhatsApp voice note** — send one even if it shows single tick. It will deliver when connectivity returns.
+- **WhatsApp voice note** — send one even if it shows a single tick. It will deliver when connectivity returns.
 - **SMS** — text messages use less bandwidth than calls and sometimes get through when calls don't.
 - **Walkie-talkie** — if you've set up the system from the When the Towers Go Down guide.
 - **Physical check** — walk to your neighbour's house. Send someone to the secondary rally point to wait. Leave a written note on your door: "Family safe, gone to [location], [date/time]."
@@ -154,9 +154,9 @@ Right now, gather every important document you have. Spread them on the floor. T
 
 ### Precious items protocol
 
-Documents you can replace (with effort). Some things you can't: family photos, heirloom jewellery, children's keepsakes. You are NOT packing these in your go-bag — they add weight and aren't survival items.
+Documents you can replace with effort. Some things you can't: family photos, heirloom jewellery, children's keepsakes. Don't pack these in your go-bag — they add weight and aren't survival items.
 
-Instead: know where they are. If you have time (and you might — not every evacuation is 30 minutes), you can grab them. A fire-resistant safe for important jewellery and irreplaceable documents is worth the investment (Rs. 5,000-15,000 at hardware stores).
+Instead: know where they are. If you have time (and you might, since not every evacuation is 30 minutes), you can grab them. A fire-resistant safe for important jewellery and irreplaceable documents is worth the investment (Rs. 5,000-15,000 at hardware stores).
 
 ## Roles and responsibilities
 
@@ -178,7 +178,7 @@ In a crisis, everyone needs a job. Not because the tasks are complicated, but be
 - Checks fuel level
 - Pulls the car out or prepares the motorcycle
 - Loads bags
-- Knows the route — primary and alternate
+- Knows the route, both primary and alternate
 
 **The child handler (whoever the kids are most calm with):**
 - Gets children dressed and ready
@@ -186,13 +186,13 @@ In a crisis, everyone needs a job. Not because the tasks are complicated, but be
 - Keeps them calm, occupied, and accounted for
 - Carries the youngest if needed
 
-**In a two-adult household, roles double up.** The person at home is packer + child handler. The person coming from work is caller + driver. Adjust for your family.
+**In a two-adult household, roles double up.** The person at home is packer and child handler. The person coming from work is caller and driver. Adjust for your family.
 
 ### Joint family considerations
 
 Pakistani families often live jointly — parents, siblings, their families under one roof. This changes the plan:
 
-- **More people = more coordination needed.** Assign roles to every adult. Your father can be the information officer (radio/TV monitoring). Your mother can manage the children. Your brother handles vehicles.
+- **More people means more coordination.** Assign roles to every adult. Your father can be the information officer (radio/TV monitoring). Your mother can manage the children. Your brother handles vehicles.
 - **Elderly family members need specific planning.** Can they walk to the secondary rally point? Do they need medication that takes time to gather? Who carries their bag?
 - **Domestic staff.** If you have household help who lives with you or nearby, include them in the plan. They're people too, and in a crisis they may also need guidance. At minimum, tell them: "If something happens and we leave, you should go to [your home]. Don't stay in the house alone."
 
@@ -202,7 +202,7 @@ If your kids are at school when something happens:
 
 1. **Know the school's emergency policy.** Most schools have one — they may lock down and keep children until parents arrive, or they may release them. Ask the school administration. Get it in writing if possible.
 2. **Authorised pickup list.** Make sure the school has an updated list of people authorised to pick up your children. Include at least 3 people: you, your spouse, and one trusted relative or family friend who lives nearby.
-3. **Assign a "school person."** In your plan, designate who goes to get the kids. Usually the parent who's physically closest or has the most flexible schedule.
+3. **Assign a "school person."** In your plan, designate who goes to get the kids — usually the parent who's physically closest or has the most flexible schedule.
 4. **If you can't get to the school:** Call the "school person" backup. If nobody can get through, call the school directly. If phones are down, the school will hold children — trust the process and don't panic. Get there when you can.
 
 ## The stay-or-go decision
@@ -222,7 +222,7 @@ This is covered in depth in the Shelter in Place guide, but your family plan nee
 - Our building has structural damage
 - We're running out of water with no resupply option
 - There's a specific, credible threat to our area (nearby military installation, government building, or infrastructure target)
-- A safe corridor has been confirmed by reliable sources (not WhatsApp forwards)
+- A safe corridor has been confirmed by reliable sources, not WhatsApp forwards
 - Medical emergency we can't handle at home
 
 ### We evacuate the city if:
@@ -304,11 +304,11 @@ You don't need a full drill. You need one walkthrough. A Saturday afternoon, 30 
 
 3. **The walk to secondary.** On a normal Saturday, walk with your family from home to your secondary rally point. How long does it take? Can the youngest child walk it? Can your elderly parent manage it? Do you know the route without Google Maps?
 
-4. **The route out.** Drive to your tertiary destination once. On a normal day. Know the route, the fuel stops, the travel time. Know what it looks like so it's not new when you're stressed.
+4. **The route out.** Drive to your tertiary destination once, on a normal day. Know the route, the fuel stops, the travel time. Know what it looks like so it's not unfamiliar when you're stressed.
 
 ### Make it normal
 
-Don't present this as a scary exercise. Frame it for kids: "We're going to play a game where we practice what to do if we ever need to leave quickly. Like a fire drill at school." For older family members: "Let's just walk through this once so we all know what we're doing."
+Don't present this as a scary exercise. Frame it for kids: "We're going to play a game where we practise what to do if we ever need to leave quickly. Like a fire drill at school." For older family members: "Let's just walk through this once so we all know what we're doing."
 
 The goal isn't perfection. The goal is familiarity. A family that has walked through the plan once will execute it three times faster than a family reading it for the first time under sirens.
 

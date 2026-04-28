@@ -23,18 +23,18 @@ status: "published"
 
 ## Application steps
 
-1. **Place it high and tight** — as high on the limb as possible, close to the groin or armpit
-2. **Pull the strap tight** — as tight as you physically can by hand
-3. **Turn the windlass** (the rod/stick) — twist it until the bleeding stops completely
-4. **Lock the windlass** — secure it in the clip or holder so it cannot unwind
-5. **Note the time** — write the time of application on the tourniquet, on their skin with a marker, or on tape. This is critical for medical teams
-6. **Do not remove it** — once applied, only a medical professional should remove a tourniquet
+1. **Place it high and tight:** as high on the limb as possible, close to the groin or armpit
+2. **Pull the strap tight:** as tight as you physically can by hand
+3. **Turn the windlass** (the rod/stick): twist it until the bleeding stops completely
+4. **Lock the windlass:** secure it in the clip or holder so it cannot unwind
+5. **Note the time:** write the time of application on the tourniquet, on their skin with a marker, or on tape. This is critical for medical teams.
+6. **Do not remove it:** once applied, only a medical professional should remove a tourniquet
 
 ## Improvised tourniquet (no commercial one available)
 
 If you don't have a proper tourniquet:
 
-1. Use a **wide strip of cloth** (belt, dupatta, torn shirt) — minimum 3–4cm wide. Wire, rope, or thin string will cut into tissue.
+1. Use a **wide strip of cloth** (belt, dupatta, torn shirt), at least 3-4cm wide. Wire, rope, or thin string will cut into tissue.
 2. Wrap it around the limb, tie a half-knot
 3. Place a **stick, pen, or spoon** on the knot
 4. Tie a full knot over the stick
@@ -43,10 +43,10 @@ If you don't have a proper tourniquet:
 
 ## Common mistakes
 
-- **Too loose** — if you can slide a finger under it, it's too loose. It must be painful to be effective.
-- **Too low** — place it high on the limb, not directly over the wound
-- **Removing it** — never loosen or remove a tourniquet in the field
-- **Too narrow** — thin cords and wires cause tissue damage. Use something at least 3cm wide.
+- **Too loose:** if you can slide a finger under it, it's too loose. It must be painful to be effective.
+- **Too low:** place it high on the limb, not directly over the wound
+- **Removing it:** never loosen or remove a tourniquet in the field
+- **Too narrow:** thin cords and wires cause tissue damage. Use something at least 3cm wide.
 
 ## After application
 

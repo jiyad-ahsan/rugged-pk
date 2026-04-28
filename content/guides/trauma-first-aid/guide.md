@@ -27,7 +27,7 @@ Someone is bleeding. Badly. A piece of shrapnel from a blast, a deep cut from co
 
 You have what's in this room and what's in your head. Right now, the second one matters more.
 
-This guide is not a substitute for professional medical training. If you can take a first aid course — do it. The Pakistan Red Crescent, St. John Ambulance, and several private organisations run them in Karachi for Rs. 2,000-5,000. What this guide gives you is enough to keep someone alive until help arrives. That's the goal. Not surgery, not diagnosis, not treatment. Just: keep them alive.
+This guide isn't a substitute for professional medical training. If you can take a first aid course, do it. The Pakistan Red Crescent, St. John Ambulance, and several private organisations run them in Karachi for Rs. 2,000-5,000. What this guide gives you is enough to keep someone alive until help arrives. That's the goal: not surgery, not diagnosis, not treatment. Just keep them alive.
 
 <Callout type="danger" title="This guide covers serious injuries">
 Some of these techniques — tourniquet application, wound packing, chest seals — are for life-threatening situations only. Using them incorrectly or unnecessarily can cause harm. Read carefully. Understand when to use each technique and when not to.
@@ -44,13 +44,13 @@ This is not selfishness. If you get hurt, there are now two casualties and zero 
 - **Ongoing threat.** Are there more blasts expected? Is the building still collapsing? Is there active firing? If yes, you need to either wait or move the casualty to safety before treating. If you can't do it safely, don't.
 - **Structural danger.** Cracked walls, hanging debris, exposed wiring, gas leaks (smell it). Don't enter a building that might come down.
 - **Electrical hazards.** Downed power lines, flooded areas with live wiring. Stay clear.
-- **Blood exposure.** If you have gloves — use them. If you don't — a plastic bag over your hands, a folded plastic shopping bag, even a clean dupatta between your hands and their wound. You're protecting yourself from bloodborne infections. This is not optional if you can manage it.
+- **Blood exposure.** If you have gloves, use them. If you don't: a plastic bag over your hands, a folded plastic shopping bag, even a clean dupatta between your hands and their wound. You're protecting yourself from bloodborne infections. Manage this if you can.
 
 **If the scene is not safe, don't go in.** Call for help, direct others, wait for the scene to be secured. The most dangerous thing a first responder can do is become a second casualty.
 
 ## The ABCs — what to check first
 
-When you reach someone who's hurt, you need to assess quickly. Not a full medical exam — just enough to know what's killing them fastest.
+When you reach someone who's hurt, you need to assess quickly. Not a full medical exam, just enough to know what's killing them fastest.
 
 **A — Airway.** Are they breathing? Can you hear it? Is anything blocking their mouth or throat? If they're talking or crying, their airway is open. If they're unconscious, tilt their head back gently, lift the chin, and check for breathing. If something is visibly blocking the airway, clear it with a finger sweep — carefully.
 
@@ -66,13 +66,13 @@ Blood loss is the number one preventable cause of death in trauma. Severe arteri
 
 Put pressure on the wound. Hard. With whatever you have.
 
-- Your hand, with a cloth between it and the wound — a dupatta, a shirt, a towel, anything clean-ish
-- Press hard. Harder than feels comfortable. You're trying to compress the blood vessel
-- Don't lift the cloth to check. Every time you lift, you break the clot that's trying to form. Press, hold, wait
-- If the cloth soaks through, **don't remove it**. Put another cloth on top and press harder
-- Hold for a minimum of 10 minutes. Set a timer if you can. It will feel much longer than it is
+- Your hand, with a cloth between it and the wound — a dupatta, a shirt, a towel, anything reasonably clean
+- Press hard. Harder than feels comfortable. You're trying to compress the blood vessel.
+- Don't lift the cloth to check. Every time you lift, you break the clot that's trying to form. Press, hold, wait.
+- If the cloth soaks through, **don't remove it**. Put another cloth on top and press harder.
+- Hold for a minimum of 10 minutes. Set a timer if you can. It will feel much longer than it is.
 
-Direct pressure stops most bleeding. If it's working — keep going. Don't switch to fancier techniques unnecessarily.
+Direct pressure stops most bleeding. If it's working, keep going. Don't switch to fancier techniques unnecessarily.
 
 For a step-by-step reference, see the <FieldCardRef slug="fc-pressure-bandage" title="Pressure Bandage Field Card" />.
 
@@ -91,7 +91,7 @@ If you've been pressing hard for several minutes and blood is still flowing free
 A tourniquet is a band that wraps tightly around a limb to completely cut off blood flow below it. It is for **life-threatening bleeding from arms or legs only.** Not for scrapes, not for minor cuts, not for anything that direct pressure can handle.
 
 <Callout type="important" title="Tourniquets are for emergencies only">
-A tourniquet causes pain and stops all blood flow to the limb. This is the right choice when the alternative is bleeding to death. It is the wrong choice for injuries that can be managed with pressure. When in doubt — start with direct pressure. Escalate to a tourniquet only if pressure fails.
+A tourniquet causes pain and stops all blood flow to the limb. This is the right choice when the alternative is bleeding to death. It is the wrong choice for injuries that can be managed with pressure. When in doubt, start with direct pressure. Escalate to a tourniquet only if pressure fails.
 </Callout>
 
 ### When to use one
@@ -107,11 +107,11 @@ A tourniquet causes pain and stops all blood flow to the limb. This is the right
 
 If you have one, you already know it's the gold standard. They cost Rs. 3,000-8,000 on Daraz. Worth every rupee if you ever need it. Follow the manufacturer's instructions — the general process:
 
-1. Place it **2-3 inches above the wound** — not on a joint (elbow, knee). If the wound is on the lower arm, the tourniquet goes on the upper arm. If you're not sure where the wound is (clothes, debris), go high — upper arm or upper thigh.
+1. Place it **2-3 inches above the wound**, not on a joint (elbow, knee). If the wound is on the lower arm, the tourniquet goes on the upper arm. If you're not sure where the wound is (clothes, debris), go high: upper arm or upper thigh.
 2. Pull the strap tight and secure it through the buckle.
 3. Twist the windlass (the stick/rod) until the bleeding stops. This will hurt the casualty. That's expected. Keep twisting until the bleeding stops.
 4. Secure the windlass so it can't unwind.
-5. **Write the time on the tourniquet or on the patient's forehead.** Use a marker, a pen, blood — anything. Write "TQ" and the time. Example: "TQ 14:30." This tells medical staff how long the tourniquet has been on.
+5. **Write the time on the tourniquet or on the patient's forehead.** Use a marker, a pen, blood, anything. Write "TQ" and the time. Example: "TQ 14:30." This tells medical staff how long the tourniquet has been on.
 
 **With an improvised tourniquet:**
 
@@ -150,8 +150,8 @@ This sounds brutal. It is. But it's the most effective way to stop deep bleeding
 ### How to pack a wound
 
 1. **Get material.** Clean gauze is ideal. If you don't have gauze: a clean cotton dupatta, a t-shirt, strips of any clean cotton fabric. Avoid synthetic materials that don't absorb well.
-2. **Open the wound.** You may need to use your fingers to hold the wound open so you can see inside and pack effectively. Yes, this is as unpleasant as it sounds.
-3. **Push the material into the wound.** Not on top of it — into it. You're filling the cavity. Pack it tightly. Use your fingers to push the material down into the deepest part of the wound first, then pack on top of that.
+2. **Open the wound.** You may need to use your fingers to hold the wound open so you can see inside and pack effectively.
+3. **Push the material into the wound.** Not on top of it, but into it. You're filling the cavity. Pack it tightly. Use your fingers to push the material down into the deepest part of the wound first, then pack on top of that.
 4. **Keep packing until the wound is full.** The material should be in firm contact with all the bleeding surfaces inside.
 5. **Apply direct pressure on top.** Once packed, press hard on the packed wound. Hold or bandage tightly over it.
 
@@ -163,7 +163,7 @@ For the visual step-by-step, see the <FieldCardRef slug="fc-wound-packing" title
 
 ## Chest wounds
 
-A penetrating chest wound — from shrapnel, glass, a stabbing — is immediately life-threatening for a specific reason: air enters the chest cavity through the wound, collapses the lung, and the person can't breathe.
+A penetrating chest wound from shrapnel, glass, or a stabbing is immediately life-threatening for a specific reason: air enters the chest cavity through the wound, collapses the lung, and the person can't breathe.
 
 ### How to recognise it
 
@@ -178,7 +178,7 @@ The goal is to seal the hole so air can't enter through it. The person's airway 
 
 1. **Find plastic.** A clean plastic bag, cling wrap, the wrapper from a bandage or cigarette pack — anything non-porous that air can't pass through. It needs to be large enough to cover the wound with at least 5 cm extra on all sides.
 2. **Place the plastic over the wound.** As the person exhales, press it firmly over the hole. This creates a seal during the exhale when there's the least pressure.
-3. **Tape three sides.** Tape the top and two sides of the plastic to the skin. Leave the bottom side **untaped.** This creates a one-way valve — when the person inhales, the plastic seals against the wound and prevents air entry. When they exhale, air trapped in the chest can escape through the untaped bottom edge.
+3. **Tape three sides.** Tape the top and two sides of the plastic to the skin. Leave the bottom side **untaped.** This creates a one-way valve: when the person inhales, the plastic seals against the wound and prevents air entry. When they exhale, air trapped in the chest can escape through the untaped bottom edge.
 4. **If you don't have tape:** Have someone hold the plastic firmly in place. The priority is the seal, not the method.
 
 **Check both sides of the torso.** An object that enters the front may exit the back. If there's an exit wound, seal that one too.
@@ -192,7 +192,7 @@ Shock is what happens when the body isn't getting enough blood flow to its vital
 ### How to recognise it
 
 - **Skin:** Pale, cold, clammy. Sometimes greyish. In darker skin, check the lips and nail beds — they'll look pale or bluish.
-- **Pulse:** Rapid and weak. If you press the inside of the wrist and the pulse feels fast and thready — that's a warning sign.
+- **Pulse:** Rapid and weak. If you press the inside of the wrist and the pulse feels fast and thready, that's a warning sign.
 - **Mental state:** Confused, anxious, agitated, or unusually quiet. The person may say they feel like something is wrong, or they may not make sense.
 - **Breathing:** Rapid, shallow breaths.
 - **Thirst:** Intense, persistent thirst — the body is signalling that it's lost fluid.
@@ -202,7 +202,7 @@ Shock is what happens when the body isn't getting enough blood flow to its vital
 1. **Treat the cause.** If they're bleeding, stop the bleeding first. Shock from blood loss won't improve until the bleeding stops.
 2. **Lay them down.** Flat on their back if there's no spinal injury concern. If they're vomiting or you're not sure, put them in the recovery position (on their side). See the <FieldCardRef slug="fc-recovery-position" title="Recovery Position Field Card" />.
 3. **Elevate the legs.** If their legs aren't injured, raise them 20-30 cm (a folded blanket or bag under the ankles). This helps blood return to the core.
-4. **Keep them warm.** Shock causes the body to lose heat rapidly. Cover them with whatever you have — a blanket, a chador, a jacket. Underneath them too — cold ground pulls heat away. Body temperature maintenance is critical.
+4. **Keep them warm.** Shock causes the body to lose heat rapidly. Cover them with whatever you have — a blanket, a chador, a jacket. Underneath them too, since cold ground pulls heat away. Body temperature maintenance is critical.
 5. **Don't give food or water.** Even if they're begging for water. If they need surgery, food or water in the stomach is dangerous. Wet their lips if they're desperate, but don't let them swallow.
 6. **Keep talking to them.** Maintain eye contact. Tell them help is coming. Ask their name. Keep them conscious and as calm as possible. A person in shock who becomes unresponsive is deteriorating rapidly — this is a medical emergency.
 
@@ -256,13 +256,13 @@ This is critically important in Pakistan. Common home practices that cause infec
 - **Applying soil or ash** — this is how you get tetanus and gangrene
 - **Kerosene or petrol on wounds** — causes chemical burns on top of the injury
 
-Clean water and pressure. That's it. If you have Pyodine (povidone-iodine), use it to clean around the wound — not inside deep wounds. If you have Dettol, dilute it properly. If you have nothing — clean water is better than any of the above.
+Clean water and pressure. That's it. If you have Pyodine (povidone-iodine), use it to clean around the wound, not inside deep wounds. If you have Dettol, dilute it properly. If you have nothing, clean water is better than any of the above.
 
 For proper wound cleaning, see the <FieldCardRef slug="fc-wound-disinfection" title="Wound Cleaning Field Card" />.
 
 ### Burns — a brief note
 
-Burns are extremely common in blast and fire scenarios. The full treatment protocol is covered in the <FieldCardRef slug="fc-burns" title="Burns Field Card" />, but the essentials: cool running water on the burn for 10-20 minutes. Not ice, not butter, not toothpaste, not ghee — clean, cool water. Cover loosely with cling wrap or a clean, non-fluffy cloth. If the burn is larger than the person's palm, blistered, or on the face, hands, feet, or joints — they need a hospital.
+Burns are extremely common in blast and fire scenarios. The full treatment protocol is covered in the <FieldCardRef slug="fc-burns" title="Burns Field Card" />, but the essentials: cool running water on the burn for 10-20 minutes. Not ice, not butter, not toothpaste, not ghee — clean, cool water. Cover loosely with cling wrap or a clean, non-fluffy cloth. If the burn is larger than the person's palm, blistered, or on the face, hands, feet, or joints, they need a hospital.
 
 ### Don't move someone with a suspected spinal injury
 
@@ -273,11 +273,11 @@ If someone has fallen from height, been in a vehicle crash, or been thrown by a 
 
 **Don't move them.** Keep them still. Support their head so it doesn't turn. Wait for medical help. Moving someone with a spinal injury can cause permanent paralysis.
 
-**Exception:** If the scene is immediately life-threatening (fire, collapsing structure, ongoing blast), move them. A paralyzed person alive is better than a person with an intact spine who died in a fire.
+**Exception:** If the scene is immediately life-threatening (fire, collapsing structure, ongoing blast), move them. A paralysed person alive is better than a person with an intact spine who died in a fire.
 
 ### Don't give aspirin or blood thinners
 
-If someone is bleeding, giving them aspirin or similar medications makes the bleeding worse. It prevents blood from clotting. If they're on blood-thinning medication (common in older adults), tell the medical team when they arrive — it's important information.
+If someone is bleeding, giving them aspirin or similar medications makes the bleeding worse — it prevents blood from clotting. If they're on blood-thinning medication (common in older adults), tell the medical team when they arrive. It's important information.
 
 ## Basic triage — when there are multiple casualties
 
@@ -289,7 +289,7 @@ This is ugly. It's the part nobody wants to think about. But not deciding is a d
 
 **Help first:** People who are bleeding severely but conscious and breathing. They're dying right now but they can survive if you stop the bleeding. These people get your attention first.
 
-**Help second:** People who are hurt but stable — broken bones, moderate bleeding that's not immediately life-threatening, burns. They need help but they have time.
+**Help second:** People who are hurt but stable: broken bones, moderate bleeding that's not immediately life-threatening, burns. They need help but they have time.
 
 **Help last (or not at all):** People who are not breathing and have no pulse despite clearing their airway. In a mass casualty situation where you are the only responder, spending 20 minutes on CPR for one person means three others bleed to death. This is the hardest call in first aid. In a hospital, they'd get full resuscitation. On a street with one responder and five casualties, the math is different.
 
@@ -299,7 +299,7 @@ This is ugly. It's the part nobody wants to think about. But not deciding is a d
 
 When you or someone nearby gets the casualty to a vehicle, you need to know where to go. Not every hospital handles trauma well. Here are the ones that do:
 
-- **Jinnah Postgraduate Medical Centre (JPMC)** — Rafiqui Shaheed Road. The largest trauma centre in the city. Government hospital — free treatment but extremely busy. If it's a mass casualty event, this is where most people will be taken.
+- **Jinnah Postgraduate Medical Centre (JPMC)** — Rafiqui Shaheed Road. The largest trauma centre in the city. Government hospital: free treatment but extremely busy. If it's a mass casualty event, this is where most people will be taken.
 - **Aga Khan University Hospital** — Stadium Road. Private. Excellent trauma care. Expensive, but in a life-or-death situation, they will stabilise first and bill later.
 - **Indus Hospital** — Korangi. Free, high-quality care. One of the best charity hospitals in the country.
 - **Liaquat National Hospital** — Stadium Road. Private, good emergency department.
@@ -321,10 +321,10 @@ You should have one at home and one in your car. Here's what to buy — everythi
 <Item name="Scissors" detail="Blunt-tip medical scissors" price="Rs. 150-300" />
 <Item name="Paracetamol" detail="Strip of 10" price="Rs. 50" />
 <Item name="ORS sachets" detail="10 sachets" price="Rs. 100-150" />
-<Item name="Triangular bandage" detail="For slings — or use a dupatta" price="Rs. 100-200" />
-<Item name="Plastic bags" detail="Clean zip-lock bags — for improvised chest seals" price="Rs. 50-100" />
-<Item name="Torch" detail="Small LED + extra batteries" price="Rs. 300-500" />
-<Item name="Marker" detail="Permanent marker — for noting tourniquet time" price="Rs. 50" />
+<Item name="Triangular bandage" detail="For slings, or use a dupatta" price="Rs. 100-200" />
+<Item name="Plastic bags" detail="Clean zip-lock bags for improvised chest seals" price="Rs. 50-100" />
+<Item name="Torch" detail="Small LED plus extra batteries" price="Rs. 300-500" />
+<Item name="Marker" detail="Permanent marker for noting tourniquet time" price="Rs. 50" />
 </SupplyList>
 
 **Total cost: approximately Rs. 1,800-3,500.** Keep it in a labelled container or bag. Check it every 6 months — replace anything that's been used or expired. Tell your family where it is.
@@ -333,13 +333,13 @@ You should have one at home and one in your car. Here's what to buy — everythi
 
 ## Tonight
 
-1. **Learn one thing.** Just one. Direct pressure — how to press on a wound hard and keep pressing for 10 minutes. You now know the technique that stops most bleeding.
+1. **Learn one thing.** Just one. Direct pressure: how to press on a wound hard and keep pressing for 10 minutes. You now know the technique that stops most bleeding.
 2. **Check your home for supplies.** Do you have Pyodine? Gauze? Even a roll of bandage and a bottle of antiseptic is a start. If not, add them to your next pharmacy run.
 3. **Know your nearest trauma hospital.** Not the nearest clinic — the nearest hospital with an emergency department. Know the route from home. Know the route from work.
 4. **Save the numbers.** Rescue 1122, Edhi 115, Chhipa 1021, Aga Khan Emergency (021-111-911-911). Put them in a contact group on your phone called "Emergency."
 5. **Talk to your family.** "If someone is bleeding, press hard with a clean cloth and don't let go. Call 1122. If 1122 doesn't answer, call Edhi." That's enough to start.
 
-The skills in this guide take an afternoon to learn and a lifetime to (hopefully) never use. But if you need them and you have them, you will save a life. If you need them and you don't — you'll wish you'd spent the afternoon.
+The skills in this guide take an afternoon to learn and a lifetime to (hopefully) never use. But if you need them and you have them, you will save a life.
 
 <EmergencyNumbers />
 

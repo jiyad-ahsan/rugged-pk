@@ -18,8 +18,8 @@ Keep **photocopies** of everything below in a waterproof zip-lock bag or dry pou
 
 ### Identity
 
-- CNIC (front and back) — every family member
-- Passport bio page — every family member
+- CNIC (front and back) for every family member
+- Passport bio page for every family member
 - Birth certificates
 - Nikah nama / marriage certificate
 - Children's B-forms
@@ -50,7 +50,7 @@ One laminated card with:
 ## Storage tips
 
 - Use a **zip-lock bag inside a dry bag** for double waterproofing
-- Store in the same spot as your go-bag — not inside it, but next to it so you can grab both
+- Store in the same spot as your go-bag, next to it rather than inside it, so you can grab both
 - Take photos of every document and store them in a password-protected folder on your phone and in cloud storage
 - Update every 6 months or when any document changes
 
