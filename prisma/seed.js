@@ -91,14 +91,14 @@ async function main() {
     update: {},
     create: {
       id: "seed-thread-1",
-      title: "We started a 12-house cluster in North Nazimabad — here's how we did it",
+      title: "We started a 12-house cluster in North Nazimabad, here's how we did it",
       body: `Last month a few of us in Block H, North Nazimabad decided to get organised. We're 12 houses on the same gali, most of us have lived here 10+ years, and we figured if anything ever kicks off we'd rather have a plan than just hope for the best.
 
 Here's what we did:
 
 1. Started with chai. Literally knocked on doors on a Friday evening, said "let's talk about what we'd do if things got bad." 8 out of 12 houses showed up the first time. The other 4 joined over the next two weeks.
 
-2. Made a WhatsApp group — but also agreed on a walkie-talkie channel (Channel 7) in case WhatsApp goes down. Three of us already had Baofengs.
+2. Made a WhatsApp group, but also agreed on a walkie-talkie channel (Channel 7) in case WhatsApp goes down. Three of us already had Baofengs.
 
 3. Pooled information. Who has medical training? (One uncle is a retired pharmacist.) Who has a generator? (Two houses.) Who has a vehicle that can carry more than 5 people? (One Hilux, one van.)
 
@@ -124,8 +124,8 @@ Has anyone else tried something like this? What worked, what didn't?`,
     update: {},
     create: {
       id: "seed-thread-2",
-      title: "Baofeng UV-5R vs Motorola Talkabout — actual range test in Gulshan",
-      body: `I bought both to compare. Tested them last weekend with my brother — I stood on my roof in Gulshan-e-Iqbal Block 13, he walked away with the other radio and we tested at what distance we lost signal.
+      title: "Baofeng UV-5R vs Motorola Talkabout: actual range test in Gulshan",
+      body: `I bought both to compare. Tested them last weekend with my brother. I stood on my roof in Gulshan-e-Iqbal Block 13, he walked away with the other radio and we tested at what distance we lost signal.
 
 Results:
 
@@ -139,7 +139,7 @@ Baofeng UV-5R:
 - Roof to ground: solid out to 1.5km. Could reach Johar Chowrangi from my roof in Block 13.
 - Roof to roof: roughly 2.5km (tested with a friend in Block 7).
 
-Key takeaway: roof access is more important than which radio you buy. If you can get to your roof, even the cheap Motorola works fine for a neighbourhood cluster. The Baofeng is better but also more complicated — my mother wouldn't be able to figure it out without help.
+Key takeaway: roof access is more important than which radio you buy. If you can get to your roof, even the cheap Motorola works fine for a neighbourhood cluster. The Baofeng is better but also more complicated. My mother wouldn't be able to figure it out without help.
 
 Battery life: Motorola ran about 18 hours on AAs. Baofeng lasted about 14 hours on its rechargeable.
 
@@ -186,7 +186,7 @@ Appreciate any advice. This is the one part of preparedness I'm struggling with.
     update: {},
     create: {
       id: "seed-reply-1",
-      body: "This is excellent. The shared first aid kit at the mosque is a really smart move — it's a neutral location everyone knows. We've been thinking about doing something similar in our building (DHA Phase 6, 8-floor apartment) but coordinating with 40+ families is a different challenge. Any advice for apartment buildings vs streets?",
+      body: "This is excellent. The shared first aid kit at the mosque is a really smart move, it's a neutral location everyone knows. We've been thinking about doing something similar in our building (DHA Phase 6, 8-floor apartment) but coordinating with 40+ families is a different challenge. Any advice for apartment buildings vs streets?",
       threadId: thread1.id,
       authorId: kamran.id,
       createdAt: new Date(Date.now() - 2.5 * 24 * 60 * 60 * 1000),
@@ -198,7 +198,7 @@ Appreciate any advice. This is the one part of preparedness I'm struggling with.
     update: {},
     create: {
       id: "seed-reply-2",
-      body: "We framed it as an adventure. \"What if we had to go camping suddenly?\" Our 8-year-old loved it. We packed her bag together — she picked her own torch and chose which snacks to include. The rally point walk became a \"treasure hunt\" where she had to remember the route. She doesn't know it's about anything serious, she just thinks we have a cool family tradition.",
+      body: "We framed it as an adventure. \"What if we had to go camping suddenly?\" Our 8-year-old loved it. We packed her bag together and she picked her own torch and chose which snacks to include. The rally point walk became a \"treasure hunt\" where she had to remember the route. She doesn't know it's about anything serious, she just thinks we have a cool family tradition.",
       threadId: thread3.id,
       authorId: zainab.id,
       createdAt: new Date(Date.now() - 6 * 60 * 60 * 1000),
@@ -210,7 +210,7 @@ Appreciate any advice. This is the one part of preparedness I'm struggling with.
     update: {},
     create: {
       id: "seed-reply-3",
-      body: "Good data, jazakallah for actually testing instead of just guessing. One thing to add — the Baofeng's range drops significantly if your battery is below 50%. I noticed mine barely reached 1km on a half charge versus 2km+ on full. Always charge before you need it.",
+      body: "Good data, jazakallah for actually testing instead of just guessing. One thing to add: the Baofeng's range drops significantly if your battery is below 50%. I noticed mine barely reached 1km on a half charge versus 2km+ on full. Always charge before you need it.",
       threadId: thread2.id,
       authorId: kamran.id,
       createdAt: new Date(Date.now() - 20 * 60 * 60 * 1000),
@@ -245,9 +245,9 @@ Appreciate any advice. This is the one part of preparedness I'm struggling with.
 
   const products = [
     // Kits
-    { name: "Starter Kit", slug: "starter-kit", subtitle: "72 hours. One person.", price: 10000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Start here", sortOrder: 0, items: ["9 meals — 1,800+ cal/day, shelf-stable local foods", "Water purification for 72L (3 days drinking + cooking)", "LED torch + 48-hour battery supply", "First aid kit — 35+ components", "Waterproof document safe", "Canvas grab bag — ready to move"], description: "Everything one person needs to survive 72 hours with no infrastructure. Packed in a grab-and-go canvas bag that lives by your front door." },
-    { name: "Family Kit", slug: "family-kit", subtitle: "4–5 days. Four people.", price: 40000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Most popular", sortOrder: 1, items: ["60+ meals — 2,000 cal/person/day for 4 people", "Gravity water filter — processes 500L+", "Walkie-talkie pair — pre-set, 1–2km urban range", "20,000mAh power bank", "Comprehensive medical kit — 80+ components", "Emergency shelter + 4× thermal blankets"], description: "Your household covered for almost a week. Enough food for four people at full calories, a way to communicate when the networks collapse, and medical supplies that go beyond band-aids." },
-    { name: "Urban Conflict Kit", slug: "urban-conflict-kit", subtitle: "5+ days. Full readiness.", price: 95000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Complete protection", sortOrder: 2, items: ["80+ meals — 2,000 cal/person/day, 5-day supply for 4", "Filtration system — processes 1,000L of any freshwater", "Long-range walkie-talkies — 2–3km urban, spare batteries", "Solar panel + power bank hybrid — daytime recharge in sun", "Trauma medical — tourniquets, chest seals, splints, 120+ items", "Multi-tool, document safe, full printed inventory"], description: "Built for the scenario nobody wants to say out loud. Trauma-grade medical. Solar power that doesn't depend on anything. Extended comms. Enough to sustain your household while you figure out your next move." },
+    { name: "Starter Kit", slug: "starter-kit", subtitle: "72 hours. One person.", price: 10000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Start here", sortOrder: 0, items: ["9 meals, 1,800+ cal/day, shelf-stable local foods", "Water purification for 72L (3 days drinking + cooking)", "LED torch + 48-hour battery supply", "First aid kit, 35+ components", "Waterproof document safe", "Canvas grab bag, ready to move"], description: "Everything one person needs to survive 72 hours with no infrastructure. Packed in a grab-and-go canvas bag that lives by your front door." },
+    { name: "Family Kit", slug: "family-kit", subtitle: "4–5 days. Four people.", price: 40000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Most popular", sortOrder: 1, items: ["60+ meals, 2,000 cal/person/day for 4 people", "Gravity water filter, processes 500L+", "Walkie-talkie pair, pre-set, 1-2km urban range", "20,000mAh power bank", "Comprehensive medical kit, 80+ components", "Emergency shelter + 4x thermal blankets"], description: "Your household covered for almost a week. Enough food for four people at full calories, a way to communicate when the networks collapse, and medical supplies that go beyond band-aids." },
+    { name: "Urban Conflict Kit", slug: "urban-conflict-kit", subtitle: "5+ days. Full readiness.", price: 95000, categoryId: catMap["kits"], isKit: true, isFeatured: true, kitHighlight: "Complete protection", sortOrder: 2, items: ["80+ meals, 2,000 cal/person/day, 5-day supply for 4", "Filtration system, processes 1,000L of any freshwater", "Long-range walkie-talkies, 2-3km urban, spare batteries", "Solar panel + power bank hybrid, daytime recharge in sun", "Trauma medical: tourniquets, chest seals, splints, 120+ items", "Multi-tool, document safe, full printed inventory"], description: "Built for the scenario nobody wants to say out loud. Trauma-grade medical. Solar power that doesn't depend on anything. Extended comms. Enough to sustain your household while you figure out your next move." },
     // Communication
     { name: "Walkie-Talkie Pair", slug: "walkie-talkie-pair", subtitle: "Pre-set frequencies", price: 6500, categoryId: catMap["communication"], sortOrder: 0 },
     { name: "Long-Range Walkie-Talkies", slug: "long-range-walkie-talkies", subtitle: "2–3km urban range", price: 14000, categoryId: catMap["communication"], sortOrder: 1 },
