@@ -53,7 +53,7 @@ export default function VerifyPage() {
     if (!res.ok) {
       setError(data.error || "Failed to resend code");
     } else {
-      setResendMsg("New code sent — check your email");
+      setResendMsg("New code sent. Check your email.");
       setCode("");
     }
   }

@@ -26,7 +26,7 @@ const fallbackGuides = [
     tag: "essentials",
     date: "2025-11",
     excerpt:
-      "Sometimes the safest move is no move at all. How to fortify your home for a multi-day lockdown — securing entry points, managing power and water, keeping your family calm, and knowing when it's finally time to go.",
+      "Leaving isn't always the right call. This guide covers how to secure your home for a multi-day lockdown: entry points, water, power, keeping the family calm, and knowing when it's actually time to go.",
     readTime: "13 min",
     sketch: "shelter",
     sections: ["Home security basics", "Resource management", "Information gathering", "Decision framework"],
@@ -39,7 +39,7 @@ const fallbackGuides = [
     tag: "food & water",
     date: "2026-02",
     excerpt:
-      "Forget freeze-dried Western rations nobody here has tasted. Pakistan already has the perfect emergency foods — sattu alone can sustain you for days and costs almost nothing.",
+      "Most Western emergency food advice doesn't apply here. Pakistan already has shelf-stable, calorie-dense foods your family actually eats: sattu, roasted chana, dates. This guide covers what to stock, how much, and how to store it through the heat.",
     readTime: "9 min",
     sketch: "food",
     sections: ["Why local foods win", "Sourcing guide", "Storage & rotation", "Calorie planning"],
@@ -65,7 +65,7 @@ const fallbackGuides = [
     tag: "medical",
     date: "2025-12",
     excerpt:
-      "In an urban conflict scenario, professional medical help may be hours away or not coming at all. Tourniquet application, wound packing, and keeping someone stable — skills that save lives when the system can't.",
+      "When professional medical help is hours away or not coming at all. Tourniquet application, wound packing, chest seals, and keeping someone alive until you can get to a hospital.",
     readTime: "18 min",
     sketch: "medical",
     sections: ["Tourniquet basics", "Wound packing", "Chest seal application", "Shock management"],
@@ -91,7 +91,7 @@ const fallbackGuides = [
     tag: "community",
     date: "2026-01",
     excerpt:
-      "In every crisis Pakistan has faced, it was neighbours who showed up first — not services, not government. This guide helps you build that into something deliberate.",
+      "In every crisis Pakistan has faced, neighbours showed up before services or government did. This guide helps you turn that into something organised before you need it.",
     readTime: "16 min",
     sketch: "houses",
     sections: ["Starting the conversation", "Skills mapping", "WhatsApp tree setup", "Mutual aid agreements"],
@@ -99,8 +99,8 @@ const fallbackGuides = [
 ];
 
 export const metadata = {
-  title: "Guides — Rugged",
-  description: "Free preparedness guides for Pakistani families. Evacuation, shelter, water, food, trauma first aid, comms — practical, local, offline-ready.",
+  title: "Guides · Rugged",
+  description: "Free preparedness guides for Pakistani families. Evacuation, shelter, water, food, trauma first aid, comms. Practical, local, offline-ready.",
 };
 
 export default function GuidesPage() {

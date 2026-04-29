@@ -192,7 +192,7 @@ export default function CheckoutPage() {
               disabled={submitting}
               className="btn-primary w-full text-center py-4 disabled:opacity-50"
             >
-              {submitting ? "Placing order..." : `Place Order — Rs. ${formatPrice(cartTotal)}`}
+              {submitting ? "Placing order..." : `Place Order · Rs. ${formatPrice(cartTotal)}`}
             </button>
           </div>
         </form>

@@ -7,7 +7,7 @@ const featuredGuides = [
     slug: "30-minute-window",
     title: "The 30-Minute Window",
     tag: "essentials",
-    excerpt: "Build a family evacuation plan — rally points, grab bag, vehicle prep — in one evening.",
+    excerpt: "Rally points, grab bag, vehicle prep, communication tree. Build it all in one evening.",
     readTime: "14 min",
   },
   {
@@ -76,7 +76,7 @@ export default async function Home() {
             <span className="text-rugged-500 dark:text-rugged-400">be ready.</span>
           </h1>
           <p className="text-sm text-sand-600 dark:text-sand-500 max-w-md leading-relaxed mb-8">
-            Free guides, practical kits, and a community — built for Pakistani families who want a plan before they need one.
+            Free guides, practical kits, and a community for Pakistani families who want a plan before they need one.
           </p>
           <div className="flex gap-4 items-center">
             <Link href="/guides" className="btn-primary">

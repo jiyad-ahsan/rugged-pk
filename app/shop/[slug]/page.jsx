@@ -16,9 +16,9 @@ export async function generateMetadata({ params }) {
     where: { slug },
     select: { name: true, subtitle: true },
   });
-  if (!product) return { title: "Product — Rugged" };
+  if (!product) return { title: "Product · Rugged" };
   return {
-    title: `${product.name} — Shop — Rugged`,
+    title: `${product.name} · Shop · Rugged`,
     description: product.subtitle || product.name,
   };
 }

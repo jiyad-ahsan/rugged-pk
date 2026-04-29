@@ -2,7 +2,7 @@
 type: "guide"
 slug: "family-emergency-plan"
 title: "The Family Emergency Plan"
-subtitle: "A One-Page Agreement That Could Save Your Family"
+subtitle: "One Page Your Whole Family Should Know"
 tag: "planning"
 date: "2026-03"
 lastUpdated: "2026-03"

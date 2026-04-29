@@ -21,10 +21,10 @@ const tagColor = {
 // Generate SEO metadata
 export async function generateMetadata({ params }) {
   const piece = getContentBySlug(params.slug);
-  if (!piece) return { title: "Guide Not Found — Rugged" };
+  if (!piece) return { title: "Guide Not Found · Rugged" };
 
   return {
-    title: `${piece.title} — Rugged`,
+    title: `${piece.title} · Rugged`,
     description: piece.excerpt || piece.subtitle,
     openGraph: {
       title: piece.title,
@@ -259,7 +259,7 @@ export default async function GuidePage({ params }) {
           <div className="print-footer-content">
             <span className="print-footer-brand">RUGGED</span>
             <br />
-            rugged.pk — Pakistan&apos;s first preparedness brand
+            rugged.pk · Pakistan&apos;s first preparedness brand
             <br />
             This guide is free to download, print, and share with your family.
             <br />

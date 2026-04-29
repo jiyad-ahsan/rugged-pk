@@ -248,7 +248,7 @@ export default function ShopListing({ products = [], categories = [] }) {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search products — try 'water', 'radio', 'first aid'..."
+            placeholder="Search products... try 'water', 'radio', 'first aid'"
             className="
               w-full font-mono text-sm
               bg-sand-100 dark:bg-sand-800
@@ -394,7 +394,7 @@ export default function ShopListing({ products = [], categories = [] }) {
               Tested, not theoretical
             </span>
             <span className="text-xs text-sand-600 dark:text-sand-500">
-              Every item tested in Karachi conditions — heat, humidity, power outages
+              Every item tested in Karachi conditions: heat, humidity, power outages
             </span>
           </div>
           <div>

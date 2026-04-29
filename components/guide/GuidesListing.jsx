@@ -206,7 +206,7 @@ export default function GuidesListing({ initialContent = [] }) {
           <span className="text-sand-600 dark:text-sand-500">Or never.</span>
         </h1>
         <p className="text-sm text-sand-600 dark:text-sand-500 leading-relaxed max-w-lg">
-          Every guide is free, no account required. Download them for offline access —
+          Every guide is free, no account required. Download them for offline access,
           because the moment you need this information is the moment the internet might not be there.
         </p>
       </div>
@@ -278,7 +278,7 @@ export default function GuidesListing({ initialContent = [] }) {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search guides — try 'water', 'evacuation', 'walkie-talkie'..."
+                placeholder="Search guides... try 'water', 'evacuation', 'walkie-talkie'"
                 className="
                   w-full font-mono text-sm
                   bg-sand-100 dark:bg-sand-800
@@ -381,7 +381,7 @@ export default function GuidesListing({ initialContent = [] }) {
                         Field Cards ({filteredCards.length})
                       </p>
                       <p className="text-xs text-sand-500 mt-1">
-                        Quick-reference cards — print them, laminate them, keep them in your kit.
+                        Quick-reference cards. Print them, laminate them, keep them in your kit.
                       </p>
                     </div>
                   )}

@@ -1,7 +1,7 @@
 import AdminShell from "@/components/admin/AdminShell";
 
 export const metadata = {
-  title: "Admin — Rugged",
+  title: "Admin · Rugged",
 };
 
 export default function AdminLayout({ children }) {

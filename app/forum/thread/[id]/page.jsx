@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
     where: { id },
     select: { title: true },
   });
-  return { title: thread ? `${thread.title} — Forum — Rugged` : "Thread — Forum — Rugged" };
+  return { title: thread ? `${thread.title} · Forum · Rugged` : "Thread · Forum · Rugged" };
 }
 
 export default async function ThreadPage({ params }) {

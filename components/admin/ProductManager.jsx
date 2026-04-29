@@ -35,7 +35,7 @@ function ImageUploader({ images = [], onChange }) {
           alert(data.error || "Upload failed");
         }
       } catch {
-        alert("Upload failed — check your connection");
+        alert("Upload failed. Check your connection.");
       }
     }
 
@@ -120,7 +120,7 @@ function ImageUploader({ images = [], onChange }) {
         ) : (
           <>
             <p className="text-sm text-sand-600 dark:text-sand-500 mb-1">Drop images here or click to browse</p>
-            <p className="text-xs text-sand-500">JPEG, PNG, WebP or AVIF — max 5MB each</p>
+            <p className="text-xs text-sand-500">JPEG, PNG, WebP or AVIF · max 5MB each</p>
           </>
         )}
       </div>
@@ -457,7 +457,7 @@ export default function ProductManager({ categories }) {
               <div className="mb-4">
                 <label className="text-xs font-mono uppercase tracking-wider text-sand-500 mb-1 block">Kit Items (one per line)</label>
                 <textarea value={form.items} onChange={(e) => setForm({ ...form, items: e.target.value })} rows={6}
-                  placeholder={"9 meals — 1,800+ cal/day\nWater purification for 72L\nLED torch + batteries"}
+                  placeholder={"9 meals, 1,800+ cal/day\nWater purification for 72L\nLED torch + batteries"}
                   className="w-full px-3 py-2 text-sm bg-transparent border border-black/15 dark:border-white/10 rounded-sm text-neutral-900 dark:text-sand-100 focus:outline-none resize-y font-mono" />
               </div>
             </>

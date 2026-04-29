@@ -153,7 +153,7 @@ export default function CartDrawer() {
               onClick={() => setCartOpen(false)}
               className="btn-primary w-full text-center block no-underline"
             >
-              Checkout — Cash on Delivery →
+              Checkout · Cash on Delivery →
             </Link>
             <button
               onClick={() => setCartOpen(false)}

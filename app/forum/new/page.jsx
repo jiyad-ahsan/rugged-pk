@@ -5,7 +5,7 @@ import Link from "next/link";
 import NewThreadForm from "@/components/forum/NewThreadForm";
 
 export const metadata = {
-  title: "New Thread — Forum — Rugged",
+  title: "New Thread · Forum · Rugged",
 };
 
 export default async function NewThreadPage() {
