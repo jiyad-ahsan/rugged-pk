@@ -2,6 +2,9 @@ import prisma from "@/lib/db";
 import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
 
+// Never prerender at build time: this queries the database.
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   const categories = await prisma.productCategory.findMany({
     orderBy: { sortOrder: "asc" },
