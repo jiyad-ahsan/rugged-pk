@@ -51,7 +51,7 @@ function LoginForm() {
           Log in
         </h1>
         <p className="text-sm text-sand-600 dark:text-sand-500 mb-8">
-          Access the forum, save guides, and track your orders.
+          Save guides and track your orders.
         </p>
 
         {error && (

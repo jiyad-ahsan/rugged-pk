@@ -5,7 +5,6 @@ const footerCols = [
     title: "Resources",
     links: [
       { label: "All Guides", href: "/guides" },
-      { label: "Forum", href: "/forum" },
       { label: "Workshops", href: "#" },
     ],
   },

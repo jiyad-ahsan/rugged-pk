@@ -31,21 +31,18 @@ export default function AdminDashboard() {
           <h1 className="font-sans text-2xl font-bold tracking-tight mb-1">Dashboard</h1>
           <p className="text-sm text-sand-500">Loading...</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
-          {[1,2,3,4,5].map((i) => <SkeletonCard key={i} />)}
+        <div className="grid grid-cols-2 gap-4 mb-10">
+          {[1,2].map((i) => <SkeletonCard key={i} />)}
         </div>
       </div>
     );
   }
 
-  const { userCount, productCount, threadCount, replyCount, openReportCount, recentUsers, recentThreads, statusCounts } = data;
+  const { userCount, productCount, recentUsers, statusCounts } = data;
 
   const stats = [
     { label: "Users", value: userCount, href: "/admin/users", color: "text-sky-600 dark:text-sky-400" },
     { label: "Products", value: productCount, href: "/admin/products", color: "text-emerald-600 dark:text-emerald-400" },
-    { label: "Threads", value: threadCount, href: null, color: "text-violet-600 dark:text-violet-400" },
-    { label: "Replies", value: replyCount, href: null, color: "text-amber-600 dark:text-amber-400" },
-    { label: "Open Reports", value: openReportCount, href: "/admin/moderation", color: openReportCount > 0 ? "text-rose-600 dark:text-rose-400" : "text-emerald-600 dark:text-emerald-400" },
   ];
 
   return (
@@ -56,7 +53,7 @@ export default function AdminDashboard() {
       </div>
 
       {/* Stats grid */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
+      <div className="grid grid-cols-2 gap-4 mb-10">
         {stats.map((stat) => {
           const inner = (
             <div className="card p-5 text-center">
@@ -139,43 +136,6 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        {/* Recent threads */}
-        <div className="card p-6">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="font-sans text-sm font-semibold">Recent Threads</h2>
-            <Link href="/forum" className="text-xs text-rugged-500 hover:text-rugged-600 no-underline">
-              View forum →
-            </Link>
-          </div>
-          <div className="space-y-0">
-            {recentThreads.map((thread) => (
-              <div
-                key={thread.id}
-                className="py-2.5"
-                style={{ borderBottom: "1px solid rgba(128,128,128,0.08)" }}
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0">
-                    <Link
-                      href={`/forum/thread/${thread.id}`}
-                      className="text-sm font-medium text-neutral-900 dark:text-sand-100 hover:text-rugged-500 no-underline block truncate"
-                    >
-                      {thread.title}
-                    </Link>
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-xs text-sand-500">{thread.author?.name}</span>
-                      <span className="text-xs text-sand-500">in {thread.category?.name}</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-xs text-sand-500 tabular-nums">{thread.replyCount} replies</span>
-                    <span className="text-[0.6rem] text-sand-500 tabular-nums">{timeAgo(thread.createdAt)}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );

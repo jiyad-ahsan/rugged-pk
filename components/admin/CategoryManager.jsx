@@ -179,17 +179,12 @@ function CategorySection({ title, description, apiBase, categories, onRefresh, c
 
 export default function CategoryManager() {
   const [shopCategories, setShopCategories] = useState([]);
-  const [forumCategories, setForumCategories] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const fetchAll = useCallback(async () => {
     setLoading(true);
-    const [shopRes, forumRes] = await Promise.all([
-      fetch("/api/shop/categories"),
-      fetch("/api/forum/categories"),
-    ]);
+    const shopRes = await fetch("/api/shop/categories");
     setShopCategories(await shopRes.json());
-    setForumCategories(await forumRes.json());
     setLoading(false);
   }, []);
 
@@ -201,7 +196,7 @@ export default function CategoryManager() {
     <div>
       <div className="mb-10">
         <h1 className="font-sans text-2xl font-bold tracking-tight mb-1">Categories</h1>
-        <p className="text-sm text-sand-500">Manage categories for the shop and forum.</p>
+        <p className="text-sm text-sand-500">Manage categories for the shop.</p>
       </div>
 
       {/* Shop categories */}
@@ -216,20 +211,6 @@ export default function CategoryManager() {
           hasDescription={false}
         />
       </div>
-
-      {/* Divider */}
-      <div className="mb-12" style={{ borderTop: "1px solid rgba(128,128,128,0.15)" }} />
-
-      {/* Forum categories */}
-      <CategorySection
-        title="Forum Categories"
-        description={`${forumCategories.length} categories for forum discussions.`}
-        apiBase="/api/forum/categories"
-        categories={forumCategories}
-        onRefresh={fetchAll}
-        countLabel="threads"
-        hasDescription={true}
-      />
     </div>
   );
 }

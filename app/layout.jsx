@@ -35,7 +35,7 @@ export const viewport = {
 export const metadata = {
   title: "Rugged · Preparedness for Pakistani Families",
   description:
-    "Free guides, real community, and kits built for the threats Pakistani families actually face. Practical readiness from Karachi, not imported survival fantasies.",
+    "Free guides and kits built for the threats Pakistani families actually face. Practical readiness from Karachi, not imported survival fantasies.",
   keywords: ["preparedness", "Pakistan", "emergency kit", "survival", "Karachi", "family safety"],
   manifest: "/manifest.json",
 };

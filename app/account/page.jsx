@@ -95,7 +95,7 @@ export default function AccountPage() {
               maxLength={30}
               className="w-full font-mono text-sm bg-sand-100 dark:bg-sand-800 text-neutral-900 dark:text-sand-100 placeholder-sand-500 dark:placeholder-sand-600 px-4 py-3 rounded-sm outline-none transition-colors duration-200"
               style={{ border: "1px solid rgba(128,128,128,0.2)" }}
-              placeholder="How you appear on the forum"
+              placeholder="How your name appears on the site"
             />
             <p className="text-xs text-sand-500 mt-1.5">
               Letters, numbers, spaces, dots and hyphens. 2–30 characters. Leave blank to use your real name.

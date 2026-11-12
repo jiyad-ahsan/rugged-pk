@@ -130,7 +130,7 @@ export default async function ProductPage({ params }) {
               <span className="text-sm font-medium">{statusLabel}</span>
               <p className="text-xs mt-1 opacity-70">
                 {product.status === "coming_soon"
-                  ? "This product is being prepared. Join the forum to be notified when it's available."
+                  ? "This product is being prepared. Check back soon."
                   : "This product is currently out of stock."}
               </p>
             </div>

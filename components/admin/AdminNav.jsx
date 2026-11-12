@@ -9,7 +9,6 @@ const navItems = [
   { href: "/admin/products", label: "Products", icon: "▦" },
   { href: "/admin/categories", label: "Categories", icon: "◫" },
   { href: "/admin/users", label: "Users", icon: "◉" },
-  { href: "/admin/moderation", label: "Moderation", icon: "⚑" },
 ];
 
 export default function AdminNav() {

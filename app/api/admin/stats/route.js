@@ -11,32 +11,15 @@ export async function GET() {
   const [
     userCount,
     productCount,
-    threadCount,
-    replyCount,
-    openReportCount,
     recentUsers,
-    recentThreads,
     productsByStatus,
   ] = await Promise.all([
     prisma.user.count(),
     prisma.product.count(),
-    prisma.forumThread.count({ where: { isHidden: false } }),
-    prisma.forumReply.count({ where: { isHidden: false } }),
-    prisma.forumReport.count({ where: { status: "open" } }),
     prisma.user.findMany({
       orderBy: { createdAt: "desc" },
       take: 5,
       select: { id: true, name: true, email: true, role: true, createdAt: true },
-    }),
-    prisma.forumThread.findMany({
-      orderBy: { createdAt: "desc" },
-      take: 5,
-      where: { isHidden: false },
-      select: {
-        id: true, title: true, createdAt: true, replyCount: true,
-        author: { select: { name: true, displayName: true } },
-        category: { select: { name: true } },
-      },
     }),
     prisma.product.groupBy({
       by: ["status"],
@@ -50,7 +33,6 @@ export async function GET() {
   }
 
   return NextResponse.json({
-    userCount, productCount, threadCount, replyCount,
-    openReportCount, recentUsers, recentThreads, statusCounts,
+    userCount, productCount, recentUsers, statusCounts,
   });
 }

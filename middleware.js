@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const protectedPaths = ["/forum", "/admin"];
+const protectedPaths = ["/admin"];
 
 export function middleware(req) {
   const { pathname } = req.nextUrl;

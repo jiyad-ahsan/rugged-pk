@@ -193,7 +193,7 @@ export default async function GuidePage({ params }) {
                   </p>
                   <p className="text-xs text-sand-600 dark:text-sand-500 leading-relaxed">
                     We're putting together the full illustrated {isFieldCard ? "card" : "guide"} now.
-                    Join the forum to be notified when it's ready, or check back soon.
+                    Check back soon.
                   </p>
                 </div>
               </div>
