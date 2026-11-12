@@ -1,13 +1,30 @@
 import { NextResponse } from "next/server";
+import { SHOP_ENABLED, ACCOUNTS_ENABLED, isDisabledPath } from "@/lib/features";
 
 const protectedPaths = ["/admin"];
 
 export function middleware(req) {
   const { pathname } = req.nextUrl;
 
-  const isProtected = protectedPaths.some((path) =>
-    pathname.startsWith(path)
-  );
+  // Features switched off in lib/features.js
+  if (isDisabledPath(pathname)) {
+    if (pathname.startsWith("/api/")) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+    // Pages return notFound() from their segment layout.
+    return NextResponse.next();
+  }
+
+  // Product detail pages read from the database; send visitors to the
+  // static "coming soon" shop page while the shop is closed.
+  if (!SHOP_ENABLED && pathname.startsWith("/shop/")) {
+    return NextResponse.redirect(new URL("/shop", req.url));
+  }
+
+  if (pathname.startsWith("/api/")) return NextResponse.next();
+
+  const isProtected =
+    ACCOUNTS_ENABLED && protectedPaths.some((path) => pathname.startsWith(path));
 
   if (!isProtected) return NextResponse.next();
 
@@ -26,5 +43,5 @@ export function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|sw.js|manifest.json).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|sw.js|manifest.json).*)"],
 };

@@ -1,5 +1,6 @@
 import prisma from "@/lib/db";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { SHOP_ENABLED } from "@/lib/features";
 import Link from "next/link";
 import Image from "next/image";
 import AddToCartButton from "@/components/shop/AddToCartButton";
@@ -11,6 +12,7 @@ function formatPrice(price) {
 }
 
 export async function generateMetadata({ params }) {
+  if (!SHOP_ENABLED) return { title: "Shop · Rugged" };
   const { slug } = await params;
   const product = await prisma.product.findUnique({
     where: { slug },
@@ -24,6 +26,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ProductPage({ params }) {
+  // Product details come from the database; closed shop -> static shop page.
+  if (!SHOP_ENABLED) redirect("/shop");
   const { slug } = await params;
 
   const product = await prisma.product.findUnique({

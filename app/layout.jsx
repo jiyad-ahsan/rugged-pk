@@ -6,6 +6,11 @@ import CartProvider from "@/components/CartProvider";
 import Nav from "@/components/Nav";
 import CartDrawer from "@/components/shop/CartDrawer";
 import Footer from "@/components/Footer";
+import { SHOP_ENABLED, ACCOUNTS_ENABLED } from "@/lib/features";
+
+// Auth.js session provider only when accounts are on; otherwise it would
+// call /api/auth/session, which is switched off.
+const SessionWrapper = ACCOUNTS_ENABLED ? AuthProvider : ({ children }) => children;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,16 +49,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
       <body>
-        <AuthProvider>
+        <SessionWrapper>
           <ThemeProvider>
             <CartProvider>
               <Nav />
-              <CartDrawer />
+              {SHOP_ENABLED && <CartDrawer />}
               <main className="pt-[72px] min-h-screen">{children}</main>
               <Footer />
             </CartProvider>
           </ThemeProvider>
-        </AuthProvider>
+        </SessionWrapper>
       </body>
     </html>
   );
