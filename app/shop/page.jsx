@@ -1,5 +1,7 @@
 import prisma from "@/lib/db";
 import ShopListing from "@/components/shop/ShopListing";
+import KitsComingSoon from "@/components/shop/KitsComingSoon";
+import { SHOP_ENABLED } from "@/lib/features";
 
 export const metadata = {
   title: "Shop · Rugged",
@@ -9,6 +11,9 @@ export const metadata = {
 export const revalidate = 60; // regenerate every 60 seconds
 
 export default async function ShopPage() {
+  // Shop closed: static kits from content/kits.js, no database.
+  if (!SHOP_ENABLED) return <KitsComingSoon />;
+
   let products = [];
   let categories = [];
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Divider from "@/components/Divider";
+import { SHOP_ENABLED } from "@/lib/features";
 
 const featuredGuides = [
   {
@@ -134,9 +135,16 @@ export default function Home() {
           <div className="absolute -top-3 left-6 bg-rugged-500 dark:bg-rugged-400 text-white text-xs font-mono tracking-widest px-3 py-1 rounded-sm">
             START HERE
           </div>
-          <h3 className="font-sans text-xl font-bold tracking-tight mt-1 mb-1">
-            Starter Kit
-          </h3>
+          <div className="flex items-center gap-3 mt-1 mb-1">
+            <h3 className="font-sans text-xl font-bold tracking-tight">
+              Starter Kit
+            </h3>
+            {!SHOP_ENABLED && (
+              <span className="text-[0.6rem] uppercase tracking-widest font-medium px-2 py-0.5 rounded-sm text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20">
+                Coming soon
+              </span>
+            )}
+          </div>
           <p className="text-sm text-sand-600 dark:text-sand-500 mb-3">
             72 hours. One person. Everything in a grab bag.
           </p>
@@ -148,8 +156,8 @@ export default function Home() {
             <p>· 9 meals, water purification, LED torch</p>
             <p>· First aid kit, document safe, canvas bag</p>
           </div>
-          <Link href="/shop/starter-kit" className="btn-primary text-sm">
-            View kit →
+          <Link href={SHOP_ENABLED ? "/shop/starter-kit" : "/shop#starter-kit"} className="btn-primary text-sm">
+            {SHOP_ENABLED ? "View kit →" : "See what's inside →"}
           </Link>
         </div>
       </section>
